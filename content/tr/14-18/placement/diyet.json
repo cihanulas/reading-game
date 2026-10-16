@@ -1,0 +1,64 @@
+{
+  "id": "tr-14-18-placement-diyet",
+  "lang": "tr",
+  "ageGroup": "14-18",
+  "level": 0,
+  "title": "Diyet (bölüm)",
+  "author": "Ömer Seyfettin",
+  "source": "Diyet (1918) öyküsünün başından. Vikikaynak: https://tr.wikisource.org/wiki/Diyet",
+  "simplified": false,
+  "body": "Dar kapısından başka aydınlık girecek hiçbir yeri olmayan dükkânında, tek başına, gece gündüz kıvılcımlar saçarak çalışan Koca Ali, tıpkı kafese konmuş terbiyeli bir arslanı andırıyordu. Uzun boylu, iri pençeli, kalın bazulu, geniş omuzlu bir pehlivandı. On senedir bu karanlık in içinde ham demirden dövdüğü kılıç namluları bütün Anadolu'da, bütün Rumeli'de, serhat boylarında büyük bir nâm kazanmıştı. Hatta İstanbul'da bile yeniçeriler, satın alacakları kamaların, saldırmaların, yatağanların üstünde \"Amel-i Ali Usta\" damgasını arıyorlardı. O, çeliğe \"çifte su\" vermesini biliyordu. Uzun kılıçlar değil, yaptığı kısacık bıçaklar bile iki kat olur, yine kırılmazdı. \"Çifte su vermek\", sanatının, yalnız ona özgü bir sırrı idi. Yanına çırak almaz, kimseyle çok konuşmaz, dükkânından dışarı çıkmaz, habire uğraşırdı. Bekârdı. Hısımı, akrabası yoktu. Memleketin yabancısıydı. Kılıçtan, demirden, çelikten, ateşten başka laf bilmez, pazarlığa girişmez, müşterileri ne verirse alırdı. Yalnız muharebe zamanları ocağını söndürür, dükkânının kapısını kilitler, kaybolur; muharebeden sonra meydana çıkardı.\n\nŞehirde ona dair birçok hikâyeler söylenirdi. Kimi \"cellat elinden kaçmış bir çelebi\", kimi \"sevgilisi öldüğü için vakitsiz dünyayı terk etmiş bir garip\" derdi. Siyah şahane gözlerinin yüksek bakışından, kibar tavrından, mağrur sükûnundan, düzgün sözlerinden onun öyle sıradan bir adam olmadığı belliydi... Ama kimdi? Nereliydi? Nereden gelmişti? Bunları bilen yoktu. Halk kendisini seviyordu. Şehirde böyle meşhur bir ustanın bulunması herkes için ayrı bir iftihardı.\n\n— Bizim Ali...\n— Bizim koca usta...\n— Dünyada eşi yoktur...\n— Zülfikâr'ın sırrı ondadır!.. derlerdi.\n\nKoca Ali en kalın, en katı demirleri mısır yaprağı gibi incelten, kâğıt gibi yumuşatan sanatını kimseden öğrenmemiş, kendi kendine bulmuştu. Daha on iki yaşındayken, sert bir beylerbeyi olan babasının başı vurulmuş, öksüz kalmıştı. Amcası çok zengindi. Debdebeli bir vezirdi. Onu yanına aldı. Okutmak istedi. Belki devlet katında yetiştirecek, büyük mevkilere çıkaracaktı. Fakat Ali'nin mizacında \"başkasına minnettar kalmak\" ihtimali derin bir elem sızlatıyordu. \"Ben kimseye eyvallah etmeyeceğim,\" dedi. Bir gece amcasının konağından kaçtı. Serseri bir adsız gibi dağlar, tepeler, dereler aştı. İsmini bilmediği memleketler dolaştı. Nihayet Erzurum'da ihtiyar bir demircinin yanına girdi. Otuz yaşına kadar Anadolu'da uğramadığı şehir kalmadı. Kimseye boyun eğmedi. Minnettar kalmadı. Ekmeğini taştan çıkardı. Alnının teriyle kazandı.",
+  "glossary": [
+    { "word": "bazulu", "meaning": "Bazu: kolun omuzla dirsek arasındaki kalın bölümü, pazı." },
+    { "word": "serhat", "meaning": "Sınır bölgesi." },
+    { "word": "nâm", "meaning": "Ün, şöhret." },
+    { "word": "yatağanların", "meaning": "Yatağan: ucu hafif eğri, kısa bir kılıç türü." },
+    { "word": "muharebe", "meaning": "Savaş." },
+    { "word": "mağrur", "meaning": "Gururlu." },
+    { "word": "iftihardı", "meaning": "İftihar: övünç, gurur duyulacak şey." },
+    { "word": "Debdebeli", "meaning": "Gösterişli, şatafatlı." },
+    { "word": "mizacında", "meaning": "Mizaç: huy, yaradılış." },
+    { "word": "minnettar", "meaning": "Kendisine yapılan iyilik yüzünden kendini borçlu hisseden." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Koca Ali'nin ustalığının sırrı neydi?",
+      "options": ["Çeliğe \"çifte su\" vermek", "Kılıçlara altın kakmak", "Demiri çok uzun süre dövmek", "Özel bir ocak kullanmak"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Koca Ali amcasının konağından neden kaçtı?",
+      "options": [
+        "Kimseye minnettar kalmak istemediği için",
+        "Amcası ona kötü davrandığı için",
+        "Demircilik öğrenmek için",
+        "Askere alınmak istemediği için"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Koca Ali demirciliğe hangi şehirde başladı?",
+      "options": ["Erzurum", "İstanbul", "Konya", "Edirne"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "trueFalse",
+      "prompt": "Koca Ali amcasının yanında kalıp devlette yüksek bir mevkiye çıktı.",
+      "answer": false
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Hangi silah adı metinde geçiyordu?",
+      "options": ["yatağan", "mızrak", "tüfek", "topuz"],
+      "answer": 0
+    }
+  ]
+}

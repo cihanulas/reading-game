@@ -1,0 +1,77 @@
+{
+  "app": {
+    "title": "Okuma Adası",
+    "guide": "Kaptan Kelime"
+  },
+  "language": {
+    "tr": "Türkçe",
+    "de": "Deutsch",
+    "en": "English"
+  },
+  "ageGroup": {
+    "label": "Yaş grubu",
+    "10-13": "10-13 yaş",
+    "14-18": "14-18 yaş"
+  },
+  "profiles": {
+    "title": "Kim maceraya çıkıyor?",
+    "empty": "Henüz bir kaptan yok. Hadi ilk kaptanı oluşturalım!",
+    "new": "Yeni kaptan",
+    "target": "Hedef: {{wpm}} KDK"
+  },
+  "createProfile": {
+    "title": "Yeni kaptan",
+    "greeting": "Ahoy! Ben Kaptan Kelime. Seni tanıyalım!",
+    "name": "Adın",
+    "namePlaceholder": "Kaptan adın",
+    "avatar": "Karakterini seç",
+    "language": "Okuma dili",
+    "submit": "Maceraya başla",
+    "cancel": "Vazgeç"
+  },
+  "placement": {
+    "introTitle": "Hazine haritası testi",
+    "intro": "Haritanı çizebilmem için {{count}} kısa metin okuyacaksın. Acele etme, her zamanki gibi oku. Sonra birkaç soru soracağım.",
+    "glossaryHint": "Altı noktalı kelimelere dokunursan anlamını gösteririm. O sırada süre durur.",
+    "progress": "Metin {{current}} / {{total}}",
+    "start": "Okumaya başla",
+    "finish": "Bitirdim",
+    "paused": "Süre durdu",
+    "simplified": "Bu metin sadeleştirilmiştir.",
+    "questionsTitle": "Bakalım neler hatırlıyorsun?",
+    "next": "Devam",
+    "noTexts": "Bu dil ve yaş grubu için henüz metin yok."
+  },
+  "placementResult": {
+    "title": "Haritan hazır!",
+    "speed": "Okuma hızın",
+    "comprehension": "Anlama",
+    "effective": "Etkili okuma hızı",
+    "target": "Başlangıç hedefin",
+    "unitWpm": "{{value}} KDK",
+    "percent": "%{{value}}",
+    "continue": "Haritaya git"
+  },
+  "home": {
+    "welcome": "Hoş geldin, {{name}}!",
+    "target": "Şu anki hedefin: {{wpm}} kelime/dakika",
+    "comingSoon": "Hazine haritası çok yakında burada olacak!",
+    "retakePlacement": "Testi tekrar yap",
+    "switchProfile": "Kaptan değiştir"
+  },
+  "question": {
+    "true": "Doğru",
+    "false": "Yanlış",
+    "check": "Kontrol et",
+    "correct": "Harika, doğru!",
+    "wrong": "Bu sefer olmadı.",
+    "orderingHint": "Maddelere doğru sırayla dokun.",
+    "orderingReset": "Baştan başla"
+  },
+  "glossary": {
+    "close": "Tamam"
+  },
+  "about": {
+    "credits": "Kaynaklar"
+  }
+}

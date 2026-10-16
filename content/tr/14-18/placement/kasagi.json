@@ -1,0 +1,60 @@
+{
+  "id": "tr-14-18-placement-kasagi",
+  "lang": "tr",
+  "ageGroup": "14-18",
+  "level": 0,
+  "title": "Kaşağı (bölüm)",
+  "author": "Ömer Seyfettin",
+  "source": "Kaşağı (1919) öyküsünden bir bölüm. Vikikaynak: https://tr.wikisource.org/wiki/Kaşağı",
+  "simplified": false,
+  "body": "At, ahır işlerinde yalnız tımarı beceremiyordum. Boyum atın karnına bile varmıyordu. Halbuki en keyifli, en eğlenceli şey buydu. Sanki kaşağının muntazam tıkırtısı Tosun'un hoşuna gidiyor, kulaklarını kısıyor, kuyruğunu kocaman bir püskül gibi sallıyordu. Tam tımar biteceğine yakın huysuzlanır, o zaman Dadaruh, \"Höyt..\" diye sağrısına bir tokat indirir, sonra öteki atları tımara başlardı. Ben bir gün yalnız başıma kaldım. Hasan'la Dadaruh dere kenarına inmişlerdi. İçimde bir tımar etmek hırsı uyandı. Kaşağıyı aradım, bulamadım. Ahırın köşesinde Dadaruh'un penceresiz küçük bir odası vardı. Buraya girdim. Rafları aradım. Eyerlerin arasına falan baktım. Yok, yok! Yatağın altında, yeşil tahtadan bir sandık duruyordu. Onu açtım. Az daha sevincimden haykıracaktım. Annemin bir hafta önce İstanbul'dan gönderdiği hediyeler içinden çıkan fakfon kaşağı, pırıl pırıl parlıyordu. Hemen kaptım. Tosun'un yanına koştum. Karnına sürtmek istedim. Rahat durmuyordu.\n\n— Galiba acıtıyor? dedim.\n\nGümüş gibi parlayan bu güzel kaşağının dişlerine baktım. Çok keskin, çok sivriydi. Biraz köreltmek için duvarın taşlarına sürtmeye başladım. Dişleri bozulunca tekrar tecrübe ettim. Gene atların hiçbiri durmuyordu. Kızdım. Öfkemi sanki kaşağıdan çıkarmak istedim. On adım ilerdeki çeşmeye koştum. Kaşağıyı yalağın taşına koydum. Yerden kaldırabileceğim en ağır bir taş bularak üstüne hızlı hızlı indirmeye başladım. İstanbul'dan gelen, ihtimal, Dadaruh'un kullanmaya kıyamadığı bu güzel kaşağıyı ezdim, parçaladım. Sonra yalağın içine attım.\n\nBabam, her sabah dışarıya giderken bir kere ahıra uğrar, öteye beriye bakardı. Ben o gün gene ahırda yalnızdım. Hasan evde hizmetçimiz Pervin'le kalmıştı. Babam çeşmeye bakarken, yalağın içinde kırılmış kaşağıyı gördü; Dadaruh'a haykırdı:\n\n— Gel buraya!\n\nNefesim kesilecekti, bilmem neden, çok korkmuştum. Dadaruh şaşırdı, kırılmış kaşağı meydana çıkınca, babam bunu kimin yaptığını sordu. Dadaruh:\n\n— Bilmiyorum, dedi.\n\nBabamın gözleri bana döndü, daha bir şey sormadan:\n\n— Hasan, dedim.",
+  "glossary": [
+    { "word": "muntazam", "meaning": "Düzenli." },
+    { "word": "sağrısına", "meaning": "Sağrı: atın sırtının arka, kalçaya yakın bölümü." },
+    { "word": "Eyerlerin", "meaning": "Eyer: ata binmek için hayvanın sırtına konulan oturak." },
+    { "word": "fakfon", "meaning": "Gümüşe benzeyen, bakır, nikel ve çinkodan yapılmış bir alaşım." },
+    { "word": "köreltmek", "meaning": "Keskinliğini azaltmak." },
+    { "word": "yalağın", "meaning": "Yalak: çeşme önünde suyun biriktiği taş tekne." },
+    { "word": "ihtimal", "meaning": "Burada: belki, olasılıkla." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Anlatıcı parlak kaşağıyı nerede buldu?",
+      "options": ["Dadaruh'un odasındaki sandıkta", "Ahırın kapısında", "Çeşmenin yanında", "Babasının odasında"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Anlatıcı kaşağıyı neden duvarın taşlarına sürttü?",
+      "options": ["Dişlerini köreltmek için", "Parlatmak için", "Temizlemek için", "Saklamak için"],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Kaşağı, annenin İstanbul'dan gönderdiği hediyelerden biriydi.",
+      "answer": true
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Olayları oluş sırasına diz.",
+      "items": [
+        "Anlatıcı sandıkta parlak kaşağıyı bulur.",
+        "Kaşağının dişlerini duvar taşlarına sürter.",
+        "Kaşağıyı yalağın taşında ezer.",
+        "Babası kırık kaşağıyı görür.",
+        "Anlatıcı suçu Hasan'a atar."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "trueFalse",
+      "prompt": "Babası sorduğunda anlatıcı doğruyu söyledi.",
+      "answer": false
+    }
+  ]
+}

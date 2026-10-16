@@ -1,0 +1,53 @@
+{
+  "id": "tr-10-13-placement-diyet",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 0,
+  "title": "Usta Demirci",
+  "author": "Ömer Seyfettin",
+  "source": "Diyet (1918) öyküsünün başından. Vikikaynak: https://tr.wikisource.org/wiki/Diyet",
+  "simplified": true,
+  "body": "Dar kapısından başka ışık girecek hiçbir yeri olmayan dükkânında, tek başına, gece gündüz kıvılcımlar saçarak çalışan Koca Ali, kafese konmuş uslu bir aslanı andırıyordu. Uzun boylu, iri elli, kalın kollu, geniş omuzlu bir pehlivandı. On yıldır bu karanlık dükkânda ham demirden dövdüğü kılıçlar bütün Anadolu'da, bütün Rumeli'de büyük bir ün kazanmıştı. İstanbul'daki askerler bile satın alacakları bıçakların üstünde \"Ali Usta'nın işi\" damgasını arıyorlardı.\n\nO, çeliğe \"çifte su\" vermesini biliyordu. Yaptığı kısacık bıçaklar bile iki kat bükülür, yine kırılmazdı. Bu, sanatının yalnız ona özgü bir sırrıydı. Yanına çırak almaz, kimseyle çok konuşmaz, dükkânından dışarı çıkmaz, durmadan çalışırdı. Kılıçtan, demirden, çelikten, ateşten başka söz bilmez, pazarlık etmez, müşterileri ne verirse alırdı.\n\nŞehirde onun hakkında birçok hikâye anlatılırdı. Ama kimdi? Nereliydi? Nereden gelmişti? Bunları bilen yoktu. Halk onu seviyordu. Şehirde böyle ünlü bir ustanın bulunması herkes için ayrı bir gururdu.\n\n— Bizim Ali...\n— Bizim koca usta...\n— Dünyada eşi yoktur! derlerdi.",
+  "glossary": [
+    { "word": "andırıyordu", "meaning": "Benziyordu." },
+    { "word": "pehlivandı", "meaning": "Pehlivan: çok güçlü, iri yapılı kimse; güreşçi." },
+    { "word": "ham", "meaning": "İşlenmemiş, olduğu gibi duran." },
+    { "word": "çırak", "meaning": "Bir ustanın yanında çalışarak iş öğrenen kimse." },
+    { "word": "pazarlık", "meaning": "Alışverişte fiyat üzerinde konuşup anlaşmaya çalışma." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Koca Ali ne iş yapıyordu?",
+      "options": ["Kılıç ve bıçak yapan bir demirciydi", "Kasaptı", "Çobandı", "Öğretmendi"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Ali Usta'nın sanatının sırrı neydi?",
+      "options": ["Çeliğe \"çifte su\" vermek", "Altını eritmek", "Kılıçları boyamak", "Çok hızlı çalışmak"],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Koca Ali'nin yanında birçok çırak çalışıyordu.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "trueFalse",
+      "prompt": "Şehirdekiler Koca Ali'nin nereden geldiğini bilmiyordu.",
+      "answer": true
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Koca Ali metinde hangi hayvana benzetiliyordu?",
+      "options": ["aslan", "kaplan", "kartal", "kurt"],
+      "answer": 0
+    }
+  ]
+}

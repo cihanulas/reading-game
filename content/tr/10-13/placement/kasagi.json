@@ -1,0 +1,53 @@
+{
+  "id": "tr-10-13-placement-kasagi",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 0,
+  "title": "Ahırdaki Atlar",
+  "author": "Ömer Seyfettin",
+  "source": "Kaşağı (1919) öyküsünün başından. Vikikaynak: https://tr.wikisource.org/wiki/Kaşağı",
+  "simplified": true,
+  "body": "Ahırın avlusunda oynarken aşağıda, gümüş söğütlerin altında görünmeyen derenin hüzünlü şırıltısını duyardık. Evimiz, büyük kestane ağaçlarının arkasında kaybolmuş gibiydi. Annem İstanbul'a gittiği için benden bir yaş küçük kardeşim Hasan'la Dadaruh'un yanından hiç ayrılmıyorduk. Dadaruh, babamın seyisi, yaşlı bir adamdı. Sabahları erkenden ahıra koşuyorduk. En sevdiğimiz şey atlardı.\n\nDadaruh'la beraber atları suya götürmek, çıplak sırtlarına binmek ne doyulmaz bir zevkti. Hasan korkar, yalnız binemezdi. Dadaruh onu kendi önüne alırdı. Torbalara arpa koymak, yemliklere ot doldurmak bizim çok hoşumuza gidiyordu. Hele tımar... Bu en zevkli şeydi. Dadaruh eline kaşağıyı alıp işe başladı mı, tık... tık... tık... tıpkı bir saat gibi ses çıkarırdı. Ben yerimde duramaz:\n\n— Ben de yapacağım! diye tuttururdum.\n\nO zaman Dadaruh beni Tosun'un sırtına koyar, elime kaşağıyı verir:\n\n— Hadi yap! derdi.\n\nBu demir aleti hayvanın üstüne sürterdim ama o güzel tıkırtıyı bir türlü çıkaramazdım.\n\nHer sabah ahıra gelir gelmez:\n\n— Dadaruh, tımarı ben yapacağım, derdim.\n— Yapamazsın.\n— Niçin?\n— Daha küçüksün de ondan...\n— Ne zaman yapabilirim?\n— Boyun at kadar olduğu zaman.",
+  "glossary": [
+    { "word": "seyisi", "meaning": "Seyis: atlara bakan, onları besleyip temizleyen kişi." },
+    { "word": "tımar", "meaning": "Atın tüylerini tarayıp temizleme işi." },
+    { "word": "kaşağıyı", "meaning": "Kaşağı: atların tüylerini temizlemeye yarayan dişli demir tarak." },
+    { "word": "yemliklere", "meaning": "Yemlik: hayvanlara yem konulan kap ya da yer." },
+    { "word": "tuttururdum", "meaning": "Bir şeyi inatla ısrar ederek isterdim." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Çocuklar en çok neyi seviyordu?",
+      "options": ["Atları", "Kedileri", "Kuşları", "Balıkları"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Dadaruh kimdir?",
+      "options": ["Babanın seyisi", "Çocukların öğretmeni", "Komşu çiftçi", "Annenin kardeşi"],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Hasan atlara yalnız başına binebiliyordu.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "trueFalse",
+      "prompt": "Dadaruh, çocuğun tımarı ancak boyu at kadar olunca yapabileceğini söyledi.",
+      "answer": true
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Hangi ağaç metinde geçiyordu?",
+      "options": ["kestane", "çınar", "ceviz", "incir"],
+      "answer": 0
+    }
+  ]
+}
