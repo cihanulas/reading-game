@@ -32,13 +32,7 @@
   "placement": {
     "introTitle": "Hazine haritası testi",
     "intro": "Haritanı çizebilmem için {{count}} kısa metin okuyacaksın. Acele etme, her zamanki gibi oku. Sonra birkaç soru soracağım.",
-    "glossaryHint": "Altı noktalı kelimelere dokunursan anlamını gösteririm. O sırada süre durur.",
     "progress": "Metin {{current}} / {{total}}",
-    "start": "Okumaya başla",
-    "finish": "Bitirdim",
-    "paused": "Süre durdu",
-    "simplified": "Bu metin sadeleştirilmiştir.",
-    "questionsTitle": "Bakalım neler hatırlıyorsun?",
     "next": "Devam",
     "noTexts": "Bu dil ve yaş grubu için henüz metin yok."
   },
@@ -52,10 +46,47 @@
     "percent": "%{{value}}",
     "continue": "Haritaya git"
   },
+  "reading": {
+    "glossaryHint": "Altı noktalı kelimelere dokunursan anlamını gösteririm. O sırada süre durur.",
+    "start": "Okumaya başla",
+    "finish": "Bitirdim",
+    "paused": "Süre durdu",
+    "simplified": "Bu metin sadeleştirilmiştir.",
+    "questionsTitle": "Bakalım neler hatırlıyorsun?"
+  },
+  "explore": {
+    "title": "Keşif Adası",
+    "intro": "Bir hikâye seç, sessizce oku, sonra soruları cevapla. Hem hızlı hem dikkatli okursan daha çok puan kazanırsın!",
+    "level": "Seviye {{level}}",
+    "words": "{{count}} kelime",
+    "best": "En iyi: {{score}} puan",
+    "empty": "Bu dil ve yaş grubu için henüz hikâye yok.",
+    "back": "Geri dön"
+  },
+  "exploreResult": {
+    "title": "Macera tamam!",
+    "targetReached": "Hedefini geçtin! Harika bir okuma.",
+    "targetMissed": "Hedefe az kaldı. Bir dahakine daha iyi olacak!",
+    "lowComprehension": "Çok hızlı geçmiş olabilirsin. Biraz daha dikkatli okumayı dene.",
+    "newRecord": "Yeni rekor! Önceki en iyin: {{value}} KDK",
+    "previousBest": "Bu hikâyedeki en iyin: {{value}} KDK",
+    "score": "Puan",
+    "base": "Etkili okuma hızı puanı",
+    "targetBonus": "Hedef bonusu",
+    "perfectBonus": "Tam doğru bonusu",
+    "streakBonus": "Seri bonusu ({{days}} gün)",
+    "total": "Toplam",
+    "again": "Başka hikâye",
+    "home": "Limana dön"
+  },
   "home": {
     "welcome": "Hoş geldin, {{name}}!",
     "target": "Şu anki hedefin: {{wpm}} kelime/dakika",
-    "comingSoon": "Hazine haritası çok yakında burada olacak!",
+    "totalScore": "Toplam puan",
+    "streak": "Seri",
+    "streakDays": "{{count}} gün",
+    "explore": "Keşif Adası'na git",
+    "comingSoon": "Yeni adalar çok yakında haritada belirecek!",
     "retakePlacement": "Testi tekrar yap",
     "switchProfile": "Kaptan değiştir"
   },
@@ -66,7 +97,8 @@
     "correct": "Harika, doğru!",
     "wrong": "Bu sefer olmadı.",
     "orderingHint": "Maddelere doğru sırayla dokun.",
-    "orderingReset": "Baştan başla"
+    "orderingReset": "Baştan başla",
+    "next": "Devam"
   },
   "glossary": {
     "close": "Tamam"

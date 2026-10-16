@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { AGE_GROUPS, SUPPORTED_LANGUAGES } from '../lang';
-import { getPlacementTexts, rawContent } from './loader';
+import { getLevelTexts, getPlacementTexts, rawContent } from './loader';
 import { validateReadingText } from './validate';
 
 describe('content library', () => {
@@ -21,6 +21,13 @@ describe('content library', () => {
     '%s %s has 2 placement texts',
     (lang, age) => {
       expect(getPlacementTexts(lang, age)).toHaveLength(2);
+    },
+  );
+
+  it.each(SUPPORTED_LANGUAGES.flatMap((l) => AGE_GROUPS.map((a) => [l, a] as const)))(
+    '%s %s has level-1 texts',
+    (lang, age) => {
+      expect(getLevelTexts(lang, age)[0]?.level).toBe(1);
     },
   );
 });

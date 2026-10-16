@@ -1,0 +1,53 @@
+{
+  "id": "tr-10-13-l1-perili-kosk-1",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 1,
+  "title": "Perili Köşk (1): Kiralık Köşk",
+  "author": "Ömer Seyfettin",
+  "source": "Perili Köşk öyküsünün ilk bölümü. Vikikaynak: https://tr.wikisource.org/wiki/Perili_Köşk",
+  "simplified": true,
+  "body": "Sermet Bey arkasındaki bekçiye döndü:\n\n— İşte bir boş köşk daha... dedi.\n\nKüçük bir çam ormanının önünde beyaz, şık bir bina vardı. Mermerdenmiş gibi göz kamaştıracak kadar parlıyordu. Bahçesini yabani otlar sarmıştı. Demir kapısında büyük bir \"Kiralıktır\" levhası asılıydı. Bekçi başını salladı:\n\n— Geç efendim, geç! Orası size göre değil.\n— Niçin canım?\n— Demin gösterdiğim evi tutun. Küçük ama çok uğurludur.\n— On iki kişi beş odaya nasıl sığarız! Buraya bakalım, tam bize göre...\n\nBekçi kesin bir işaret yaptı:\n\n— Buraya oturamazsınız efendim.\n\nSermet Bey gözünü köşkten alamıyordu. Her tarafında geniş balkonları vardı. Kuluçkaya yatmış beyaz bir tavuk gibi yayvandı. Yirmi yıldır hep böyle bir yuva hayal ederdi.\n\n— Niçin oturamayız? diye sordu.\n— Efendim, bu köşkte peri var.\n— Ne perisi?\n— Bildiğimiz peri! Gece çıkar, evdekilere rahat vermez.\n\nSermet Bey, gözüyle gördüğüne, kulağıyla işittiğine hemen inananlardan değildi. Eliyle sıkı sıkıya tutup dokunmadıkça bir şeyin var olduğuna karar vermezdi. Ona göre göz ile kulak kolayca kandırılırdı ama el asla kanmazdı. Güldü:\n\n— Perinin bize zararı dokunmaz! dedi.\n\nBekçi, sanki kötü bir söz işitmiş gibi Sermet Bey'in yüzüne baktı:\n\n— Her giren önce böyle söyler ama bir ay oturamaz.\n\nYolda ihtiyar bekçi köşkün hikâyesini anlattı. On yıldır buraya girenler bir aydan fazla oturamamıştı. Önce peri görünüyor, sonra büyük büyük taşlar atıyor, en sonunda camları kırıyordu. Köşkün sahibi, yan taraftaki kırmızı evde oturan Hacı Niyazi Efendi'ydi.\n\nHacı Niyazi Efendi ev alıp satarak geçinen bir adamdı. Köşkünün perili olduğunu hiç saklamıyordu. Sermet Bey'i köşke götürdü. Alt kat baştan başa mermerdi. Sarnıç, banyo, kuyu, kümes, ahır... Her şey tamamdı.\n\n— Kirası ne kadar?\n— Çok istemiyorum. Yüz seksen lira. Ama üç yıllığını peşin isterim. Düşmanlarım, köşk boş kalsın diye peri lafı çıkardılar. Kiracılar duydukları yalanı gördüklerini sanıyorlar, kışın ortasında kaçıp gidiyorlar.\n— Ben ürkmem.\n— İnşallah.\n\nSermet Bey köşkü çok beğenmişti, kirası da ucuzdu. Hemen o gün sözleşmeyi yaptılar. Çıkarken bekçi:\n\n— Paranıza yazık oldu efendim, dedi. Üç yıl değil, üç ay bile oturamazsınız.\n— Görürsün!",
+  "glossary": [
+    { "word": "levhası", "meaning": "Levha: üzerinde yazı olan tabela." },
+    { "word": "kuluçkaya", "meaning": "Kuluçka: tavuğun civciv çıkarmak için yumurtaların üstüne yatması." },
+    { "word": "yayvandı", "meaning": "Yayvan: basık ve geniş." },
+    { "word": "sarnıç", "meaning": "Yağmur suyunun biriktirildiği yer altı deposu." },
+    { "word": "peşin", "meaning": "Parasını önceden, hepsini birden ödeyerek." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Bekçi, köşkte neden oturulamayacağını söyledi?",
+      "options": ["Köşkte peri olduğu için", "Köşk çok pahalı olduğu için", "Köşk yıkılmak üzere olduğu için", "Köşk satıldığı için"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Sermet Bey bir şeyin var olduğuna nasıl karar verirdi?",
+      "options": ["Eliyle dokununca", "Gözüyle görünce", "Kulağıyla duyunca", "Başkaları söyleyince"],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Hacı Niyazi Efendi, köşkünün perili olduğunu saklıyordu.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "trueFalse",
+      "prompt": "Ev sahibi üç yıllık kirayı peşin istedi.",
+      "answer": true
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Köşkün alt katı neyle kaplıydı?",
+      "options": ["mermer", "tahta", "tuğla", "kerpiç"],
+      "answer": 0
+    }
+  ]
+}

@@ -53,7 +53,7 @@ export function ReadingBody({ text, onGlossaryToggle }: Props) {
       {entry && (
         <div className="modal-backdrop" role="dialog" aria-modal="true" onClick={close}>
           <div className="modal card" onClick={(e) => e.stopPropagation()}>
-            <p className="badge">{t('placement.paused')}</p>
+            <p className="badge">{t('reading.paused')}</p>
             <h3>{entry.word}</h3>
             <p>{entry.meaning}</p>
             <button type="button" className="btn primary" onClick={close} autoFocus>

@@ -24,7 +24,7 @@ export function QuestionCard({ question, onDone }: Props) {
         <div className={`feedback ${result ? 'ok' : 'no'}`}>
           <span>{result ? t('question.correct') : t('question.wrong')}</span>
           <button type="button" className="btn primary" onClick={() => onDone(result)} autoFocus>
-            {t('placement.next')}
+            {t('question.next')}
           </button>
         </div>
       )}

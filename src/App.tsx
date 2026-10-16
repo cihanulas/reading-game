@@ -1,4 +1,7 @@
 import { CreateProfileScreen } from './screens/CreateProfileScreen';
+import { ExploreResultScreen } from './screens/ExploreResultScreen';
+import { ExploreScreen } from './screens/ExploreScreen';
+import { ExploreSelectScreen } from './screens/ExploreSelectScreen';
 import { HomeScreen } from './screens/HomeScreen';
 import { PlacementResultScreen } from './screens/PlacementResultScreen';
 import { PlacementScreen } from './screens/PlacementScreen';
@@ -18,5 +21,11 @@ export function App() {
       return <PlacementResultScreen />;
     case 'home':
       return <HomeScreen />;
+    case 'exploreSelect':
+      return <ExploreSelectScreen />;
+    case 'explore':
+      return <ExploreScreen />;
+    case 'exploreResult':
+      return <ExploreResultScreen />;
   }
 }

@@ -25,6 +25,8 @@ export interface ReadingSession {
   wpm: number;
   comprehension: number;
   effectiveWpm: number;
+  /** Points earned; 0 for placement sessions. */
+  score: number;
   createdAt: number;
 }
 

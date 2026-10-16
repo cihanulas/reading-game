@@ -1,0 +1,57 @@
+{
+  "id": "tr-10-13-l1-perili-kosk-2",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 1,
+  "title": "Perili Köşk (2): Hayaletin Sırrı",
+  "author": "Ömer Seyfettin",
+  "source": "Perili Köşk öyküsünün devamı. Vikikaynak: https://tr.wikisource.org/wiki/Perili_Köşk",
+  "simplified": true,
+  "body": "Sermet Bey bir hafta sonra kalabalık ailesiyle köşke taşındı. Evde her gece müzik çalınır, yemekler yenir, misafirler eksik olmazdı. Çocuklar okula gider, Sermet Bey'in karısı piyano dersi verirdi. Yetmiş beş yaşındaki annesi de mutfağa bakardı.\n\nAradan on beş gün geçmeden bir gece aşağı kattan bir çığlık koptu. Hizmetçi Artemisya avazı çıktığı kadar bağırarak yukarı koştu. Arkadaki çamların arasında beyaz bir şeyin gezindiğini söyledi. Herkes arka balkona çıktı. Gerçekten de ağaçların altında beyaz bir hayalet duruyor, sanki köşke bakıyordu.\n\nKarısı, kızları, çocukları korkudan sapsarı kesildi. Sermet Bey ise gözlerini ovuşturdu:\n\n— Bu bir telkin! dedi. Buraya geldiğimizden beri peri masalından başka bir şey işitmedik. Şimdi de hepimiz birden olmayan bir şeyi görüyoruz. Gözümüz kandırılabilir ama elimiz kandırılamaz. Elimi sürersem hemen kaybolur.\n\nKarısının engel olmasını dinlemeden bahçeye fırladı. Ama hayalet kaçtı, çamların arasında kayboldu. O gece Sermet Bey'den başka kimse uyuyamadı.\n\nArtık her gece hayaleti görüyorlardı. Bir gece hepsi uyurken müthiş bir gürültü köşkü sarstı. Sabah yemek odasında kocaman bir taş buldular. Komşular: \"Daha çıkmazsanız camlarınızı da kırar!\" diyorlardı. Sermet Bey'in annesi köşkten taşınmak için yalvarıyordu.\n\nSermet Bey ise hâlâ periye inanmıyordu. Bir akşam gizlice çamlığa gitti, büyük bir çamın alt dalına çıktı. Bekledi, bekledi. Gece yarısı oldu. Birden yüreği hop etti: Hayalet gelmişti!\n\n\"Ben korkmuyorum ama dizlerim titriyor!\" diye düşündü. Yavaşça aşağı atladı, hayaletin arkasından yürüdü. Elini uzattı, beyaz örtüye dokundu. Hayalet fena halde ürktü ama kaybolmadı! Dönüp kaçmaya başladı.\n\nSermet Bey, dokununca kaybolmayan bu hayaletin peri falan olmadığını hemen anladı. Peşinden koştu, duvara tırmanırken yakaladı. Köşke doğru sürükledi:\n\n— Lamba getirin, yüzünü görelim! diye bağırdı.\n\nHayalet beyaz çarşafı başından bırakmak istemiyordu. Sermet Bey zorla çekti. Bir de ne görsünler: Sakallı, bıyıklı Hacı Niyazi Efendi! Köşkün sahibi! Zavallı adam utancından yüzünü elleriyle kapatıyordu.\n\nSermet Bey bir kahkaha attı. Demek kiracıları korkutup kaçıran, köşkün sahibinin ta kendisiydi! Kiracılar kaçınca peşin aldığı paralar da ona kalıyordu.\n\nSermet Bey hemen kâğıt kalem istedi:\n\n— Haydi bakalım, al eline kalemi, söylediğimi yaz!\n\nHacı Niyazi Efendi tek söz söyleyemeden yazdı: \"Kiracım Sermet Bey'den köşkün altı yıllık kirasını peşin aldım.\" Sonra imzasını attı, beyaz örtüsüne bürünüp karanlıkta kayboldu.\n\nİki yıl sonra Sermet Bey hâlâ o köşkte oturuyordu. Herkes buna şaşırıp kalmıştı.",
+  "glossary": [
+    { "word": "avazı", "meaning": "Avaz: ses. \"Avazı çıktığı kadar\" çok yüksek sesle demektir." },
+    { "word": "telkin", "meaning": "Bir düşünceyi insana farkettirmeden aşılamak." },
+    { "word": "ürktü", "meaning": "Birden korkup irkildi." },
+    { "word": "bürünüp", "meaning": "Bürünmek: bir örtüye sıkıca sarınmak." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Hayaleti ilk kim gördü?",
+      "options": ["Hizmetçi Artemisya", "Sermet Bey", "Sermet Bey'in annesi", "Bekçi"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Sermet Bey, hayaletin gerçek bir peri olduğuna inanıyordu.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "ordering",
+      "prompt": "Olayları oluş sırasına diz.",
+      "items": [
+        "Hizmetçi çamların arasında beyaz bir şey gördü.",
+        "Yemek odasında kocaman bir taş bulundu.",
+        "Sermet Bey bir çamın dalında bekledi.",
+        "Hayalet yakalandı ve yüzü açıldı."
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Hayalet aslında kimdi?",
+      "options": ["Köşkün sahibi Hacı Niyazi Efendi", "İhtiyar bekçi", "Bir komşu çocuğu", "Hizmetçi Artemisya"],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Sermet Bey hangi ağacın dalına çıktı?",
+      "options": ["çam", "meşe", "kavak", "söğüt"],
+      "answer": 0
+    }
+  ]
+}

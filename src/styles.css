@@ -365,6 +365,60 @@ h2 {
   font-size: 1.2rem;
 }
 
+/* Explore */
+.text-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.btn.text-pick {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  gap: 0.2rem;
+}
+
+.text-pick small {
+  font-weight: 400;
+  opacity: 0.75;
+}
+
+.score-table {
+  margin: 1rem auto;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  min-width: min(100%, 320px);
+}
+
+.score-table caption {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.score-table th,
+.score-table td {
+  padding: 0.5rem 0.9rem;
+  text-align: left;
+}
+
+.score-table td {
+  text-align: right;
+  font-weight: 700;
+}
+
+.score-table .total {
+  background: var(--leaf);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .treasure {
     animation: none;
