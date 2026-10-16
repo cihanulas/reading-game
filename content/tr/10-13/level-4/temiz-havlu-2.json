@@ -1,0 +1,58 @@
+{
+  "id": "tr-10-13-l4-temiz-havlu-2",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 4,
+  "title": "Bir Temiz Havlu Uğruna (2): Temiz Havlu",
+  "author": "Ömer Seyfettin",
+  "source": "Bir Temiz Havlu Uğruna öyküsünün ikinci bölümü. Vikikaynak: https://tr.wikisource.org/wiki/Bir_Temiz_Havlu_Uğruna",
+  "simplified": true,
+  "body": "— Şimdi böyle zevkime tam ters kurulmuş bir yuva bana ne kadar mutluluk verebilir? Dışarıdaki yokluklarımı evimde unutabilir miyim, söyleyin...\n\nSesimi çıkaramadım. Kumral şişman acı acı güldü. Dedi ki:\n\n— Ailem hakkında şimdiye kadar kimseye bir şey söylemedim. Hem böyle gevezelikleri ayıp sayarım. Ama şimdi gerekti. Dertliler gibi sohbet ediyoruz. Birbirimizi ayıplayacak halimiz yok.\n\nBen de senin gibi görmeden evlendim, ama kendim istemedim. Gençken niyetim ölünceye kadar bekâr kalmaktı. Bir akşam annem damdan düşer gibi:\n\n— Eğer evlenmezsen sana hakkımı helal etmem! dedi.\n\nÇok uygun bir kız bulduğunu söyledi. Şart koymama fırsat vermedi. Beni sıkboğaz etti. Ne huyuma, ne zevkime, ne isteğime önem verdi. Mesela ben okur yazar, neşeli bir kadın isterdim. Zaten sessizlikten, durgunluktan hiç hoşlanmam. Annemin pek uygun bulduğu kız ise son derece sessiz, iki lafı bir araya getiremeyen, okuyup yazması olmayan, durgun bir zavallıydı. Annem soyu sopu filan da düşünmemişti.\n\nAnnem bir gün nasılsa Kocamustafapaşa'ya, Sümbülefendi'yi ziyarete gitmiş. Sokakta abdest alması gerekmiş. Rastgele bir kapıyı çalmış. Kapıyı utangaç bir kız açmış. Annem abdest almak istediğini söylemiş. Kızcağız:\n\n— Buyurun, hanım nine, diye hiç duraksamadan annemi içeri almış.\n\nYerlerin, merdivenlerin, musluğun temizliğine annem bayılmış. Abdest aldıktan sonra kızcağız hemen karşısına koşmuş, gayet temiz, bembeyaz, ütülü, mükemmel bir havlu tutmuş. Annem bu ikrama, bu terbiyeye büsbütün bayılmış:\n\n— Kızım, senin annen, baban var mı? diye sormuş.\n— Var, efendim, cevabını almış.\n\nKızcağızın utanıp büzülmesi daha çok hoşuna gitmiş. Gönlü yumuşamış:\n\n— Benim bir oğlum var, ister misin, seni ona alayım? demiş.\n\nKız utancından kıpkırmızı kesilmiş. Hiç cevap verememiş. Annem bu susmayı \"evet\" saymış. Sümbülefendi dönüşünde tekrar eve uğramış. Ama bu sefer abdest almaya değil, görücü olarak! Adresimi vermiş. Kendine temiz havlu tutan kızı annesinden, Allah'ın emriyle, peygamberin sözüyle istemiş! Benim hiçbir şeyden haberim yokken iş olup bitmiş! Önce karşı koymak istedim. Annem:\n\n— Ben söz verdim. Hakkımı sana helal etmem! diye ayağa kalktı.\n\nSonunda bu temiz evin temiz kızıyla evlendim. Bir eşte aradığım şeylerin hiçbirini onda bulamadım. Doğrusu şimdi yalımızın her yeri bir hamam kadar temiz... Tavanlar bile sabunla ovulmaktan pırıl pırıl parlıyor. Havlularımız hep ketenden, hep ütülü! Keskin keskin lavanta çiçeği kokuyor... Ama bunlar benim için bir mutluluk değil. Benim de çocuklarım oldu. Temiz temiz büyüdüler. Fakat düşünün, hayatımın en önemli işine annemin bir abdesti karar verdi. Talihimi bir temiz havlu belirledi. Evet, ben bir temiz havlu uğruna yandım. Bir temiz havlu uğruna...\n\nVapur Sarıyer'e yanaşıyordu. Kalktık. Parmaklıkların arasından birer birer güverteye geçtik. Çömelmekten bacaklarımız öyle uyuşmuştu ki... Tıpkı oğullarına kız aramaya giden romatizmalı anneler gibi, badikleye badikleye yürümeye çalışıyorduk.",
+  "glossary": [
+    { "word": "görücü", "meaning": "Evlenecek birine kız beğenmek için evlere giden kimse." },
+    { "word": "ikrama", "meaning": "İkram: misafire bir şey sunma, ağırlama." },
+    { "word": "ketenden", "meaning": "Keten: bitkiden yapılan sağlam bir kumaş." },
+    { "word": "lavanta", "meaning": "Mor çiçekli, güzel kokulu bir bitki." },
+    { "word": "badikleye", "meaning": "Badiklemek: ördek gibi sallana sallana yürümek." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Anne, kızı ilk kez nasıl gördü?",
+      "options": ["Abdest almak için çaldığı kapıyı kız açtı", "Kızı vapurda gördü", "Kız onların evine misafir geldi", "Kızı pazarda alışveriş yaparken gördü"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Kumral arkadaş gençken evlenmeyi çok istiyordu.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "wordRecall",
+      "prompt": "Evdeki havlular hangi kumaştandı?",
+      "options": ["keten", "pamuk", "ipek", "yün"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Olayları oluş sırasına göre diz.",
+      "items": [
+        "Anne, Sümbülefendi'yi ziyarete gitti.",
+        "Kız, anneye temiz bir havlu tuttu.",
+        "Anne, kızı annesinden istedi.",
+        "Vapur Sarıyer'e yanaştı."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multipleChoice",
+      "prompt": "Kumral arkadaş nasıl bir kadınla evlenmek isterdi?",
+      "options": ["Okur yazar, neşeli bir kadın", "Sessiz, durgun bir kadın", "Mavi gözlü, kısa boylu bir kadın", "Zengin ve asil bir kadın"],
+      "answer": 0
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "tr-10-13-l2-bir-hatira-2",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 2,
+  "title": "Bir Hatıra (2): Memiş Paşa",
+  "author": "Ömer Seyfettin",
+  "source": "Bir Hatıra öyküsünün ikinci bölümü. Vikikaynak: https://tr.wikisource.org/wiki/Bir_Hatıra",
+  "simplified": true,
+  "body": "— \"Le grade dégrade!\" Evet, \"Rütbe, insanın değerini ve haysiyetini düşürür!\" değil mi?\n— Fakat bundan ne anlıyorsun?\n— Bayağı anlamını anlıyorum işte...\n— Rütbe, haysiyeti bozar mı?\n— Bozmaz mı?\n\nTartışmaya başladık. Logaritmacı sorduğu sorulara kendi cevap veriyordu:\n\n— Büyük, küçük, bilgin, cahil, zengin, fakir... Kısacası herkesin kendine özgü bir haysiyeti vardır. Bu haysiyetle yaşarsa gülünç olmaz. Mesela her hayvanın kendine özgü şekli, tüyü, sesi gibi... Sarı gagalı beyaz bir kaz ne kadar doğal, ne kadar mantıklıdır. Ama şimdi bu kazın rengini yeşile boyasalar, gagasını ördek gagası gibi yassıltsalar, ne tuhaf olur. Yahut fino köpeğinin kafasına bir çift eşek kulağı, gergedan boynuzu takılsa... Kedi kişnetilse... At havlatılsa... Düşün, ne maskara olurlar! İşte insanlar da böyledir. Kendi yerlerine uymayan bir durum onlara zorla verildi mi, hemen düşer, rezil rüsva olurlar.\n\nLafını uzatıyordu. Eldiven gibi vücuda tıpatıp oturan elbiselerin insanı nasıl güzelleştirdiğini, bol yahut küçük gelenlerin de palyaçoya çevirdiğini söylüyordu. Ben dinliyordum ama pek aklım ermiyordu. Önümüzden atlı tramvaylar, arabalar, insanlar geçiyordu. Birden haykırdı:\n\n— Bak işte!\n— Ne?\n— Sorduğun sözün canlı anlamı...\n\nBaktım. Kır sakallı, şişmanca bir adam, arkasında iki üç zeybek, sallana sallana geliyordu. Koyu mavi, dar bir şalvar, üstüne de şık bir smokin giymişti. Başında ince bir sarık vardı. Gözlerinde altın gözlükler, göbeğinin üstünde kalın bir altın zincir... Ağır tespihi elinde, kırıta kırıta yürüyordu. Arkasındakiler paltosunu, şemsiyesini, bastonunu taşıyordu. Kendimi tutamadım:\n\n— Ayol, bu ne?\n— Dikkatli bak.\n\nBu küçük alay, sallana süzüle önümüzden geçti. Gülüyordum.\n\n— Ne bu Allah aşkına?\n— Söyleyeyim, dedi. Bu adamcağız, tarlasında kendi haberi olmadan büyük bir maden damarı çıkan bir köylüdür. Yedi sekiz yıl önce köyünde sade bir hayat geçiriyordu. Okuyup yazması yoktu ama çok ciddi bir haysiyet sahibiydi. Sözü dinlenir, herkesten saygı görürdü. Fakat parası çoğalınca çiftini çubuğunu bıraktı. Sık sık İzmir'e gelmeye alıştı. Sonra bir kolayını bulmuş, saraydaki başkâtibe her yıl turfanda üzüm göndermeye başlamış. O da tutmuş, bu zavallı adama bir paşalık rütbesi vermiş! Memiş Ağa birdenbire Memiş Paşa oluverince işte bu gördüğün duruma girdi. Şimdi İzmir'e geldi mi, en açık havalarda bile uşaklarıyla \"Ben paşayım, bana bakınız!\" der gibi kabara kabara dolaşır. Ama görüyorsun, ne acıklı, ne gülünç bir hal!\n\nCümlenin anlamını artık kendim yazmış gibi anlamıştım. Kafamdan bir bilinmeyenin ağırlığı kalkınca o kadar ferahlamıştım ki... Başka düşünecek bir şey bulmak için Mersinli'deki minimini evime döndüm. Büyük ağaçların fısıltıları içinde yine kitaplarımın dipsiz girdabına daldım.",
+  "glossary": [
+    { "word": "maskara", "meaning": "Gülünç, alay edilecek duruma düşmüş." },
+    { "word": "palyaçoya", "meaning": "Palyaço: sirkte insanları güldüren, süslü giyinmiş kişi." },
+    { "word": "smokin", "meaning": "Özel davetlerde giyilen şık erkek ceketi ve takımı." },
+    { "word": "turfanda", "meaning": "Mevsiminin ilk ürünü olan meyve ya da sebze." },
+    { "word": "ferahlamıştım", "meaning": "Ferahlamak: içi rahatlamak, sıkıntıdan kurtulmak." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Memiş Paşa, paşa olmadan önce kimdi?",
+      "options": ["Tarlasında maden çıkan bir köylü", "Bir matematik öğretmeni", "Saraydaki başkâtip", "İzmirli bir tüccar"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Logaritmacı Hasan'a göre bir kazı yeşile boyamak onu daha güzel yapar.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "wordRecall",
+      "prompt": "Memiş Paşa yürürken elinde ne tutuyordu?",
+      "options": ["tespih", "yelpaze", "bayrak", "sepet"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Olayları oluş sırasına göre diz.",
+      "items": [
+        "Logaritmacı Hasan hayvanlarla ilgili örnekler verir.",
+        "Memiş Paşa ve adamları önlerinden geçer.",
+        "Logaritmacı, Memiş Paşa'nın nasıl paşa olduğunu anlatır.",
+        "Anlatıcı ferahlamış olarak evine döner."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multipleChoice",
+      "prompt": "Memiş Paşa'nın arkasındaki adamlar ne taşıyordu?",
+      "options": ["Paltosunu, şemsiyesini ve bastonunu", "Kitaplarını ve gazetelerini", "Üzüm sepetlerini", "Sancağını ve davulunu"],
+      "answer": 0
+    }
+  ]
+}

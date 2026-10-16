@@ -1,0 +1,58 @@
+{
+  "id": "tr-10-13-l3-pembe-incili-kaftan-1",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 3,
+  "title": "Pembe İncili Kaftan (1): Cesur Bir Elçi",
+  "author": "Ömer Seyfettin",
+  "source": "Pembe İncili Kaftan öyküsünün ilk yarısı. Vikikaynak: https://tr.wikisource.org/wiki/Pembe_İncili_Kaftan",
+  "simplified": true,
+  "body": "Büyük kubbeli serin Divan, bugün daha sakin, daha gölgeliydi. Yüksek ipek minderlere diz çökmüş yorgun vezirler, önlerindeki halının renkli nakışlarına bakıyorlardı. Uzun beyaz sakalını zayıf eliyle tutan yaşlı sadrazam konuştu:\n\n— Cesur bir adam lazım, paşalar... dedi. Bizden elçi gidecek adamın çok cesur olması lazım! Öyle bir adam ki, ölümden korkmasın. Devletin şanına dokunacak hareketlere karşı koysun.\n— Evet!\n— Hay hay.\n— Çok doğru...\n\nSadrazam başını kaldırdı. Vezirlere ayrı ayrı baktı:\n\n— Haydi öyleyse... Bir cesur adam bulun, dedi. Benim aklıma böyle gözü pek bir adam gelmiyor. Siz de düşünün bakalım.\n\nBu elçi, Tebriz'deki Şah İsmail'e gönderilecekti. Bu şah, zalim olduğu kadar da kurnazdı. Devleti temsil edecek adama karşı şüphesiz birçok saygısızlık yapacaktı. Sadrazamın sağında, deminden beri bir mezar taşı gibi hareketsiz duran vezir, yavaş yavaş sola döndü:\n\n— Ben bu elçiliğe uygun bir adam biliyorum, dedi. Ama devlet memurluğu kabul etmez.\n— Kim?\n— Muhsin Çelebi.\n— Ne iş yapıyor?\n— Biraz zengindir. Vaktini okumakla geçirir. Çok cesurdur. Doğruluktan ayrılmaz. Ölümden çekinmez. Yüzünde kılıç yaraları vardır.\n\nSadrazam o akşam kâhyasını Muhsin Çelebi'nin Üsküdar'daki evine gönderdi. Ertesi sabah odasının kapısından pala bıyıklı, iri, şen bir adam girdi. İnce siyah kaşlarının altında iri gözleri parlıyordu. Herkesin önünde eğilmesine alışan sadrazam, bir an eteğine kapanılmasını bekledi. Böyle göğsü ileride, başı yukarı kalkık bir adamı ömründe ilk defa görüyordu. Muhsin Çelebi gayet doğal bir sesle sordu:\n\n— Beni istetmişsiniz, ne söyleyeceksiniz efendim?\n— Tebriz'e bir elçi göndermek istiyoruz. Sen gider misin, oğlum?\n— Ben şimdiye kadar devlet görevine girmedim.\n— Niçin girmedin?\n\nMuhsin Çelebi biraz durdu. Yutkundu. Gülümsedi:\n\n— Çünkü ben boyun eğmem, el etek öpmem, dedi.\n\nSadrazam yavaşça dişlerini sıktı. Sonra vicdanının derin sesini işitti. \"Tam bizim aradığımız adam işte...\" dedi. Bu kadar korkusuz bir adam, devletine yapılacak hakareti de çekemezdi.\n\n— Devletini seviyor musun?\n— Seviyorum.\n— Öyleyse bu fedakârlığı kabul edeceksin!\n— Ettim efendim, fakat bir şartla. Fedakârlık ücretle olmaz. Ben maaş, makam, ücret istemem.\n— Fakat oğlum, onların elçisi çok süslü giyinmişti. Bizim elçimizin daha görkemli olması gerekir. Hazineden sana birkaç bin altın vereceğiz.\n— Hayır, hazineden bir pul almam. Atları, hizmetçileri kendi paramla hazırlayacağım. Hatta sırtıma Şah İsmail'in ömründe görmediği bir şey giyeceğim. Toroğlu'ndaki Pembe İncili Kaftan'ı alacağım.\n\nBu kaftanın ününü İstanbul'da duymayan yoktu. Üzeri en nadir pembe incilerle işlenmişti. Muhsin Çelebi, çiftliğini ve evini rehine verip tüccarlardan borç toplayacağını anlattı. Sadrazamın hayreti büyüyordu. İşte aranan adam bulunmuştu!",
+  "glossary": [
+    { "word": "sadrazam", "meaning": "Osmanlı'da padişahtan sonra gelen en büyük devlet görevlisi." },
+    { "word": "elçi", "meaning": "Bir devleti başka bir ülkede temsil eden kişi." },
+    { "word": "kâhyasını", "meaning": "Kâhya: büyük bir evin işlerine bakan görevli." },
+    { "word": "fedakârlığı", "meaning": "Fedakârlık: başkaları için kendi rahatından, malından vazgeçme." },
+    { "word": "rehine", "meaning": "Borca karşılık güvence olarak bırakılan şey." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Sadrazam nasıl bir elçi arıyordu?",
+      "options": ["Çok cesur, ölümden korkmayan biri", "Çok zengin biri", "Yabancı dil bilen biri", "Yaşlı ve tecrübeli biri"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Muhsin Çelebi elçilik için hazineden altın istedi.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "wordRecall",
+      "prompt": "Muhsin Çelebi'nin yüzünde neyin yaraları vardı?",
+      "options": ["kılıç", "hançer", "mızrak", "topuz"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Olayları oluş sırasına göre diz.",
+      "items": [
+        "Sadrazam vezirlerden cesur bir adam bulmalarını istedi.",
+        "Bir vezir Muhsin Çelebi'nin adını verdi.",
+        "Muhsin Çelebi sadrazamın odasına girdi.",
+        "Muhsin Çelebi Pembe İncili Kaftan'ı alacağını söyledi."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multipleChoice",
+      "prompt": "Muhsin Çelebi neden şimdiye kadar devlet görevine girmemişti?",
+      "options": ["Boyun eğmediği, el etek öpmediği için", "Hasta olduğu için", "Okuma bilmediği için", "İstanbul'da yaşamadığı için"],
+      "answer": 0
+    }
+  ]
+}

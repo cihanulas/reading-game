@@ -1,0 +1,58 @@
+{
+  "id": "tr-10-13-l3-pembe-incili-kaftan-2",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 3,
+  "title": "Pembe İncili Kaftan (2): Şahın Sarayında",
+  "author": "Ömer Seyfettin",
+  "source": "Pembe İncili Kaftan öyküsünün ikinci yarısı. Vikikaynak: https://tr.wikisource.org/wiki/Pembe_İncili_Kaftan",
+  "simplified": true,
+  "body": "Altı ay içinde Muhsin Çelebi büyük çiftliğini, mandırasını, evini, dükkânını, bahçesini rehine koydu. Tüccarlardan para topladı. Atlarını, hizmetçilerini hazırladı. Bunların hepsi gerçekten eşi görülmedik derecede görkemliydi. Dönüşte yedi bin altına geri vermek şartıyla Toroğlu'ndan meşhur Pembe İncili Kaftan'ı da aldı. Genç karısıyla iki küçük çocuğunu akrabasından birinin evine bıraktı. Sonra padişahın mektubunu koynuna koyarak yola düzüldü.\n\nMuhsin Çelebi bir gün Tebriz kalesine büyük bir görkemle girdi. Süse, renge meraklı halk, İstanbul elçisinin kaftanını görünce şaşırdı. Şehir, saray kaftanın hikâyesiyle doldu. Şah İsmail \"Pembe İnci\"yi yalnız masallarda işitmişti. Kendisinin daha görmediği şeye sahip olan bu zengin elçiye karşı içinde derin bir kin duydu. Onu küçük düşürmeye karar verdi. Tahtın önündeki minderleri, ipek seccadeleri kaldırttı.\n\nMuhsin Çelebi, geniş kemerli açık kapıdan serbest adımlarla girdi. Başı her zamanki gibi yukarıda, göğsü her zamanki gibi ileride idi. Koynundan çıkardığı padişah mektubunu öptü. Başına koydu. Sonra altın tahtın üstünde oturan Şah'a uzattı. Ayağı öpülmeyen Şah öfkesinden sapsarı kesildi. Mektubu aldı.\n\nMuhsin Çelebi, tahtın önünden çekilince şöyle bir etrafına baktı. Oturacak bir şey yoktu. Gülümsedi. İçinden: \"Beni zorla ayakta, saygı duruşunda tutmak istiyorlar galiba...\" dedi. Bir an düşündü. Bu hakarete nasıl karşılık vermeliydi? Hemen sırtından Pembe İncili Kaftan'ı çıkardı. Tahtın önüne, yere serdi. Şah İsmail, vezirleri, kumandanları şaşkın şaşkın bakıyorlardı. Sonra bu değerli kaftanın üzerine bağdaş kurdu. Gür sesiyle haykırdı:\n\n— Mektubunu verdiğim büyük padişahım, Oğuz Kara Han soyundandır! Böyle bir padişahın elçisi, hiçbir yabancı padişah karşısında ayakta durmaz!\n\nMuhsin Çelebi sözünü bitirince izin filan istemedi, kalktı. Kapıya doğru yürüdü. Şah İsmail donmuş, taş kesilmişti. Askerlerden biri koştu. Tahtın önünde serili kaftanı topladı. Elçiye yetişti:\n\n— Buyurun. Kaftanınızı unutuyorsunuz.\n\nMuhsin Çelebi durdu, güldü. Şah'ın işiteceği yüksek bir sesle:\n\n— Hayır, unutmuyorum. Onu size bırakıyorum. Sarayınızda büyük bir padişah elçisini oturtacak seccadeniz, minderiniz yok... Hem bir Türk yere serdiği şeyi bir daha sırtına koymaz... Bunu bilmiyor musunuz? dedi.\n\nİstanbul'a döndüğünde Muhsin Çelebi'nin cebinde tek bir akçe kalmamıştı. Sadrazam kaftanı satın almak istedi:\n\n— Kaftanın burada mı?\n— Hayır, getirmedim.\n— Sattın mı?\n— Hayır, satmadım.\n— Ya ne yaptın?\n— Hiç!\n\nMuhsin Çelebi, yaptığı ile övünecek kadar küçük ruhlu değildi. İstanbul'da hiç kimse, meşhur kaftanın nerede bırakıldığını öğrenemedi. Muhsin Çelebi borçlarını ödeyip çiftliğini kurtaramadı. Kuzguncuk'ta minicik bir bahçe aldı. Onu ekip biçti. Ölünceye kadar Üsküdar pazarında sebze sattı. Çok fakir bir hayat geçirdi. Ama yine ne kimseye boyun eğdi, ne de fedakârlığını anlatıp övündü.",
+  "glossary": [
+    { "word": "görkemle", "meaning": "Görkem: göz kamaştıran büyüklük ve süs." },
+    { "word": "seccadeleri", "meaning": "Seccade: üzerinde namaz kılınan ya da oturulan küçük halı." },
+    { "word": "bağdaş", "meaning": "Bacakları çapraz kıvırıp yere oturma şekli." },
+    { "word": "akçe", "meaning": "Osmanlı'da kullanılan küçük gümüş para." },
+    { "word": "mandırasını", "meaning": "Mandıra: süt, peynir yapılan ve hayvan beslenen çiftlik." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Şah İsmail elçiyi küçük düşürmek için ne yaptı?",
+      "options": ["Tahtın önündeki minderleri ve seccadeleri kaldırttı", "Elçiyi kapıda bekletti", "Elçinin kaftanını elinden aldı", "Padişahın mektubunu yırttı"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Muhsin Çelebi kaftanı sarayda yanlışlıkla unuttu.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "wordRecall",
+      "prompt": "Muhsin Çelebi ölünceye kadar Üsküdar pazarında ne sattı?",
+      "options": ["sebze", "balık", "kumaş", "ekmek"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Olayları oluş sırasına göre diz.",
+      "items": [
+        "Muhsin Çelebi Tebriz'e büyük bir görkemle girdi.",
+        "Padişahın mektubunu Şah'a uzattı.",
+        "Kaftanı yere serip üzerine bağdaş kurdu.",
+        "Kaftanı sarayda bırakıp çıktı."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "multipleChoice",
+      "prompt": "Şah İsmail elçiye neden kin duydu?",
+      "options": ["Elçi, Şah'ın hiç görmediği bir şeye sahip olduğu için", "Elçi geç geldiği için", "Elçi hediye getirmediği için", "Elçi kaba sözler söylediği için"],
+      "answer": 0
+    }
+  ]
+}

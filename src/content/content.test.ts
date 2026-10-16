@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { AGE_GROUPS, SUPPORTED_LANGUAGES } from '../lang';
 import { getLevelTexts, getPlacementTexts, rawContent } from './loader';
+import { MAX_LEVEL } from './schema';
 import { validateReadingText } from './validate';
 
 describe('content library', () => {
@@ -25,9 +26,11 @@ describe('content library', () => {
   );
 
   it.each(SUPPORTED_LANGUAGES.flatMap((l) => AGE_GROUPS.map((a) => [l, a] as const)))(
-    '%s %s has level-1 texts',
+    '%s %s has at least 2 texts on every level',
     (lang, age) => {
-      expect(getLevelTexts(lang, age)[0]?.level).toBe(1);
+      const groups = getLevelTexts(lang, age);
+      expect(groups.map((g) => g.level)).toEqual(Array.from({ length: MAX_LEVEL }, (_, i) => i + 1));
+      for (const g of groups) expect(g.texts.length).toBeGreaterThanOrEqual(2);
     },
   );
 });

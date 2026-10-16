@@ -1,10 +1,11 @@
 Okuma Adası - Kaynaklar / Credits
 
 METİNLER
-- Ömer Seyfettin (1884-1920), "Kaşağı", "Diyet", "Perili Köşk" ve "Kütük" öyküleri. Kamu malı (public domain).
-  Dijital metin: Vikikaynak - https://tr.wikisource.org/wiki/Kaşağı , https://tr.wikisource.org/wiki/Diyet ,
-  https://tr.wikisource.org/wiki/Perili_Köşk , https://tr.wikisource.org/wiki/Kütük
+- Ömer Seyfettin (1884-1920) öyküleri. Kamu malı (public domain). Dijital metin: Vikikaynak (https://tr.wikisource.org)
+  "Kaşağı", "Diyet", "Perili Köşk", "Kütük", "Bir Hatıra", "Pembe İncili Kaftan", "Bir Temiz Havlu Uğruna",
+  "Kerâmet", "Nasıl Kurtarmış?", "Gizli Mâbed", "Forsa", "Fon Sadriştayn'ın Karısı", "Vire".
+  Her metnin tam Vikikaynak adresi uygulamadaki kaynak bilgisinde yer alır.
   10-13 yaş metinleri hafifçe sadeleştirilmiştir; 14-18 yaş metinlerinde dil korunmuş, yer yer kısaltılmıştır.
 
 SES VE MÜZİK
-- (Faz 4'te eklenecek)
+- Tüm ses efektleri tarayıcıda Web Audio API ile sentezlenir; harici ses dosyası kullanılmaz.

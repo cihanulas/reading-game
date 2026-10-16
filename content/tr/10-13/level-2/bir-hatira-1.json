@@ -1,0 +1,57 @@
+{
+  "id": "tr-10-13-l2-bir-hatira-1",
+  "lang": "tr",
+  "ageGroup": "10-13",
+  "level": 2,
+  "title": "Bir Hatıra (1): Anlaşılmayan Cümle",
+  "author": "Ömer Seyfettin",
+  "source": "Bir Hatıra öyküsünün ilk bölümü. Vikikaynak: https://tr.wikisource.org/wiki/Bir_Hatıra",
+  "simplified": true,
+  "body": "Ah gençlik! Tıpkı sonsuz bir baharın ilk çiçekli günlerine benzer. Yeşil kırlar, kelebek dolu bahçeler, güzel kokular içinde serçelerin şen masallarını doymadan dinleyerek dolaşırız. Hayallerimiz bize hayat kışının fırtınalarını, karlarını, tipilerini hatırlatmaz. Ben işte bu hiç bitmez sanılan baharı İzmir'de geçirdim. On dokuz yaşındaydım. Galiba on beş yıl önce... Evet, yıllar nasıl bir ok gölgesi gibi uçuyor!\n\nMersinli'deki minimini evimde, kocaman çınar ağaçlarının hiç durmadan öten ninnileri içinde, kitapların dipsiz girdabına dalmış gitmiştim. Dış dünya umurumda değildi. Sözde, felsefe feneriyle büyük bir gerçek bulacaktım. Bir kelimeyi, bir satırı, bir sözü haftalarca, aylarca düşünürdüm. Bir cümlenin altındaki gizli anlamı bulmak için birçok gece uyuyamazdım. Romanlarda rastladığım ukalaca sözler bile gözümden kaçmazdı. Onları da fişlere yazar, notlarımın arasına koyardım.\n\nBu sözlerden birisi beni tam üç ay düşündürdü. Tam yüz beş gece gözüme uyku girmedi. Flaubert'in miydi, yoksa bir başkasının mı, iyice hatırlayamıyorum. \"Le grade dégrade...\", yani \"Rütbe, haysiyeti düşürür.\" cümlesi! Bundan bir türlü anlam çıkaramadım. Tersine, bence rütbe insanı herkesin seviyesinden yukarı kaldırır, yükseltir, hatta sahibine özel bir haysiyet verirdi.\n\nArtık başka kitap, gazete falan okuyamaz oldum. Her satırın altında, anlamını bilmediğim bu cümle kararıyordu. Sakin evimde oturamıyor, bulamadığım anlamı arayarak tenha sahillerde, kalabalık caddelerde, dar sokaklarda serseri serseri dolaşıyordum.\n\nBir gün yine içimden \"Le grade dégrade...\" diye söylenerek Hükümet Konağı'nın önünden geçiyordum. Adımı işittim. Döndüm. Bir de baktım ki, matematik öğretmenim Logaritmacı Hasan! Kıraathanenin ta köşesinde bir sandalyeye kurulmuştu.\n\n— Nereye böyle?\n— Le gr... şey! Hiç...\n\nDiye kendimi topladım.\n\n— Çok dalgınsın.\n— Evet.\n— Gel otur da kahve iç bakalım. Dalgınlığın geçer.\n\nGösterdiği sandalyeye iliştim. Açık, yüksek alnında çok sık, çok kır saçları bir aslan yelesi gibi kabarıyordu. Parlak gözleriyle beni bir süzdü:\n\n— Sana ne olmuş, dedi, betin benzin solmuş!\n— Hiç...\n— Söyle, söyle.\n— Üç aydır küçük bir cümlenin anlamını arıyorum da...\n— Bulamıyorsun ha? diye güldü. İşte matematiğe çalışmamanın cezası! Dünyada ancak bir bilim vardır, o da matematiktir. Onu bilen her şeyi bilir.\n— Ben felsefeyle uğraşıyorum.\n\nBu söz canımı sıktı. Kendimi tutamadım:\n\n— Sen matematikçisin, dedim, ama her cümlenin, her kelimenin anlamını anlar mısın?\n— Anlarım. Bence bilinmeyen yoktur.\n\nGarson kahvemi getirdi. Yudum yudum içiyor, \"Şu cümlenin anlamını bir sorayım\" diyordum. Sözünü en coşkun yerinden kestim:\n\n— \"Le grade dégrade!\" ne demektir, hocam?\n\nDiye sordum.",
+  "glossary": [
+    { "word": "girdabına", "meaning": "Girdap: suyun döne döne içine çektiği çukur; burada insanı içine çeken şey." },
+    { "word": "haysiyet", "meaning": "İnsanın kendine ve başkalarına saygınlığı, onuru." },
+    { "word": "rütbe", "meaning": "Bir kişinin görevdeki derecesi, unvanı." },
+    { "word": "tenha", "meaning": "Kalabalık olmayan, ıssız." },
+    { "word": "kıraathanenin", "meaning": "Kıraathane: gazete okunan, kahve içilen yer." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Anlatıcı üç ay boyunca hangi cümlenin anlamını aradı?",
+      "options": ["Rütbe, haysiyeti düşürür.", "Bilgi en büyük güçtür.", "Zaman en değerli hazinedir.", "Sabreden derviş muradına ermiş."],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Anlatıcıya göre rütbe insanı herkesin seviyesinden yukarı kaldırırdı.",
+      "answer": true
+    },
+    {
+      "id": "q3",
+      "type": "wordRecall",
+      "prompt": "Logaritmacı Hasan'ın kır saçları hangi hayvanın yelesi gibi kabarıyordu?",
+      "options": ["aslan", "kaplan", "zebra", "geyik"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Olayları oluş sırasına göre diz.",
+      "items": [
+        "Anlatıcı, Mersinli'deki evinde kitaplara dalar.",
+        "Anlamını bulamadığı cümleyi düşünerek sokaklarda dolaşır.",
+        "Logaritmacı Hasan onu kahve içmeye çağırır.",
+        "Anlatıcı, hocasına cümlenin anlamını sorar."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "trueFalse",
+      "prompt": "Logaritmacı Hasan'a göre dünyadaki tek bilim felsefedir.",
+      "answer": false
+    }
+  ]
+}

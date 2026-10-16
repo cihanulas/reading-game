@@ -100,7 +100,9 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
 - [x] **Faz 3 – Hız modları:** Rüzgâr (rehber) ve Şimşek (RSVP); uyarlamalı hız algoritması.
 - [x] **Faz 4 – Oyunlaştırma:** Harita, ada kilitleri, sandık, rozetler, ses efektleri, animasyonlar, günlük seri. (Faz 3 ile paralel yapılabilir.)
 - [x] **Faz 5 – Sesli mod:** Web Speech API ile Türkçe kelime eşleştirme, esnek normalizasyon, desteklemeyen tarayıcı için alternatif.
-- [ ] **Faz 6 – İçerik ve yayın:** Metin kütüphanesi, PWA çevrimdışı, ilerleme grafiği.
+- [x] **Faz 6 – İçerik ve yayın:** Metin kütüphanesi, PWA çevrimdışı, ilerleme grafiği.
+  - Her yaş grubunda her seviyede (1-5) en az 2 metin var (Türkçe, 26 dosya). Seviye başına 6 metne çıkarmak sonraki içerik turlarına bırakıldı.
+  - Not: Yeni içerik dosyası eklendikten sonra `npx vitest run --clearCache` gerekir; aksi halde vitest'in fs önbelleği eski glob sonucunu kullanır.
 - [ ] **Faz 7 – Almanca** (onaydan sonra): dil paketi, arayüz çevirisi, Almanca metinler, de-DE sesli mod testi.
 - [ ] **Faz 8 – İngilizce:** aynı adımlar.
 
