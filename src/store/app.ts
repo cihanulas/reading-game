@@ -12,7 +12,8 @@ export type Screen =
   | 'textSelect'
   | 'play'
   | 'playResult'
-  | 'treasure';
+  | 'treasure'
+  | 'progress';
 
 /** Island game modes available from the home screen. */
 export type GameMode = 'explore' | 'pacer' | 'rsvp' | 'voice';

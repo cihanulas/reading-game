@@ -1,4 +1,5 @@
 import { AnimatePresence, motion, MotionConfig } from 'motion/react';
+import { lazy, Suspense } from 'react';
 import { CreateProfileScreen } from './screens/CreateProfileScreen';
 import { HomeScreen } from './screens/HomeScreen';
 import { PlacementResultScreen } from './screens/PlacementResultScreen';
@@ -9,6 +10,9 @@ import { ProfilesScreen } from './screens/ProfilesScreen';
 import { TextSelectScreen } from './screens/TextSelectScreen';
 import { TreasureScreen } from './screens/TreasureScreen';
 import { useApp, type Screen } from './store/app';
+
+// Charts are heavy; load them only when the progress screen is opened.
+const ProgressScreen = lazy(() => import('./screens/ProgressScreen'));
 
 function renderScreen(screen: Screen) {
   switch (screen) {
@@ -30,6 +34,12 @@ function renderScreen(screen: Screen) {
       return <PlayResultScreen />;
     case 'treasure':
       return <TreasureScreen />;
+    case 'progress':
+      return (
+        <Suspense fallback={null}>
+          <ProgressScreen />
+        </Suspense>
+      );
   }
 }
 

@@ -109,6 +109,9 @@ export function HomeScreen() {
             🧰 {t('home.treasure')}
             {unopened > 0 && <span className="pill">{unopened}</span>}
           </button>
+          <button type="button" className="btn primary" onClick={() => go('progress')}>
+            📈 {t('home.progress')}
+          </button>
           <button type="button" className="btn ghost" onClick={() => go('placement')}>
             {t('home.retakePlacement')}
           </button>

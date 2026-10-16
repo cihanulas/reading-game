@@ -9,6 +9,12 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['icon.svg', 'CREDITS.txt'],
+      // Everything (texts are bundled into JS) is precached so the app works fully offline.
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,txt,webmanifest}'],
+        cleanupOutdatedCaches: true,
+        navigateFallback: 'index.html',
+      },
       manifest: {
         name: 'Okuma Adası',
         short_name: 'Okuma Adası',

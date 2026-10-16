@@ -759,6 +759,31 @@ h2 {
   accent-color: var(--sea);
 }
 
+/* Progress */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.btn.chip {
+  padding: 0.35rem 0.8rem;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.btn.chip.selected {
+  background: var(--sea);
+  color: #fff;
+}
+
+.chart {
+  background: #fff;
+  border-radius: 14px;
+  padding: 0.5rem;
+}
+
 /* Voice */
 .voice-read {
   color: var(--leaf);

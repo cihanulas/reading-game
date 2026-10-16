@@ -129,6 +129,28 @@
     "speed200": { "title": "Roket", "desc": "200 etkili okuma hızına ulaş." },
     "recordBreaker": { "title": "Rekortmen", "desc": "Bir hikâyede kendi rekorunu kır." }
   },
+  "progress": {
+    "title": "Gelişim Günlüğü",
+    "reads": "Okuma sayısı",
+    "best": "En iyi etkili hız",
+    "recentComprehension": "Son okumalarda anlama",
+    "gain": "İlerleme",
+    "filter": "Ada seç",
+    "all": "Hepsi",
+    "empty": "Grafiği çizebilmem için en az iki okuma gerekiyor. Haydi maceraya!",
+    "chartLabel": "Son {{count}} okumada hız grafiği",
+    "wpm": "Okuma hızı (KDK)",
+    "effective": "Etkili okuma hızı",
+    "target": "Hedef",
+    "back": "Haritaya dön",
+    "mode": {
+      "placement": "Harita testi",
+      "explore": "Keşif",
+      "pacer": "Rüzgâr",
+      "rsvp": "Şimşek",
+      "voice": "Yankı"
+    }
+  },
   "sound": {
     "toggle": "Sesi aç / kapat"
   },
@@ -181,6 +203,7 @@
     "map": "Ada haritası",
     "locked": "{{island}}'nda {{count}} okuma daha",
     "treasure": "Hazine",
+    "progress": "Gelişimim",
     "retakePlacement": "Testi tekrar yap",
     "switchProfile": "Kaptan değiştir"
   },
