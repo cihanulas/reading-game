@@ -54,24 +54,52 @@
     "simplified": "Bu metin sadeleştirilmiştir.",
     "questionsTitle": "Bakalım neler hatırlıyorsun?"
   },
-  "explore": {
-    "title": "Keşif Adası",
-    "intro": "Bir hikâye seç, sessizce oku, sonra soruları cevapla. Hem hızlı hem dikkatli okursan daha çok puan kazanırsın!",
+  "speed": {
+    "label": "Okuma hızı",
+    "slower": "Yavaşlat",
+    "faster": "Hızlandır",
+    "value": "{{value}} KDK",
+    "choose": "Hızını seç",
+    "pause": "Durdur",
+    "resume": "Devam",
+    "tapToPause": "Durdurmak ya da devam etmek için dokun",
+    "pacerHint": "Rüzgâr satırları senin için boyayacak. Parlayan satırı takip et, rüzgârı geçmeye çalış!",
+    "rsvpIntro": "Kelimeler ekranda tek tek şimşek gibi çakacak. Gözünü ortadaki turuncu harfe dik!",
+    "rsvpHint": "Ekrana ya da boşluk tuşuna basarak durdurabilirsin."
+  },
+  "modes": {
+    "explore": {
+      "title": "Keşif Adası",
+      "intro": "Bir hikâye seç, sessizce oku, sonra soruları cevapla. Hem hızlı hem dikkatli okursan daha çok puan kazanırsın!"
+    },
+    "pacer": {
+      "title": "Rüzgâr Adası",
+      "intro": "Rüzgâr satırları senin seçtiğin hızda boyar. Hızını ayarla, rüzgâra yetiş!"
+    },
+    "rsvp": {
+      "title": "Şimşek Adası",
+      "intro": "Kelimeler tek tek, şimşek hızında gelir. Gözünü kırpma ve soruları cevapla!"
+    }
+  },
+  "textSelect": {
     "level": "Seviye {{level}}",
     "words": "{{count}} kelime",
     "best": "En iyi: {{score}} puan",
     "empty": "Bu dil ve yaş grubu için henüz hikâye yok.",
     "back": "Geri dön"
   },
-  "exploreResult": {
+  "playResult": {
     "title": "Macera tamam!",
     "targetReached": "Hedefini geçtin! Harika bir okuma.",
     "targetMissed": "Hedefe az kaldı. Bir dahakine daha iyi olacak!",
     "lowComprehension": "Çok hızlı geçmiş olabilirsin. Biraz daha dikkatli okumayı dene.",
+    "targetUp": "Hedefin yükseldi: {{from}} → {{to}} KDK ⬆️",
+    "targetDown": "Hedefini biraz yavaşlattım: {{from}} → {{to}} KDK",
+    "targetSame": "Hedefin: {{value}} KDK",
     "newRecord": "Yeni rekor! Önceki en iyin: {{value}} KDK",
     "previousBest": "Bu hikâyedeki en iyin: {{value}} KDK",
     "score": "Puan",
-    "base": "Etkili okuma hızı puanı",
+    "base": "Etkili okuma hızı puanı (×{{multiplier}})",
     "targetBonus": "Hedef bonusu",
     "perfectBonus": "Tam doğru bonusu",
     "streakBonus": "Seri bonusu ({{days}} gün)",
@@ -85,7 +113,6 @@
     "totalScore": "Toplam puan",
     "streak": "Seri",
     "streakDays": "{{count}} gün",
-    "explore": "Keşif Adası'na git",
     "comingSoon": "Yeni adalar çok yakında haritada belirecek!",
     "retakePlacement": "Testi tekrar yap",
     "switchProfile": "Kaptan değiştir"

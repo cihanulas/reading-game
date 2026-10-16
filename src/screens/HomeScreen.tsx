@@ -2,11 +2,12 @@ import { useTranslation } from 'react-i18next';
 import { streakDays } from '../core/scoring';
 import { useSessions } from '../db/sessions';
 import { useProfile } from '../db/useProfile';
-import { useApp } from '../store/app';
+import { GAME_MODES, useApp } from '../store/app';
+import { MODE_ICON } from '../ui/modes';
 
 export function HomeScreen() {
   const { t } = useTranslation();
-  const { profileId, go } = useApp();
+  const { profileId, go, chooseMode } = useApp();
   const profile = useProfile(profileId);
   const sessions = useSessions(profile?.id, profile?.lang);
   if (!profile) return null;
@@ -30,9 +31,13 @@ export function HomeScreen() {
             <dd>🔥 {t('home.streakDays', { count: streak })}</dd>
           </div>
         </dl>
-        <button type="button" className="btn primary big" onClick={() => go('exploreSelect')}>
-          🏝️ {t('home.explore')}
-        </button>
+        <div className="islands">
+          {GAME_MODES.map((mode) => (
+            <button key={mode} type="button" className="btn primary big island" onClick={() => chooseMode(mode)}>
+              <span aria-hidden>{MODE_ICON[mode]}</span> {t(`modes.${mode}.title`)}
+            </button>
+          ))}
+        </div>
         <p className="speech">🦜 {t('home.comingSoon')}</p>
         <div className="row">
           <button type="button" className="btn ghost" onClick={() => go('placement')}>

@@ -95,7 +95,7 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
 
 - [x] **Faz 1 – İskelet:** Vite + React + TS + i18next + PWA kurulumu; dil paketi yapısı ve Türkçe paket; profil (isim, avatar, yaş grubu, dil); IndexedDB; yerleştirme testi (2 metin); metin JSON şeması ve doğrulayıcı.
 - [x] **Faz 2 – Çekirdek oyun:** Keşif Adası; KDK, anlama, EOH; puan motoru; sonuç ekranı.
-- [ ] **Faz 3 – Hız modları:** Rüzgâr (rehber) ve Şimşek (RSVP); uyarlamalı hız algoritması.
+- [x] **Faz 3 – Hız modları:** Rüzgâr (rehber) ve Şimşek (RSVP); uyarlamalı hız algoritması.
 - [ ] **Faz 4 – Oyunlaştırma:** Harita, ada kilitleri, sandık, rozetler, ses efektleri, animasyonlar, günlük seri. (Faz 3 ile paralel yapılabilir.)
 - [ ] **Faz 5 – Sesli mod:** Web Speech API ile Türkçe kelime eşleştirme, esnek normalizasyon, desteklemeyen tarayıcı için alternatif.
 - [ ] **Faz 6 – İçerik ve yayın:** Metin kütüphanesi, PWA çevrimdışı, ilerleme grafiği.

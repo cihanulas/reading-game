@@ -7,21 +7,13 @@ export type Screen =
   | 'placement'
   | 'placementResult'
   | 'home'
-  | 'exploreSelect'
-  | 'explore'
-  | 'exploreResult';
+  | 'textSelect'
+  | 'play'
+  | 'playResult';
 
-export interface ExploreSummary {
-  textId: string;
-  title: string;
-  wpm: number;
-  comprehension: number;
-  effectiveWpm: number;
-  targetWpm: number | null;
-  previousBest: number | null;
-  streakDays: number;
-  score: ScoreBreakdown;
-}
+/** Island game modes available from the home screen. */
+export type GameMode = 'explore' | 'pacer' | 'rsvp';
+export const GAME_MODES: GameMode[] = ['explore', 'pacer', 'rsvp'];
 
 export interface PlacementSummary {
   wpm: number;
@@ -30,28 +22,46 @@ export interface PlacementSummary {
   targetWpm: number;
 }
 
+export interface PlaySummary {
+  mode: GameMode;
+  textId: string;
+  title: string;
+  wpm: number;
+  comprehension: number;
+  effectiveWpm: number;
+  previousTarget: number | null;
+  newTarget: number | null;
+  previousBest: number | null;
+  streakDays: number;
+  score: ScoreBreakdown;
+}
+
 interface AppState {
   screen: Screen;
   profileId: number | null;
   placementSummary: PlacementSummary | null;
+  mode: GameMode;
   textId: string | null;
-  exploreSummary: ExploreSummary | null;
+  playSummary: PlaySummary | null;
   go: (screen: Screen) => void;
   selectProfile: (id: number, screen: Screen) => void;
   finishPlacement: (summary: PlacementSummary) => void;
-  startExplore: (textId: string) => void;
-  finishExplore: (summary: ExploreSummary) => void;
+  chooseMode: (mode: GameMode) => void;
+  startPlay: (textId: string) => void;
+  finishPlay: (summary: PlaySummary) => void;
 }
 
 export const useApp = create<AppState>((set) => ({
   screen: 'profiles',
   profileId: null,
   placementSummary: null,
+  mode: 'explore',
   textId: null,
-  exploreSummary: null,
+  playSummary: null,
   go: (screen) => set({ screen }),
   selectProfile: (profileId, screen) => set({ profileId, screen }),
   finishPlacement: (placementSummary) => set({ placementSummary, screen: 'placementResult' }),
-  startExplore: (textId) => set({ textId, screen: 'explore' }),
-  finishExplore: (exploreSummary) => set({ exploreSummary, screen: 'exploreResult' }),
+  chooseMode: (mode) => set({ mode, screen: 'textSelect' }),
+  startPlay: (textId) => set({ textId, screen: 'play' }),
+  finishPlay: (playSummary) => set({ playSummary, screen: 'playResult' }),
 }));

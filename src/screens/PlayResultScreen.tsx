@@ -2,9 +2,9 @@ import { useTranslation } from 'react-i18next';
 import { MIN_COMPREHENSION_FOR_TARGET } from '../core/scoring';
 import { useApp } from '../store/app';
 
-export function ExploreResultScreen() {
+export function PlayResultScreen() {
   const { t } = useTranslation();
-  const { exploreSummary: s, go } = useApp();
+  const { playSummary: s, go } = useApp();
   if (!s) return null;
 
   const wpm = (value: number) => t('placementResult.unitWpm', { value });
@@ -16,17 +16,26 @@ export function ExploreResultScreen() {
 
   const message =
     s.comprehension < MIN_COMPREHENSION_FOR_TARGET
-      ? t('exploreResult.lowComprehension')
+      ? t('playResult.lowComprehension')
       : s.score.targetBonus > 0
-        ? t('exploreResult.targetReached')
-        : t('exploreResult.targetMissed');
+        ? t('playResult.targetReached')
+        : t('playResult.targetMissed');
 
   const lines = [
-    { label: t('exploreResult.base'), value: s.score.base },
-    { label: t('exploreResult.targetBonus'), value: s.score.targetBonus },
-    { label: t('exploreResult.perfectBonus'), value: s.score.perfectBonus },
-    { label: t('exploreResult.streakBonus', { days: s.streakDays }), value: s.score.streakBonus },
+    { label: t('playResult.base', { multiplier: s.score.multiplier }), value: s.score.base },
+    { label: t('playResult.targetBonus'), value: s.score.targetBonus },
+    { label: t('playResult.perfectBonus'), value: s.score.perfectBonus },
+    { label: t('playResult.streakBonus', { days: s.streakDays }), value: s.score.streakBonus },
   ].filter((l) => l.value > 0);
+
+  const targetChange =
+    s.previousTarget === null || s.newTarget === null
+      ? null
+      : s.newTarget > s.previousTarget
+        ? t('playResult.targetUp', { from: s.previousTarget, to: s.newTarget })
+        : s.newTarget < s.previousTarget
+          ? t('playResult.targetDown', { from: s.previousTarget, to: s.newTarget })
+          : t('playResult.targetSame', { value: s.newTarget });
 
   return (
     <section className="screen">
@@ -34,7 +43,7 @@ export function ExploreResultScreen() {
         <div className="treasure" aria-hidden>
           {s.score.targetBonus > 0 ? '💰' : '🧭'}
         </div>
-        <h2>{t('exploreResult.title')}</h2>
+        <h2>{t('playResult.title')}</h2>
         <p className="byline">{s.title}</p>
         <p className="speech">🦜 {message}</p>
         <dl className="stats">
@@ -45,20 +54,16 @@ export function ExploreResultScreen() {
             </div>
           ))}
         </dl>
-        {s.targetWpm !== null && (
-          <p className="target">
-            {t('placementResult.target')}: <strong>{wpm(s.targetWpm)}</strong>
-          </p>
-        )}
+        {targetChange && <p className="target">{targetChange}</p>}
         {s.previousBest !== null && (
           <p>
             {s.effectiveWpm > s.previousBest
-              ? `🏆 ${t('exploreResult.newRecord', { value: s.previousBest })}`
-              : t('exploreResult.previousBest', { value: s.previousBest })}
+              ? `🏆 ${t('playResult.newRecord', { value: s.previousBest })}`
+              : t('playResult.previousBest', { value: s.previousBest })}
           </p>
         )}
         <table className="score-table">
-          <caption>{t('exploreResult.score')}</caption>
+          <caption>{t('playResult.score')}</caption>
           <tbody>
             {lines.map((l) => (
               <tr key={l.label}>
@@ -67,17 +72,17 @@ export function ExploreResultScreen() {
               </tr>
             ))}
             <tr className="total">
-              <th scope="row">{t('exploreResult.total')}</th>
+              <th scope="row">{t('playResult.total')}</th>
               <td>{s.score.total}</td>
             </tr>
           </tbody>
         </table>
         <div className="row">
           <button type="button" className="btn ghost" onClick={() => go('home')}>
-            {t('exploreResult.home')}
+            {t('playResult.home')}
           </button>
-          <button type="button" className="btn primary" onClick={() => go('exploreSelect')}>
-            {t('exploreResult.again')}
+          <button type="button" className="btn primary" onClick={() => go('textSelect')}>
+            {t('playResult.again')}
           </button>
         </div>
       </div>

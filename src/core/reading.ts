@@ -29,6 +29,22 @@ export function initialTargetWpm(results: PlacementResult[], norm: WpmNorm): num
   const avgWpm = results.reduce((s, r) => s + r.wpm, 0) / results.length;
   const avgComp = results.reduce((s, r) => s + r.comprehension, 0) / results.length;
   const factor = avgComp >= 0.8 ? 1.05 : avgComp >= 0.6 ? 1 : 0.9;
-  const clamped = Math.min(Math.max(avgWpm * factor, norm.min * 0.5), norm.max * 2);
-  return roundTo5(clamped);
+  return clampTarget(avgWpm * factor, norm);
+}
+
+const clampTarget = (wpm: number, norm: WpmNorm) => roundTo5(Math.min(Math.max(wpm, norm.min * 0.5), norm.max * 2));
+
+export const TARGET_UP_GOOD = 1.05;
+export const TARGET_UP_PERFECT = 1.1;
+export const TARGET_DOWN = 0.9;
+
+/**
+ * After a game session: raise the target when it was reached with good comprehension
+ * (+10% for a perfect score, +5% otherwise), lower it when comprehension was poor.
+ */
+export function adaptTarget(target: number, wpm: number, comprehension: number, norm: WpmNorm): number {
+  let factor = 1;
+  if (comprehension < 0.6) factor = TARGET_DOWN;
+  else if (comprehension >= 0.8 && wpm >= target) factor = comprehension === 1 ? TARGET_UP_PERFECT : TARGET_UP_GOOD;
+  return factor === 1 ? target : clampTarget(target * factor, norm);
 }

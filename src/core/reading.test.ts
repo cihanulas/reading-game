@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { comprehensionRatio, effectiveWpm, initialTargetWpm, wordsPerMinute } from './reading';
+import { adaptTarget, comprehensionRatio, effectiveWpm, initialTargetWpm, wordsPerMinute } from './reading';
 import { Stopwatch } from './stopwatch';
 
 describe('reading metrics', () => {
@@ -34,6 +34,26 @@ describe('initialTargetWpm', () => {
     expect(initialTargetWpm([{ wpm: 2000, comprehension: 1 }], norm)).toBe(320);
     expect(initialTargetWpm([{ wpm: 10, comprehension: 1 }], norm)).toBe(60);
     expect(initialTargetWpm([], norm)).toBe(120);
+  });
+});
+
+describe('adaptTarget', () => {
+  const norm = { min: 120, max: 160 };
+
+  it('raises target when reached with good comprehension', () => {
+    expect(adaptTarget(150, 160, 0.8, norm)).toBe(160);
+    expect(adaptTarget(150, 160, 1, norm)).toBe(165);
+  });
+
+  it('keeps target when not reached or comprehension is medium', () => {
+    expect(adaptTarget(150, 140, 1, norm)).toBe(150);
+    expect(adaptTarget(150, 200, 0.6, norm)).toBe(150);
+  });
+
+  it('lowers target with poor comprehension, within bounds', () => {
+    expect(adaptTarget(150, 300, 0.4, norm)).toBe(135);
+    expect(adaptTarget(60, 100, 0, norm)).toBe(60);
+    expect(adaptTarget(320, 400, 1, norm)).toBe(320);
   });
 });
 

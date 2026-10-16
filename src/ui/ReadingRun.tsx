@@ -1,11 +1,18 @@
-import { useRef, useState, type ReactNode } from 'react';
+import { useCallback, useRef, useState, type ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { LoadedText } from '../content/loader';
+import { clampWpm } from '../core/pacing';
 import { Stopwatch } from '../core/stopwatch';
+import { PacerReader } from './PacerReader';
 import { QuestionCard } from './QuestionCard';
 import { ReadingBody } from './ReadingBody';
+import { RsvpReader } from './RsvpReader';
+import { SpeedControl } from './SpeedControl';
 
 type Phase = 'ready' | 'reading' | 'questions';
+
+/** How the text is presented: free silent reading, line pacer, or one word at a time. */
+export type Presentation = 'free' | 'pacer' | 'rsvp';
 
 export interface RunResult {
   activeMs: number;
@@ -16,14 +23,20 @@ export interface RunResult {
 interface Props {
   text: LoadedText;
   header?: ReactNode;
+  presentation?: Presentation;
+  /** Starting speed for pacer/RSVP. */
+  wpm?: number;
   onComplete: (result: RunResult) => void;
 }
 
-/** One text: ready screen → timed reading (pauses for glossary) → questions. */
-export function ReadingRun({ text, header, onComplete }: Props) {
+const DEFAULT_WPM = 150;
+
+/** One text: ready screen → timed reading (pauses excluded) → questions. */
+export function ReadingRun({ text, header, presentation = 'free', wpm: targetWpm, onComplete }: Props) {
   const { t } = useTranslation();
   const [phase, setPhase] = useState<Phase>('ready');
   const [questionIndex, setQuestionIndex] = useState(0);
+  const [wpm, setWpm] = useState(clampWpm(targetWpm ?? DEFAULT_WPM));
   const correct = useRef(0);
   const activeMs = useRef(0);
   const stopwatch = useRef(new Stopwatch());
@@ -34,16 +47,16 @@ export function ReadingRun({ text, header, onComplete }: Props) {
     setPhase('reading');
   };
 
-  const finishReading = () => {
+  const finishReading = useCallback(() => {
     stopwatch.current.pause();
     activeMs.current = stopwatch.current.elapsedMs;
     correct.current = 0;
     setQuestionIndex(0);
     setPhase('questions');
     window.scrollTo(0, 0);
-  };
+  }, []);
 
-  const onGlossaryToggle = (open: boolean) => (open ? stopwatch.current.pause() : stopwatch.current.start());
+  const onPauseChange = useCallback((paused: boolean) => (paused ? stopwatch.current.pause() : stopwatch.current.start()), []);
 
   const onQuestionDone = (isCorrect: boolean) => {
     if (isCorrect) correct.current++;
@@ -61,7 +74,17 @@ export function ReadingRun({ text, header, onComplete }: Props) {
           {header}
           <h2>{text.title}</h2>
           <p className="byline">{text.author}</p>
-          <p className="hint">{t('reading.glossaryHint')}</p>
+          {presentation === 'free' && <p className="hint">{t('reading.glossaryHint')}</p>}
+          {presentation === 'pacer' && <p className="hint">{t('speed.pacerHint')}</p>}
+          {presentation === 'rsvp' && <p className="hint">{t('speed.rsvpIntro')}</p>}
+          {presentation !== 'free' && (
+            <>
+              <p>
+                <strong>{t('speed.choose')}</strong>
+              </p>
+              <SpeedControl value={wpm} onChange={setWpm} />
+            </>
+          )}
           <button type="button" className="btn primary big" onClick={startReading}>
             {t('reading.start')}
           </button>
@@ -80,10 +103,20 @@ export function ReadingRun({ text, header, onComplete }: Props) {
             {text.author}
             {text.simplified && <> · {t('reading.simplified')}</>}
           </p>
-          <ReadingBody text={text} onGlossaryToggle={onGlossaryToggle} />
-          <button type="button" className="btn primary big" onClick={finishReading}>
-            {t('reading.finish')}
-          </button>
+          {presentation === 'free' && (
+            <>
+              <ReadingBody text={text} onGlossaryToggle={onPauseChange} />
+              <button type="button" className="btn primary big" onClick={finishReading}>
+                {t('reading.finish')}
+              </button>
+            </>
+          )}
+          {presentation === 'pacer' && (
+            <PacerReader text={text} initialWpm={wpm} onPauseChange={onPauseChange} onFinish={finishReading} />
+          )}
+          {presentation === 'rsvp' && (
+            <RsvpReader text={text} initialWpm={wpm} onPauseChange={onPauseChange} onFinish={finishReading} />
+          )}
         </div>
       </section>
     );
