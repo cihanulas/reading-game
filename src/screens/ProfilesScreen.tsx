@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { db, type Profile } from '../db/db';
 import { useApp } from '../store/app';
+import { CharacterArt, IslandArt, OceanDecor } from '../ui/GameArt';
+import { ArrowRight, Plus } from 'lucide-react';
 
 export function ProfilesScreen() {
   const { t } = useTranslation();
@@ -15,9 +17,13 @@ export function ProfilesScreen() {
   if (profiles === null) return null;
 
   return (
-    <section className="screen">
-      <h1>{t('app.title')}</h1>
-      <div className="card">
+    <section className="screen profiles-screen">
+      <header className="profile-world">
+        <OceanDecor />
+        <h1>{t('app.title')}</h1>
+        <div className="profile-islands" aria-hidden="true"><IslandArt kind="explore" /><IslandArt kind="pacer" /></div>
+      </header>
+      <div className="profile-panel">
         <h2>{t('profiles.title')}</h2>
         {profiles.length === 0 && <p>{t('profiles.empty')}</p>}
         <ul className="profile-list">
@@ -28,7 +34,7 @@ export function ProfilesScreen() {
                 className="btn profile"
                 onClick={() => selectProfile(p.id, p.targetWpm === null ? 'placement' : 'home')}
               >
-                <span className="avatar">{p.avatar}</span>
+                <CharacterArt value={p.avatar} />
                 <span className="profile-info">
                   <strong>{p.name}</strong>
                   <small>
@@ -36,12 +42,13 @@ export function ProfilesScreen() {
                     {p.targetWpm !== null && <> · {t('profiles.target', { wpm: p.targetWpm })}</>}
                   </small>
                 </span>
+                <ArrowRight className="profile-arrow" size={21} aria-hidden="true" />
               </button>
             </li>
           ))}
         </ul>
         <button type="button" className="btn primary" onClick={() => go('createProfile')}>
-          {t('profiles.new')}
+          <Plus size={19} aria-hidden="true" /> {t('profiles.new')}
         </button>
       </div>
       <a className="credits-link" href="/CREDITS.txt" target="_blank" rel="noreferrer">

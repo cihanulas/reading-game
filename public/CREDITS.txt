@@ -9,3 +9,8 @@ METİNLER
 
 SES VE MÜZİK
 - Tüm ses efektleri tarayıcıda Web Audio API ile sentezlenir; harici ses dosyası kullanılmaz.
+
+GÖRSELLER VE YAZI TİPLERİ
+- Ada, karakter, deniz ve sandık çizimleri bu oyun için oluşturulmuştur.
+- Arayüz simgeleri: Lucide (https://lucide.dev), ISC lisansı.
+- Nunito ve Fraunces yazı tipleri: SIL Open Font License 1.1; @fontsource paketleriyle yerel sunulur.

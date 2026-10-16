@@ -11,7 +11,7 @@ export default defineConfig({
       includeAssets: ['icon.svg', 'CREDITS.txt'],
       // Everything (texts are bundled into JS) is precached so the app works fully offline.
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,txt,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,svg,txt,webmanifest,woff,woff2}'],
         cleanupOutdatedCaches: true,
         navigateFallback: 'index.html',
       },

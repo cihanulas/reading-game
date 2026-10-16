@@ -4,6 +4,7 @@ import { db } from '../db/db';
 import { AGE_GROUPS, DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, type AgeGroup, type LangCode } from '../lang';
 import { useApp } from '../store/app';
 import { AVATARS } from '../ui/avatars';
+import { CharacterArt } from '../ui/GameArt';
 
 const MAX_NAME_LENGTH = 20;
 
@@ -36,7 +37,7 @@ export function CreateProfileScreen() {
     <section className="screen">
       <form className="card form" onSubmit={submit}>
         <h2>{t('createProfile.title')}</h2>
-        <p className="speech">🦜 {t('createProfile.greeting')}</p>
+        <div className="captain-greeting"><CharacterArt value={avatar} /><p className="speech">{t('createProfile.greeting')}</p></div>
 
         <label>
           {t('createProfile.name')}
@@ -60,7 +61,7 @@ export function CreateProfileScreen() {
                 onClick={() => setAvatar(a)}
                 aria-pressed={a === avatar}
               >
-                {a}
+                <CharacterArt value={a} />
               </button>
             ))}
           </div>

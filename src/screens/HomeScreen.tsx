@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { ChartNoAxesCombined, PackageOpen, Coins, Flame, LockKeyhole, RotateCcw, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { chestsEarned, islandStates, type IslandState } from '../core/progress';
 import { streakDays } from '../core/scoring';
@@ -6,17 +7,17 @@ import { useRewards } from '../db/rewards';
 import { useSessions } from '../db/sessions';
 import { useProfile } from '../db/useProfile';
 import { GAME_MODES, useApp, type GameMode } from '../store/app';
-import { MODE_ICON } from '../ui/modes';
+import { CharacterArt, IslandArt, OceanDecor } from '../ui/GameArt';
 import { playSound } from '../ui/sound';
 import { SoundToggle } from '../ui/SoundToggle';
 import { isVoiceSupported } from '../ui/speechRecognition';
 
 /** Island positions on the map, in percent of the map box. */
 const POSITION: Record<IslandState['id'], { left: number; top: number }> = {
-  explore: { left: 18, top: 72 },
-  pacer: { left: 48, top: 42 },
-  rsvp: { left: 80, top: 66 },
-  voice: { left: 76, top: 16 },
+  explore: { left: 23, top: 65 },
+  pacer: { left: 49, top: 29 },
+  rsvp: { left: 78, top: 68 },
+  voice: { left: 80, top: 21 },
 };
 
 const isGameMode = (id: string): id is GameMode => (GAME_MODES as string[]).includes(id);
@@ -47,11 +48,12 @@ export function HomeScreen() {
   };
 
   return (
-    <section className="screen">
-      <div className="card">
+    <section className="screen home-screen">
+      <div className="voyage-layout">
         <header className="home-head">
-          <div className="avatar big">{profile.avatar}</div>
+          <CharacterArt value={profile.avatar} className="home-character" />
           <div>
+            <span className="eyebrow">{t('app.title')}</span>
             <h2>{t('home.welcome', { name: profile.name })}</h2>
             {profile.targetWpm !== null && <p>{t('home.target', { wpm: profile.targetWpm })}</p>}
           </div>
@@ -60,15 +62,16 @@ export function HomeScreen() {
         <dl className="stats">
           <div>
             <dt>{t('home.totalScore')}</dt>
-            <dd>🪙 {coins}</dd>
+            <dd><Coins aria-hidden="true" /> {coins}</dd>
           </div>
           <div>
             <dt>{t('home.streak')}</dt>
-            <dd>🔥 {t('home.streakDays', { count: streak })}</dd>
+            <dd><Flame aria-hidden="true" /> {t('home.streakDays', { count: streak })}</dd>
           </div>
         </dl>
 
         <div className="sea-map" role="group" aria-label={t('home.map')}>
+          <OceanDecor />
           <svg className="route" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden>
             <polyline points={route} />
           </svg>
@@ -84,7 +87,7 @@ export function HomeScreen() {
               <div key={island.id} className="island-spot" style={{ left: `${POSITION[island.id].left}%`, top: `${POSITION[island.id].top}%` }}>
                 <motion.button
                   type="button"
-                  className={`island ${locked ? 'locked' : ''}`}
+                  className={`island island-${island.id} ${locked ? 'locked' : ''}`}
                   onClick={() => enter(island)}
                   aria-disabled={locked}
                   initial={{ scale: 0, opacity: 0 }}
@@ -93,10 +96,8 @@ export function HomeScreen() {
                   whileHover={locked ? undefined : { scale: 1.08 }}
                   whileTap={locked ? { x: [0, -6, 6, -4, 4, 0] } : { scale: 0.92 }}
                 >
-                  <span className="island-icon" aria-hidden>
-                    {locked ? '🔒' : MODE_ICON[island.id]}
-                  </span>
-                  <span className="island-name">{t(`modes.${island.id}.title`)}</span>
+                  <IslandArt kind={island.id} />
+                  <span className="island-name">{locked && <LockKeyhole size={13} aria-hidden="true" />}{t(`modes.${island.id}.title`)}</span>
                   {hint && <small>{hint}</small>}
                 </motion.button>
               </div>
@@ -104,19 +105,19 @@ export function HomeScreen() {
           })}
         </div>
 
-        <div className="row">
+        <div className="row map-actions">
           <button type="button" className="btn primary" onClick={() => go('treasure')}>
-            🧰 {t('home.treasure')}
+            <PackageOpen size={20} aria-hidden="true" /> {t('home.treasure')}
             {unopened > 0 && <span className="pill">{unopened}</span>}
           </button>
           <button type="button" className="btn primary" onClick={() => go('progress')}>
-            📈 {t('home.progress')}
+            <ChartNoAxesCombined size={20} aria-hidden="true" /> {t('home.progress')}
           </button>
           <button type="button" className="btn ghost" onClick={() => go('placement')}>
-            {t('home.retakePlacement')}
+            <RotateCcw size={16} aria-hidden="true" /> {t('home.retakePlacement')}
           </button>
           <button type="button" className="btn ghost" onClick={() => go('profiles')}>
-            {t('home.switchProfile')}
+            <Users size={16} aria-hidden="true" /> {t('home.switchProfile')}
           </button>
         </div>
       </div>

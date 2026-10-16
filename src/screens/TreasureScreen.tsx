@@ -17,6 +17,7 @@ import { useSessions } from '../db/sessions';
 import { useProfile } from '../db/useProfile';
 import { useApp } from '../store/app';
 import { playSound } from '../ui/sound';
+import { ChestArt } from '../ui/GameArt';
 
 export function TreasureScreen() {
   const { t } = useTranslation();
@@ -57,7 +58,7 @@ export function TreasureScreen() {
             animate={opening ? { rotate: [0, -12, 12, -12, 12, 0], scale: [1, 1.1, 1.1, 1.2, 1.2, 1] } : { rotate: 0, scale: 1 }}
             transition={{ duration: 0.9 }}
           >
-            {unopened > 0 || opening ? '🧰' : '🏝️'}
+            <ChestArt />
           </motion.div>
           <AnimatePresence>
             {found && (
