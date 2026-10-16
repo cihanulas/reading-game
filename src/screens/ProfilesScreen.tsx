@@ -4,11 +4,13 @@ import { db, type Profile } from '../db/db';
 import { useApp } from '../store/app';
 import { CharacterArt, IslandArt, OceanDecor } from '../ui/GameArt';
 import { ArrowRight, Plus } from 'lucide-react';
+import { PageNavigation } from '../ui/PageNavigation';
 
 export function ProfilesScreen() {
   const { t } = useTranslation();
   const { go, selectProfile } = useApp();
   const [profiles, setProfiles] = useState<Profile[] | null>(null);
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
     db.profiles.orderBy('createdAt').toArray().then(setProfiles);
@@ -27,7 +29,7 @@ export function ProfilesScreen() {
         <h2>{t('profiles.title')}</h2>
         {profiles.length === 0 && <p>{t('profiles.empty')}</p>}
         <ul className="profile-list">
-          {profiles.map((p) => (
+          {profiles.slice(page * 4, (page + 1) * 4).map((p) => (
             <li key={p.id}>
               <button
                 type="button"
@@ -47,6 +49,7 @@ export function ProfilesScreen() {
             </li>
           ))}
         </ul>
+        <PageNavigation page={page} total={Math.ceil(profiles.length / 4)} onChange={setPage} />
         <button type="button" className="btn primary" onClick={() => go('createProfile')}>
           <Plus size={19} aria-hidden="true" /> {t('profiles.new')}
         </button>

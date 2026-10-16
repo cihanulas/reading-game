@@ -1,11 +1,12 @@
 import { motion } from 'motion/react';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BADGE_ICON, PIECES_PER_CHEST } from '../core/progress';
 import { MIN_COMPREHENSION_FOR_TARGET } from '../core/scoring';
 import { useApp } from '../store/app';
 import { MODE_ICON } from '../ui/modes';
 import { playSound } from '../ui/sound';
+import { PageNavigation } from '../ui/PageNavigation';
 
 const pop = (i: number) => ({
   initial: { scale: 0, opacity: 0 },
@@ -17,6 +18,7 @@ export function PlayResultScreen() {
   const { t } = useTranslation();
   const { playSummary: s, go } = useApp();
   const played = useRef(false);
+  const [rewardPage, setRewardPage] = useState(0);
 
   useEffect(() => {
     if (!s || played.current) return;
@@ -66,9 +68,18 @@ export function PlayResultScreen() {
           ? t('playResult.targetDown', { from: s.previousTarget, to: s.newTarget })
           : t('playResult.targetSame', { value: s.newTarget });
 
+  const rewards = [
+    ...s.newIslands.map((id) => ({ id: `island-${id}`, icon: MODE_ICON[id], label: t('rewards.islandUnlocked', { island: t(`modes.${id}.title`) }), kind: 'island-unlock' })),
+    ...s.newBadges.map((id) => ({ id: `badge-${id}`, icon: BADGE_ICON[id], label: t('rewards.newBadge', { badge: t(`badges.${id}.title`) }), kind: '' })),
+    s.chestEarned
+      ? { id: 'chest', icon: '🧰', label: t('rewards.chestEarned'), kind: 'chest' }
+      : { id: 'pieces', icon: '🧩', label: t('rewards.pieces', { count: s.pieces, total: PIECES_PER_CHEST }), kind: 'muted' },
+  ];
+
   return (
-    <section className="screen">
-      <div className="card center">
+    <section className="screen result-screen">
+      <div className="card center result-layout">
+        <div className="result-summary">
         <motion.div aria-hidden {...pop(0)}>
           <div className="treasure">{s.score.targetBonus > 0 ? '💰' : '🧭'}</div>
         </motion.div>
@@ -91,6 +102,8 @@ export function PlayResultScreen() {
               : t('playResult.previousBest', { value: s.previousBest })}
           </p>
         )}
+        </div>
+        <div className="result-details">
         <table className="score-table">
           <caption>{t('playResult.score')}</caption>
           <tbody>
@@ -107,31 +120,16 @@ export function PlayResultScreen() {
           </tbody>
         </table>
         <ul className="rewards">
-          {s.newIslands.map((id, i) => (
-            <motion.li key={id} className="reward island-unlock" {...pop(i + 1)}>
-              <span className="reward-icon">{MODE_ICON[id]}</span>
-              {t('rewards.islandUnlocked', { island: t(`modes.${id}.title`) })}
+          {rewards.slice(rewardPage * 4, (rewardPage + 1) * 4).map((reward, index) => (
+            <motion.li key={reward.id} className={`reward ${reward.kind}`} {...pop(index + 1)}>
+              <span className="reward-icon">{reward.icon}</span>
+              {reward.label}
             </motion.li>
           ))}
-          {s.newBadges.map((id, i) => (
-            <motion.li key={id} className="reward" {...pop(s.newIslands.length + i + 1)}>
-              <span className="reward-icon">{BADGE_ICON[id]}</span>
-              {t('rewards.newBadge', { badge: t(`badges.${id}.title`) })}
-            </motion.li>
-          ))}
-          {s.chestEarned ? (
-            <motion.li className="reward chest" {...pop(s.newIslands.length + s.newBadges.length + 1)}>
-              <span className="reward-icon">🧰</span>
-              {t('rewards.chestEarned')}
-            </motion.li>
-          ) : (
-            <li className="reward muted">
-              <span className="reward-icon">🧩</span>
-              {t('rewards.pieces', { count: s.pieces, total: PIECES_PER_CHEST })}
-            </li>
-          )}
         </ul>
-        <div className="row">
+        <PageNavigation page={rewardPage} total={Math.ceil(rewards.length / 4)} onChange={setRewardPage} />
+        </div>
+        <div className="row result-actions">
           <button type="button" className="btn ghost" onClick={() => go('home')}>
             {t('playResult.home')}
           </button>

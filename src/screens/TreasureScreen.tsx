@@ -47,10 +47,11 @@ export function TreasureScreen() {
   };
 
   return (
-    <section className="screen">
-      <div className="card center">
+    <section className="screen treasure-screen">
+      <div className="card center treasure-layout">
         <h2>🧰 {t('treasure.title')}</h2>
 
+        <div className="treasure-vault">
         <div className="chest-stage">
           <motion.div
             className="chest"
@@ -94,6 +95,8 @@ export function TreasureScreen() {
           <p className="speech">🦜 {t('treasure.noChest', { count: pieces, total: PIECES_PER_CHEST })}</p>
         )}
 
+        </div>
+        <section className="treasure-collection">
         <h3>{t('treasure.collection', { owned: new Set(owned).size, total: ITEMS.length })}</h3>
         <ul className="collection">
           {ITEMS.map(({ id, icon }) => {
@@ -107,6 +110,8 @@ export function TreasureScreen() {
           })}
         </ul>
 
+        </section>
+        <section className="treasure-badges">
         <h3>{t('treasure.badges', { owned: badges.length, total: BADGES.length })}</h3>
         <ul className="badge-grid">
           {BADGES.map((id) => {
@@ -122,8 +127,9 @@ export function TreasureScreen() {
             );
           })}
         </ul>
+        </section>
 
-        <div className="row">
+        <div className="row treasure-actions">
           <button type="button" className="btn ghost" onClick={() => go('home')}>
             {t('treasure.back')}
           </button>

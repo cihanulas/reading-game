@@ -34,12 +34,12 @@ export function CreateProfileScreen() {
   };
 
   return (
-    <section className="screen">
-      <form className="card form" onSubmit={submit}>
+    <section className="screen profile-create-screen">
+      <form className="card form captain-form" onSubmit={submit}>
         <h2>{t('createProfile.title')}</h2>
         <div className="captain-greeting"><CharacterArt value={avatar} /><p className="speech">{t('createProfile.greeting')}</p></div>
 
-        <label>
+        <label className="name-field">
           {t('createProfile.name')}
           <input
             value={name}
@@ -50,7 +50,7 @@ export function CreateProfileScreen() {
           />
         </label>
 
-        <fieldset>
+        <fieldset className="character-field">
           <legend>{t('createProfile.avatar')}</legend>
           <div className="avatar-grid">
             {AVATARS.map((a) => (
@@ -67,7 +67,7 @@ export function CreateProfileScreen() {
           </div>
         </fieldset>
 
-        <fieldset>
+        <fieldset className="age-field">
           <legend>{t('ageGroup.label')}</legend>
           <div className="choices two">
             {AGE_GROUPS.map((g) => (
@@ -85,7 +85,7 @@ export function CreateProfileScreen() {
         </fieldset>
 
         {SUPPORTED_LANGUAGES.length > 1 && (
-          <label>
+          <label className="language-field">
             {t('createProfile.language')}
             <select value={lang} onChange={(e) => setLang(e.target.value as LangCode)}>
               {SUPPORTED_LANGUAGES.map((l) => (
@@ -97,7 +97,7 @@ export function CreateProfileScreen() {
           </label>
         )}
 
-        <div className="row">
+        <div className="row form-actions">
           <button type="button" className="btn ghost" onClick={() => go('profiles')}>
             {t('createProfile.cancel')}
           </button>

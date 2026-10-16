@@ -23,7 +23,7 @@ export default function ProgressScreen() {
   const filters: Filter[] = ['all', ...GAME_MODES];
 
   return (
-    <section className="screen">
+    <section className="screen progress-screen">
       <div className="card">
         <h2>📈 {t('progress.title')}</h2>
         <dl className="stats">
@@ -60,7 +60,7 @@ export default function ProgressScreen() {
           <p className="speech">🦜 {t('progress.empty')}</p>
         ) : (
           <div className="chart" role="img" aria-label={t('progress.chartLabel', { count: data.length })}>
-            <ResponsiveContainer width="100%" height={280}>
+            <ResponsiveContainer width="100%" height="100%">
               <LineChart data={data} margin={{ top: 10, right: 16, bottom: 0, left: -10 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e8d29d" />
                 <XAxis dataKey="n" tickFormatter={(n: number) => date(data[n - 1]?.createdAt ?? 0)} minTickGap={20} />
@@ -82,7 +82,7 @@ export default function ProgressScreen() {
           </div>
         )}
 
-        <div className="row">
+        <div className="row progress-actions">
           <button type="button" className="btn ghost" onClick={() => go('home')}>
             {t('progress.back')}
           </button>

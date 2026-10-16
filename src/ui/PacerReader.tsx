@@ -64,12 +64,6 @@ export function PacerReader({ text, initialWpm, onPauseChange, onFinish }: Props
     return () => clearTimeout(timer);
   }, [lines, lineIndex, paused, wpm, onFinish]);
 
-  useEffect(() => {
-    const line = lines[lineIndex];
-    const span = line && articleRef.current?.querySelectorAll<HTMLElement>('[data-word]')[line.start];
-    span?.scrollIntoView?.({ block: 'center', behavior: 'smooth' });
-  }, [lines, lineIndex]);
-
   const current = lines[lineIndex];
   const wordClassName = (i: number) => {
     if (!current) return lineIndex > 0 ? 'pacer-done' : undefined;
@@ -86,7 +80,7 @@ export function PacerReader({ text, initialWpm, onPauseChange, onFinish }: Props
           {userPaused ? `▶ ${t('speed.resume')}` : `⏸ ${t('speed.pause')}`}
         </button>
       </div>
-      <ReadingBody text={text} onGlossaryToggle={setGlossaryOpen} wordClassName={wordClassName} articleRef={articleRef} />
+      <ReadingBody text={text} onGlossaryToggle={setGlossaryOpen} wordClassName={wordClassName} articleRef={articleRef} activeWord={current?.start} />
     </>
   );
 }

@@ -103,11 +103,6 @@ export function VoiceReader({ text, onPauseChange, onFinish }: Props) {
     };
   }, [listening, target, pack, finish]);
 
-  useEffect(() => {
-    const span = articleRef.current?.querySelectorAll<HTMLElement>('[data-word]')[alignment.cursor];
-    span?.scrollIntoView?.({ block: 'center', behavior: 'smooth' });
-  }, [alignment.cursor]);
-
   const wordClassName = (i: number) => {
     if (alignment.matched[i]) return 'voice-read';
     if (i < alignment.cursor) return 'voice-skipped';
@@ -136,7 +131,7 @@ export function VoiceReader({ text, onPauseChange, onFinish }: Props) {
           🦜 {t(problem === 'permission' ? 'voice.permission' : 'voice.network')}
         </p>
       )}
-      <ReadingBody text={text} onGlossaryToggle={setGlossaryOpen} wordClassName={wordClassName} articleRef={articleRef} />
+      <ReadingBody text={text} onGlossaryToggle={setGlossaryOpen} wordClassName={wordClassName} articleRef={articleRef} activeWord={alignment.cursor} />
     </>
   );
 }

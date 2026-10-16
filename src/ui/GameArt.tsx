@@ -20,12 +20,46 @@ function CompanionArt({ value, className }: { value: string; className: string }
     {kind === 'octopus' && <g fill={color}><path d="M48 108Q18 111 23 133Q26 146 38 136L46 126Q36 152 53 153Q66 152 66 132Q67 162 81 156Q91 152 88 132Q96 161 110 151Q120 144 110 128Q125 147 136 132Q143 114 115 106Z" /><path d="M42 101V78Q45 35 81 36Q121 38 120 82L118 112Q80 133 42 101Z" /><path d="M56 48Q68 39 80 42" fill="none" stroke={light} strokeWidth="6" strokeLinecap="round" /><g fill={light}><circle cx="43" cy="136" r="4" /><circle cx="56" cy="144" r="4" /><circle cx="81" cy="146" r="4" /><circle cx="107" cy="141" r="4" /></g></g>}
     {kind === 'parrot' && <g><path d="M46 111L40 151L72 137L89 153L105 110Z" fill="#297e78" /><path d="M42 99Q29 130 48 139L66 111Z" fill="#e9bb51" /><path d="M111 97Q137 129 112 140L98 113Z" fill="#e9bb51" /><path d="M40 82Q33 41 69 37L58 22Q86 15 96 37Q130 40 121 88L109 122Q80 144 52 120Z" fill={color} /><path d="M49 80Q46 52 66 53Q80 53 80 70Q85 48 105 55Q119 66 111 87L81 102Z" fill="#fff5d7" /><path d="M80 78Q100 81 91 106L80 98L69 101Q60 82 80 78Z" fill="#edaa41" /><path d="M80 79L81 98" stroke="#bd792d" strokeWidth="2" /></g>}
     {kind === 'turtle' && <g><ellipse cx="80" cy="116" rx="45" ry="34" fill="#4b8164" /><path d="M46 125L64 108L91 109L111 128M64 108L61 88M91 109L100 88M65 109L67 145M91 110L95 144" fill="none" stroke="#9ec284" strokeWidth="3" /><ellipse cx="39" cy="124" rx="12" ry="19" transform="rotate(27 39 124)" fill={color} /><ellipse cx="121" cy="124" rx="12" ry="19" transform="rotate(-27 121 124)" fill={color} /><ellipse cx="80" cy="74" rx="36" ry="37" fill={color} /><path d="M53 88Q80 111 107 88Q100 115 80 115Q60 113 53 88Z" fill={light} /><path d="M50 59Q79 26 111 58" fill="none" stroke="#e3b85b" strokeWidth="8" /></g>}
-    {['shark', 'dolphin', 'whale'].includes(kind) && <g><path d="M53 120Q21 126 27 143Q48 143 65 134M109 121Q139 128 135 144Q115 145 100 135" fill={color} /><path d="M44 134Q33 105 43 73Q50 46 74 44L89 21L98 48Q126 62 121 104L113 134Q81 156 44 134Z" fill={color} /><path d="M51 113Q81 123 113 111L109 136Q80 150 52 133Z" fill={light} />{kind === 'dolphin' && <path d="M65 90Q37 85 30 101Q41 114 75 104Z" fill={color} />}{kind === 'shark' && <path d="M64 102L72 113L79 105L86 113L94 102" fill="white" />}{kind === 'whale' && <g fill="none" stroke="#d5f7f3" strokeWidth="5" strokeLinecap="round"><path d="M78 38Q71 14 60 18M81 36Q82 9 94 13M80 35V13" /></g>}<path d="M49 66Q54 54 65 53" stroke={light} strokeWidth="5" strokeLinecap="round" fill="none" /></g>}
+    {kind === 'shark' && <g>
+      <path d="M62 55L84 15L91 62L128 96L145 122L114 115L109 148H53L44 115L17 127L34 96Z" fill="#64879d" />
+      <path d="M35 94L80 41L124 94Q130 119 108 140Q80 155 51 137Q32 118 35 94Z" fill="#8baabc" />
+      <path d="M43 102Q80 114 117 101L106 136Q80 149 54 134Z" fill="#edf4ef" />
+      <path d="M49 78L65 83M96 83L112 77" stroke="#355767" strokeWidth="4" strokeLinecap="round" />
+      <ellipse cx="59" cy="88" rx="4" ry="5" fill="#253e48" /><ellipse cx="103" cy="88" rx="4" ry="5" fill="#253e48" />
+      <path d="M57 106Q80 127 104 105Q82 141 57 106Z" fill="#3d5965" />
+      <path d="M61 109L67 119L73 115L80 124L86 116L93 120L101 108" fill="#fffdf1" />
+      <path d="M34 100L43 104M31 107L40 110M119 102L127 99M122 109L131 106" stroke="#4e7080" strokeWidth="2.5" />
+    </g>}
+    {kind === 'dolphin' && <g>
+      <path d="M59 93Q19 68 32 51L69 69Z" fill="#338aab" />
+      <path d="M45 127Q33 102 48 65Q59 33 88 36Q115 36 122 58Q127 75 110 87L137 89Q153 99 134 109L109 113Q104 135 88 140L88 155L107 143L114 158Q93 170 80 156Q65 164 49 154L56 142L72 148L66 135Z" fill="#57b7cc" />
+      <path d="M59 86Q54 119 75 136Q101 140 109 113L134 107Q115 111 97 102Q78 93 80 69Z" fill="#d6f5e9" />
+      <path d="M59 101Q29 112 32 133Q48 135 72 114Z" fill="#369ab9" />
+      <path d="M70 48Q83 39 94 47" fill="none" stroke="#a9e5e5" strokeWidth="5" strokeLinecap="round" />
+      <ellipse cx="98" cy="68" rx="4.5" ry="6" fill="#253e48" /><circle cx="99" cy="66" r="1.5" fill="white" />
+      <path d="M101 98Q119 110 136 98" fill="none" stroke="#326a80" strokeWidth="2.5" strokeLinecap="round" />
+      <ellipse cx="103" cy="84" rx="7" ry="4" fill="#e7b9a1" />
+    </g>}
+    {kind === 'whale' && <g>
+      <path d="M104 111Q127 129 132 104L124 88Q139 87 145 102Q157 89 158 104Q159 123 145 129Q130 159 104 138Z" fill="#5b7fb2" />
+      <path d="M20 106Q15 56 57 48Q105 35 119 78L120 120Q109 151 69 151Q28 151 20 123Z" fill="#7296c8" />
+      <path d="M23 112Q63 133 117 111L112 132Q70 167 28 135Z" fill="#e4eaf6" />
+      <path d="M42 132L43 144M57 136L57 148M73 137V149M89 134L89 145" stroke="#b1c5e0" strokeWidth="2" />
+      <ellipse cx="45" cy="94" rx="4" ry="5" fill="#253e48" /><ellipse cx="96" cy="94" rx="4" ry="5" fill="#253e48" />
+      <circle cx="46" cy="92" r="1.4" fill="white" /><circle cx="97" cy="92" r="1.4" fill="white" />
+      <path d="M58 110Q70 121 83 110" fill="none" stroke="#3d5c8a" strokeWidth="3" strokeLinecap="round" />
+      <path d="M53 119Q41 152 67 155L81 137" fill="#5b7fb2" />
+      <path d="M67 48V20M63 45Q45 17 40 30M72 43Q83 16 94 25" fill="none" stroke="#5cbfc6" strokeWidth="5" strokeLinecap="round" />
+      <circle cx="66" cy="13" r="4" fill="#5cbfc6" /><circle cx="98" cy="32" r="3" fill="#5cbfc6" />
+      <path d="M32 72Q38 59 51 58" fill="none" stroke="#acbee0" strokeWidth="5" strokeLinecap="round" />
+    </g>}
     {kind === 'crab' && <g fill={color}><path d="M47 116L24 111L17 123M47 126L24 129L21 141M111 116L137 110L145 123M111 128L136 131L140 143" fill="none" stroke={color} strokeWidth="7" strokeLinecap="round" /><path d="M43 102L25 81L16 86L28 113M117 103L136 81L146 88L132 115" /><path d="M23 88Q1 76 16 54L23 71L32 52Q49 72 31 91M134 89Q112 75 128 53L135 71L146 54Q160 76 142 91" /><ellipse cx="80" cy="113" rx="44" ry="31" /><path d="M60 91L57 65M101 91L105 65" stroke={color} strokeWidth="8" /><circle cx="57" cy="65" r="12" fill="#fff5d7" /><circle cx="105" cy="65" r="12" fill="#fff5d7" /></g>}
-    <g fill="#253e48"><ellipse cx={kind === 'crab' ? 57 : 64} cy={kind === 'crab' ? 66 : 77} rx="3.5" ry="5" /><ellipse cx={kind === 'crab' ? 105 : 98} cy={kind === 'crab' ? 66 : 77} rx="3.5" ry="5" /></g>
-    <g fill="white"><circle cx={kind === 'crab' ? 58 : 65} cy={kind === 'crab' ? 64 : 75} r="1.3" /><circle cx={kind === 'crab' ? 106 : 99} cy={kind === 'crab' ? 64 : 75} r="1.3" /></g>
-    {kind !== 'parrot' && <path d={kind === 'crab' ? 'M69 114Q80 125 93 113' : 'M70 97Q80 106 93 96'} fill="none" stroke="#39575b" strokeWidth="2.5" strokeLinecap="round" />}
-    <path d="M54 123L80 130L108 122L105 135L80 142L55 134Z" fill="#e37459" /><path d="M81 135L95 151L106 137" fill="#bf504c" /><circle cx="80" cy="134" r="5" fill="#f8cd66" />
+    {!['shark', 'dolphin', 'whale'].includes(kind) && <g>
+      <g fill="#253e48"><ellipse cx={kind === 'crab' ? 57 : 64} cy={kind === 'crab' ? 66 : 77} rx="3.5" ry="5" /><ellipse cx={kind === 'crab' ? 105 : 98} cy={kind === 'crab' ? 66 : 77} rx="3.5" ry="5" /></g>
+      <g fill="white"><circle cx={kind === 'crab' ? 58 : 65} cy={kind === 'crab' ? 64 : 75} r="1.3" /><circle cx={kind === 'crab' ? 106 : 99} cy={kind === 'crab' ? 64 : 75} r="1.3" /></g>
+      {kind !== 'parrot' && <path d={kind === 'crab' ? 'M69 114Q80 125 93 113' : 'M70 97Q80 106 93 96'} fill="none" stroke="#39575b" strokeWidth="2.5" strokeLinecap="round" />}
+      <path d="M54 123L80 130L108 122L105 135L80 142L55 134Z" fill="#e37459" /><path d="M81 135L95 151L106 137" fill="#bf504c" /><circle cx="80" cy="134" r="5" fill="#f8cd66" />
+    </g>}
   </svg>;
 }
 

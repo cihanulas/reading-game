@@ -14,10 +14,10 @@ import { isVoiceSupported } from '../ui/speechRecognition';
 
 /** Island positions on the map, in percent of the map box. */
 const POSITION: Record<IslandState['id'], { left: number; top: number }> = {
-  explore: { left: 23, top: 65 },
-  pacer: { left: 49, top: 29 },
-  rsvp: { left: 78, top: 68 },
-  voice: { left: 80, top: 21 },
+  explore: { left: 15, top: 60 },
+  pacer: { left: 39, top: 36 },
+  rsvp: { left: 63, top: 60 },
+  voice: { left: 86, top: 36 },
 };
 
 const isGameMode = (id: string): id is GameMode => (GAME_MODES as string[]).includes(id);

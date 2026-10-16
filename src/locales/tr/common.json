@@ -169,6 +169,7 @@
     "resultGood": "Sesin mağarada yankılandı! Az takılıp anlayarak okumak en büyük hazine."
   },
   "textSelect": {
+    "levels": "Okuma seviyeleri",
     "level": "Seviye {{level}}",
     "words": "{{count}} kelime",
     "best": "En iyi: {{score}} puan",
@@ -217,6 +218,12 @@
     "moveUp": "Yukarı taşı",
     "moveDown": "Aşağı taşı",
     "next": "Devam"
+  },
+  "navigation": {
+    "pages": "Sayfalar",
+    "previous": "Önceki sayfa",
+    "next": "Sonraki sayfa",
+    "page": "{{current}} / {{total}}"
   },
   "glossary": {
     "close": "Tamam"
