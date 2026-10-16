@@ -759,8 +759,40 @@ h2 {
   accent-color: var(--sea);
 }
 
+/* Voice */
+.voice-read {
+  color: var(--leaf);
+}
+
+.voice-skipped {
+  text-decoration: underline wavy var(--coral);
+}
+
+.voice-current {
+  background: #ffe7a3;
+  border-radius: 4px;
+}
+
+.mic {
+  font-weight: 700;
+}
+
+.mic.on {
+  color: var(--coral);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .treasure {
+    animation: none;
+  }
+  .mic.on {
     animation: none;
   }
   .reading-body [data-word] {

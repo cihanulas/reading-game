@@ -132,6 +132,20 @@
   "sound": {
     "toggle": "Sesi aç / kapat"
   },
+  "voice": {
+    "intro": "Metni yüksek sesle oku. Doğru okuduğun kelimeler yeşillenecek, mağara seni takip edecek!",
+    "privacy": "Mikrofon sadece okurken açıktır. Sesin, tarayıcının konuşma tanıma hizmetiyle yazıya çevrilir; Okuma Adası sesini kaydetmez ve saklamaz.",
+    "listening": "Dinliyorum",
+    "notListening": "Dinlemiyorum",
+    "permission": "Mikrofona izin verilmedi. Tarayıcı adres çubuğundaki mikrofon simgesinden izin verebilir ya da “Bitirdim” diyerek sorulara geçebilirsin.",
+    "network": "Konuşma tanıma için internet bağlantısı gerekiyor. Bağlantıyı kontrol et ya da “Bitirdim” diyerek sorulara geç.",
+    "unsupported": "Bu tarayıcı desteklemiyor (Chrome ya da Edge kullan)",
+    "wcpm": "Doğru kelime hızı",
+    "accuracy": "Doğru okunan",
+    "accuracyValue": "{{matched}} / {{total}}",
+    "stumbles": "Takılma",
+    "resultGood": "Sesin mağarada yankılandı! Az takılıp anlayarak okumak en büyük hazine."
+  },
   "textSelect": {
     "level": "Seviye {{level}}",
     "words": "{{count}} kelime",
@@ -166,7 +180,6 @@
     "streakDays": "{{count}} gün",
     "map": "Ada haritası",
     "locked": "{{island}}'nda {{count}} okuma daha",
-    "comingSoon": "Çok yakında",
     "treasure": "Hazine",
     "retakePlacement": "Testi tekrar yap",
     "switchProfile": "Kaptan değiştir"

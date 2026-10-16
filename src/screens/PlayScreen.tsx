@@ -18,20 +18,23 @@ export function PlayScreen() {
   const text = textId ? getTextById(textId) : undefined;
   if (!profile || !text) return null;
 
-  const onComplete = async ({ activeMs, correct, total }: RunResult) => {
+  const onComplete = async ({ activeMs, correct, total, voice }: RunResult) => {
     const now = Date.now();
-    const wpm = wordsPerMinute(text.wordCount, activeMs);
+    // Read aloud: count only words heard correctly (words correct per minute).
+    const wpm = wordsPerMinute(voice ? voice.matched : text.wordCount, activeMs);
     const comprehension = comprehensionRatio(correct, total);
     const eff = effectiveWpm(wpm, comprehension);
+    // The target is a silent-reading speed, so it neither applies to nor adapts from reading aloud.
+    const targetWpm = mode === 'voice' ? null : profile.targetWpm;
 
     const previous = await getSessions(profile.id, profile.lang);
     const sameText = previous.filter((s) => s.textId === text.id && s.mode === mode);
     const previousBest = sameText.length > 0 ? Math.max(...sameText.map((s) => s.effectiveWpm)) : null;
     const streak = streakDays([...previous.map((s) => s.createdAt), now], now);
-    const score = scoreSession({ mode, wpm, comprehension, effectiveWpm: eff, targetWpm: profile.targetWpm, streakDays: streak });
+    const score = scoreSession({ mode, wpm, comprehension, effectiveWpm: eff, targetWpm, streakDays: streak });
 
     const norm = getLanguagePack(profile.lang).wpmNorms[profile.ageGroup];
-    const newTarget = profile.targetWpm === null ? null : adaptTarget(profile.targetWpm, wpm, comprehension, norm);
+    const newTarget = targetWpm === null ? profile.targetWpm : adaptTarget(targetWpm, wpm, comprehension, norm);
 
     const session: Omit<ReadingSession, 'id'> = {
       profileId: profile.id,
@@ -44,7 +47,7 @@ export function PlayScreen() {
       comprehension,
       effectiveWpm: eff,
       score: score.total,
-      targetWpm: profile.targetWpm,
+      targetWpm,
       createdAt: now,
     };
     const after = [...previous, session];
@@ -63,8 +66,8 @@ export function PlayScreen() {
       wpm,
       comprehension,
       effectiveWpm: eff,
-      previousTarget: profile.targetWpm,
-      newTarget,
+      previousTarget: targetWpm,
+      newTarget: targetWpm === null ? null : newTarget,
       previousBest,
       streakDays: streak,
       score,
@@ -72,6 +75,7 @@ export function PlayScreen() {
       newIslands: unlockedIslands(after).filter((i) => !islandsBefore.includes(i)),
       chestEarned: chestsEarned(after) > chestsEarned(previous),
       pieces: mapPieces(after) % PIECES_PER_CHEST,
+      voice,
     });
   };
 

@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import type { BadgeId, IslandId } from '../core/progress';
 import type { ScoreBreakdown } from '../core/scoring';
+import type { VoiceStats } from '../ui/VoiceReader';
 
 export type Screen =
   | 'profiles'
@@ -14,8 +15,8 @@ export type Screen =
   | 'treasure';
 
 /** Island game modes available from the home screen. */
-export type GameMode = 'explore' | 'pacer' | 'rsvp';
-export const GAME_MODES: GameMode[] = ['explore', 'pacer', 'rsvp'];
+export type GameMode = 'explore' | 'pacer' | 'rsvp' | 'voice';
+export const GAME_MODES: GameMode[] = ['explore', 'pacer', 'rsvp', 'voice'];
 
 export interface PlacementSummary {
   wpm: number;
@@ -42,6 +43,8 @@ export interface PlaySummary {
   chestEarned: boolean;
   /** Map pieces collected toward the next chest. */
   pieces: number;
+  /** Read-aloud details (Yankı Mağarası only). */
+  voice?: VoiceStats;
 }
 
 interface AppState {

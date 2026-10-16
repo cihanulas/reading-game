@@ -30,17 +30,25 @@ export function PlayResultScreen() {
 
   const wpm = (value: number) => t('placementResult.unitWpm', { value });
   const stats = [
-    { label: t('placementResult.speed'), value: wpm(s.wpm) },
+    { label: s.voice ? t('voice.wcpm') : t('placementResult.speed'), value: wpm(s.wpm) },
     { label: t('placementResult.comprehension'), value: t('placementResult.percent', { value: Math.round(s.comprehension * 100) }) },
     { label: t('placementResult.effective'), value: wpm(s.effectiveWpm) },
   ];
+  if (s.voice) {
+    stats.push(
+      { label: t('voice.accuracy'), value: t('voice.accuracyValue', { matched: s.voice.matched, total: s.voice.total }) },
+      { label: t('voice.stumbles'), value: String(s.voice.stumbles) },
+    );
+  }
 
   const message =
     s.comprehension < MIN_COMPREHENSION_FOR_TARGET
       ? t('playResult.lowComprehension')
-      : s.score.targetBonus > 0
-        ? t('playResult.targetReached')
-        : t('playResult.targetMissed');
+      : s.voice
+        ? t('voice.resultGood')
+        : s.score.targetBonus > 0
+          ? t('playResult.targetReached')
+          : t('playResult.targetMissed');
 
   const lines = [
     { label: t('playResult.base', { multiplier: s.score.multiplier }), value: s.score.base },

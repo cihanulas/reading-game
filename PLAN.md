@@ -13,7 +13,7 @@ Rehber karakter: papağan **Kaptan Kelime**.
 | Yaş grupları | 10–13 ve 14–18, ayrı parkurlar (karışık değil) |
 | Tema | Hazine avı / ada haritası |
 | Yapay zeka | Uygulama içinde yok |
-| Mikrofon | Ses hiçbir zaman kaydedilmez veya saklanmaz |
+| Mikrofon | Ses hiçbir zaman kaydedilmez veya saklanmaz. Not: Web Speech tanıma tarayıcının hizmetiyle yapılır (Chrome/Edge'de bulut), bu kullanıcıya okuma öncesi söylenir |
 
 ## 2. Okuma Hızı Ölçümü ve Puanlama
 
@@ -34,7 +34,7 @@ Rehber karakter: papağan **Kaptan Kelime**.
 1. **Keşif Adası** – Sessiz okuma + süre + anlama soruları (temel ölçüm).
 2. **Rüzgâr Adası** – Hız rehberi: metin hedef hızda satır satır vurgulanır/silinir.
 3. **Şimşek Adası** – RSVP: kelimeler ekranın ortasında tek tek gösterilir.
-4. **Yankı Mağarası** – Sesli okuma: Web Speech API ile canlı kelime takibi, doğru kelime/dakika ve takılmalar. Sadece Chrome/Edge; desteklemeyen tarayıcıda kilitli görünür.
+4. **Yankı Mağarası** – Sesli okuma: Web Speech API ile canlı kelime takibi, doğru kelime/dakika ve takılmalar. Sadece Chrome/Edge; desteklemeyen tarayıcıda kilitli görünür. Hedef hız sessiz okuma içindir; sesli modda hedef bonusu ve hedef uyarlaması yoktur (mod çarpanı 1,5).
 
 ## 4. Oyunlaştırma
 
@@ -99,7 +99,7 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
 - [x] **Faz 2 – Çekirdek oyun:** Keşif Adası; KDK, anlama, EOH; puan motoru; sonuç ekranı.
 - [x] **Faz 3 – Hız modları:** Rüzgâr (rehber) ve Şimşek (RSVP); uyarlamalı hız algoritması.
 - [x] **Faz 4 – Oyunlaştırma:** Harita, ada kilitleri, sandık, rozetler, ses efektleri, animasyonlar, günlük seri. (Faz 3 ile paralel yapılabilir.)
-- [ ] **Faz 5 – Sesli mod:** Web Speech API ile Türkçe kelime eşleştirme, esnek normalizasyon, desteklemeyen tarayıcı için alternatif.
+- [x] **Faz 5 – Sesli mod:** Web Speech API ile Türkçe kelime eşleştirme, esnek normalizasyon, desteklemeyen tarayıcı için alternatif.
 - [ ] **Faz 6 – İçerik ve yayın:** Metin kütüphanesi, PWA çevrimdışı, ilerleme grafiği.
 - [ ] **Faz 7 – Almanca** (onaydan sonra): dil paketi, arayüz çevirisi, Almanca metinler, de-DE sesli mod testi.
 - [ ] **Faz 8 – İngilizce:** aynı adımlar.

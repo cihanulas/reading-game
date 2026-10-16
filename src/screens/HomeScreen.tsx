@@ -9,6 +9,7 @@ import { GAME_MODES, useApp, type GameMode } from '../store/app';
 import { MODE_ICON } from '../ui/modes';
 import { playSound } from '../ui/sound';
 import { SoundToggle } from '../ui/SoundToggle';
+import { isVoiceSupported } from '../ui/speechRecognition';
 
 /** Island positions on the map, in percent of the map box. */
 const POSITION: Record<IslandState['id'], { left: number; top: number }> = {
@@ -19,6 +20,8 @@ const POSITION: Record<IslandState['id'], { left: number; top: number }> = {
 };
 
 const isGameMode = (id: string): id is GameMode => (GAME_MODES as string[]).includes(id);
+/** Islands this browser cannot run (read-aloud needs speech recognition). */
+const unsupported = (id: IslandState['id']) => id === 'voice' && !isVoiceSupported();
 
 export function HomeScreen() {
   const { t } = useTranslation();
@@ -35,7 +38,7 @@ export function HomeScreen() {
   const route = islands.map(({ id }) => `${POSITION[id].left},${POSITION[id].top}`).join(' ');
 
   const enter = (island: IslandState) => {
-    if (!island.unlocked || !isGameMode(island.id)) {
+    if (!island.unlocked || !isGameMode(island.id) || unsupported(island.id)) {
       playSound('wrong');
       return;
     }
@@ -70,10 +73,10 @@ export function HomeScreen() {
             <polyline points={route} />
           </svg>
           {islands.map((island, i) => {
-            const soon = !isGameMode(island.id);
-            const locked = !island.unlocked || soon;
-            const hint = soon
-              ? t('home.comingSoon')
+            const blocked = unsupported(island.id);
+            const locked = !island.unlocked || blocked;
+            const hint = blocked
+              ? t('voice.unsupported')
               : !island.unlocked && island.requires
                 ? t('home.locked', { count: island.remaining, island: t(`modes.${island.requires}.title`) })
                 : null;

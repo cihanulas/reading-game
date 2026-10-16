@@ -8,16 +8,19 @@ import { QuestionCard } from './QuestionCard';
 import { ReadingBody } from './ReadingBody';
 import { RsvpReader } from './RsvpReader';
 import { SpeedControl } from './SpeedControl';
+import { VoiceReader, type VoiceStats } from './VoiceReader';
 
 type Phase = 'ready' | 'reading' | 'questions';
 
-/** How the text is presented: free silent reading, line pacer, or one word at a time. */
-export type Presentation = 'free' | 'pacer' | 'rsvp';
+/** How the text is presented: free silent reading, line pacer, one word at a time, or read aloud. */
+export type Presentation = 'free' | 'pacer' | 'rsvp' | 'voice';
 
 export interface RunResult {
   activeMs: number;
   correct: number;
   total: number;
+  /** Only for read-aloud runs. */
+  voice?: VoiceStats;
 }
 
 interface Props {
@@ -39,6 +42,7 @@ export function ReadingRun({ text, header, presentation = 'free', wpm: targetWpm
   const [wpm, setWpm] = useState(clampWpm(targetWpm ?? DEFAULT_WPM));
   const correct = useRef(0);
   const activeMs = useRef(0);
+  const voiceStats = useRef<VoiceStats | undefined>(undefined);
   const stopwatch = useRef(new Stopwatch());
 
   const startReading = () => {
@@ -58,13 +62,21 @@ export function ReadingRun({ text, header, presentation = 'free', wpm: targetWpm
 
   const onPauseChange = useCallback((paused: boolean) => (paused ? stopwatch.current.pause() : stopwatch.current.start()), []);
 
+  const finishVoice = useCallback(
+    (stats: VoiceStats) => {
+      voiceStats.current = stats;
+      finishReading();
+    },
+    [finishReading],
+  );
+
   const onQuestionDone = (isCorrect: boolean) => {
     if (isCorrect) correct.current++;
     if (questionIndex + 1 < text.questions.length) {
       setQuestionIndex(questionIndex + 1);
       return;
     }
-    onComplete({ activeMs: activeMs.current, correct: correct.current, total: text.questions.length });
+    onComplete({ activeMs: activeMs.current, correct: correct.current, total: text.questions.length, voice: voiceStats.current });
   };
 
   if (phase === 'ready') {
@@ -77,7 +89,13 @@ export function ReadingRun({ text, header, presentation = 'free', wpm: targetWpm
           {presentation === 'free' && <p className="hint">{t('reading.glossaryHint')}</p>}
           {presentation === 'pacer' && <p className="hint">{t('speed.pacerHint')}</p>}
           {presentation === 'rsvp' && <p className="hint">{t('speed.rsvpIntro')}</p>}
-          {presentation !== 'free' && (
+          {presentation === 'voice' && (
+            <>
+              <p className="hint">{t('voice.intro')}</p>
+              <p className="hint">🔒 {t('voice.privacy')}</p>
+            </>
+          )}
+          {(presentation === 'pacer' || presentation === 'rsvp') && (
             <>
               <p>
                 <strong>{t('speed.choose')}</strong>
@@ -117,6 +135,7 @@ export function ReadingRun({ text, header, presentation = 'free', wpm: targetWpm
           {presentation === 'rsvp' && (
             <RsvpReader text={text} initialWpm={wpm} onPauseChange={onPauseChange} onFinish={finishReading} />
           )}
+          {presentation === 'voice' && <VoiceReader text={text} onPauseChange={onPauseChange} onFinish={finishVoice} />}
         </div>
       </section>
     );

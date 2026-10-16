@@ -13,4 +13,5 @@ export const MODE_PRESENTATION: Record<GameMode, Presentation> = {
   explore: 'free',
   pacer: 'pacer',
   rsvp: 'rsvp',
+  voice: 'voice',
 };
