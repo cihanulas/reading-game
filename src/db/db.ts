@@ -27,15 +27,33 @@ export interface ReadingSession {
   effectiveWpm: number;
   /** Points earned; 0 for placement sessions. */
   score: number;
+  /** Target speed at the time of reading (missing on old records). */
+  targetWpm?: number | null;
+  createdAt: number;
+}
+
+/** An opened treasure chest. */
+export interface Reward {
+  id: number;
+  profileId: number;
+  lang: LangCode;
+  /** Collectible found, or null when gold was given instead. */
+  itemId: string | null;
+  coins: number;
   createdAt: number;
 }
 
 export const db = new Dexie('okuma-adasi') as Dexie & {
   profiles: EntityTable<Profile, 'id'>;
   sessions: EntityTable<ReadingSession, 'id'>;
+  rewards: EntityTable<Reward, 'id'>;
 };
 
 db.version(1).stores({
   profiles: '++id, createdAt',
   sessions: '++id, [profileId+lang], createdAt',
+});
+
+db.version(2).stores({
+  rewards: '++id, [profileId+lang]',
 });

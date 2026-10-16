@@ -1,10 +1,31 @@
+import { motion } from 'motion/react';
+import { useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { BADGE_ICON, PIECES_PER_CHEST } from '../core/progress';
 import { MIN_COMPREHENSION_FOR_TARGET } from '../core/scoring';
 import { useApp } from '../store/app';
+import { MODE_ICON } from '../ui/modes';
+import { playSound } from '../ui/sound';
+
+const pop = (i: number) => ({
+  initial: { scale: 0, opacity: 0 },
+  animate: { scale: 1, opacity: 1 },
+  transition: { delay: 0.3 + i * 0.25, type: 'spring' as const, stiffness: 260, damping: 14 },
+});
 
 export function PlayResultScreen() {
   const { t } = useTranslation();
   const { playSummary: s, go } = useApp();
+  const played = useRef(false);
+
+  useEffect(() => {
+    if (!s || played.current) return;
+    played.current = true;
+    const fx = s.newIslands.length > 0 ? 'unlock' : s.chestEarned ? 'chest' : s.newBadges.length > 0 ? 'badge' : null;
+    if (s.score.targetBonus > 0 || s.comprehension >= MIN_COMPREHENSION_FOR_TARGET) playSound('success');
+    if (fx) setTimeout(() => playSound(fx), 600);
+  }, [s]);
+
   if (!s) return null;
 
   const wpm = (value: number) => t('placementResult.unitWpm', { value });
@@ -40,9 +61,9 @@ export function PlayResultScreen() {
   return (
     <section className="screen">
       <div className="card center">
-        <div className="treasure" aria-hidden>
-          {s.score.targetBonus > 0 ? '💰' : '🧭'}
-        </div>
+        <motion.div aria-hidden {...pop(0)}>
+          <div className="treasure">{s.score.targetBonus > 0 ? '💰' : '🧭'}</div>
+        </motion.div>
         <h2>{t('playResult.title')}</h2>
         <p className="byline">{s.title}</p>
         <p className="speech">🦜 {message}</p>
@@ -77,10 +98,40 @@ export function PlayResultScreen() {
             </tr>
           </tbody>
         </table>
+        <ul className="rewards">
+          {s.newIslands.map((id, i) => (
+            <motion.li key={id} className="reward island-unlock" {...pop(i + 1)}>
+              <span className="reward-icon">{MODE_ICON[id]}</span>
+              {t('rewards.islandUnlocked', { island: t(`modes.${id}.title`) })}
+            </motion.li>
+          ))}
+          {s.newBadges.map((id, i) => (
+            <motion.li key={id} className="reward" {...pop(s.newIslands.length + i + 1)}>
+              <span className="reward-icon">{BADGE_ICON[id]}</span>
+              {t('rewards.newBadge', { badge: t(`badges.${id}.title`) })}
+            </motion.li>
+          ))}
+          {s.chestEarned ? (
+            <motion.li className="reward chest" {...pop(s.newIslands.length + s.newBadges.length + 1)}>
+              <span className="reward-icon">🧰</span>
+              {t('rewards.chestEarned')}
+            </motion.li>
+          ) : (
+            <li className="reward muted">
+              <span className="reward-icon">🧩</span>
+              {t('rewards.pieces', { count: s.pieces, total: PIECES_PER_CHEST })}
+            </li>
+          )}
+        </ul>
         <div className="row">
           <button type="button" className="btn ghost" onClick={() => go('home')}>
             {t('playResult.home')}
           </button>
+          {s.chestEarned && (
+            <button type="button" className="btn primary" onClick={() => go('treasure')}>
+              🧰 {t('rewards.openChest')}
+            </button>
+          )}
           <button type="button" className="btn primary" onClick={() => go('textSelect')}>
             {t('playResult.again')}
           </button>

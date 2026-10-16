@@ -419,11 +419,255 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* Islands */
-.islands {
+/* Map */
+.home-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.home-head > div:nth-child(2) {
+  flex: 1;
+}
+
+.home-head h2,
+.home-head p {
+  margin: 0.2rem 0;
+}
+
+.sea-map {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  max-height: 60vh;
+  margin: 1rem auto;
+  border-radius: var(--radius);
+  background:
+    radial-gradient(circle at 20% 30%, rgb(255 255 255 / 0.18) 0 2%, transparent 3%),
+    radial-gradient(circle at 70% 80%, rgb(255 255 255 / 0.15) 0 1.5%, transparent 2.5%),
+    linear-gradient(160deg, #3fb3e0, var(--sea));
+  overflow: hidden;
+}
+
+.route {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.route polyline {
+  fill: none;
+  stroke: var(--sand);
+  stroke-width: 0.8;
+  stroke-dasharray: 2 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.island-spot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.island {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  max-width: 9rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 50% 50% 40% 40%;
+  background: var(--sand);
+  box-shadow: 0 6px 0 var(--sand-dark);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.island.locked {
+  filter: grayscale(0.8);
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.island-icon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.island-name {
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.island small {
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+.pill {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.4rem;
+  padding: 0 0.3em;
+  border-radius: 999px;
+  background: var(--coral);
+  color: #fff;
+  font-size: 0.85rem;
+}
+
+/* Rewards */
+.rewards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+  max-width: 420px;
+  margin: 1rem auto;
+}
+
+.reward {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 14px;
+  background: #fff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.reward.chest,
+.reward.island-unlock {
+  background: #fff3c4;
+}
+
+.reward.muted {
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.reward-icon {
+  font-size: 1.6rem;
+}
+
+/* Treasure */
+.chest-stage {
+  min-height: 9rem;
+  display: grid;
+  place-items: center;
+}
+
+.chest {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.found-icon {
+  font-size: 3rem;
+}
+
+.collection,
+.badge-grid {
+  list-style: none;
+  padding: 0;
   display: grid;
   gap: 0.6rem;
-  margin: 1rem 0;
+}
+
+.collection {
+  grid-template-columns: repeat(auto-fill, minmax(5.5rem, 1fr));
+}
+
+.badge-grid {
+  grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+}
+
+.collection li,
+.badge-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 0.6rem;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.collection li > span {
+  font-size: 2.2rem;
+}
+
+.badge-icon {
+  font-size: 2.2rem;
+}
+
+.badge-grid small {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.collection .missing,
+.badge-grid .missing {
+  opacity: 0.45;
+}
+
+.badge-grid .missing .badge-icon {
+  filter: grayscale(1);
+}
+
+/* Ordering */
+.order-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.btn.order-item {
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  background: #fff;
+}
+
+.btn.order-item:active {
+  cursor: grabbing;
+}
+
+.order-label {
+  flex: 1;
+}
+
+.order-moves {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.order-moves button {
+  border: none;
+  border-radius: 8px;
+  background: var(--sand);
+  min-width: 2.25rem;
+  min-height: 2.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.order-moves button:disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 /* Speed */

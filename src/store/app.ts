@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import type { BadgeId, IslandId } from '../core/progress';
 import type { ScoreBreakdown } from '../core/scoring';
 
 export type Screen =
@@ -9,7 +10,8 @@ export type Screen =
   | 'home'
   | 'textSelect'
   | 'play'
-  | 'playResult';
+  | 'playResult'
+  | 'treasure';
 
 /** Island game modes available from the home screen. */
 export type GameMode = 'explore' | 'pacer' | 'rsvp';
@@ -34,6 +36,12 @@ export interface PlaySummary {
   previousBest: number | null;
   streakDays: number;
   score: ScoreBreakdown;
+  newBadges: BadgeId[];
+  newIslands: IslandId[];
+  /** True when this read completed a chest. */
+  chestEarned: boolean;
+  /** Map pieces collected toward the next chest. */
+  pieces: number;
 }
 
 interface AppState {

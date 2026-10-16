@@ -42,6 +42,8 @@ Rehber karakter: papağan **Kaptan Kelime**.
 - Altın, harita parçaları, rozetler; sandıklardan kostüm, gemi ve rozet çıkar.
 - Günlük seri.
 - Animasyonlar (Framer Motion) ve ses efektleri/müzik.
+- Ses efektleri şu an Web Audio ile kodda sentezlenir (harici dosya/lisans gerekmez); müzik eklenirse ses dosyaları aşağıdaki kurala uyar.
+- Ada kilitleri: bir önceki adada 2 başarılı okuma (anlama ≥ %60). Her başarılı okuma 1 harita parçası; 3 parça = 1 sandık.
 - Ses ve müzik ücretsiz lisanslı kaynaklardan (öncelik CC0: Kenney, Pixabay). Kaynaklar `assets/CREDITS` dosyasında ve "Hakkında" ekranında listelenir.
 
 ## 5. Çoklu Dil Mimarisi
@@ -96,7 +98,7 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
 - [x] **Faz 1 – İskelet:** Vite + React + TS + i18next + PWA kurulumu; dil paketi yapısı ve Türkçe paket; profil (isim, avatar, yaş grubu, dil); IndexedDB; yerleştirme testi (2 metin); metin JSON şeması ve doğrulayıcı.
 - [x] **Faz 2 – Çekirdek oyun:** Keşif Adası; KDK, anlama, EOH; puan motoru; sonuç ekranı.
 - [x] **Faz 3 – Hız modları:** Rüzgâr (rehber) ve Şimşek (RSVP); uyarlamalı hız algoritması.
-- [ ] **Faz 4 – Oyunlaştırma:** Harita, ada kilitleri, sandık, rozetler, ses efektleri, animasyonlar, günlük seri. (Faz 3 ile paralel yapılabilir.)
+- [x] **Faz 4 – Oyunlaştırma:** Harita, ada kilitleri, sandık, rozetler, ses efektleri, animasyonlar, günlük seri. (Faz 3 ile paralel yapılabilir.)
 - [ ] **Faz 5 – Sesli mod:** Web Speech API ile Türkçe kelime eşleştirme, esnek normalizasyon, desteklemeyen tarayıcı için alternatif.
 - [ ] **Faz 6 – İçerik ve yayın:** Metin kütüphanesi, PWA çevrimdışı, ilerleme grafiği.
 - [ ] **Faz 7 – Almanca** (onaydan sonra): dil paketi, arayüz çevirisi, Almanca metinler, de-DE sesli mod testi.

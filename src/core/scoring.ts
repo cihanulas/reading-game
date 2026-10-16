@@ -60,3 +60,8 @@ export function streakDays(activityTimes: number[], now: number): number {
   }
   return streak;
 }
+
+/** Longest run of consecutive activity days ever. */
+export function longestStreak(activityTimes: number[]): number {
+  return activityTimes.reduce((best, t) => Math.max(best, streakDays(activityTimes, t)), 0);
+}

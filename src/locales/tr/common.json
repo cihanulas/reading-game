@@ -79,7 +79,58 @@
     "rsvp": {
       "title": "Şimşek Adası",
       "intro": "Kelimeler tek tek, şimşek hızında gelir. Gözünü kırpma ve soruları cevapla!"
+    },
+    "voice": {
+      "title": "Yankı Mağarası",
+      "intro": "Metni yüksek sesle oku, mağara sana yankılansın!"
     }
+  },
+  "rewards": {
+    "islandUnlocked": "Yeni ada açıldı: {{island}}!",
+    "newBadge": "Yeni rozet: {{badge}}",
+    "chestEarned": "Harita tamamlandı, bir hazine sandığı kazandın!",
+    "pieces": "Harita parçası: {{count}} / {{total}}",
+    "openChest": "Sandığı aç"
+  },
+  "treasure": {
+    "title": "Hazine Mağarası",
+    "open_one": "Sandığı aç",
+    "open_other": "Sandığı aç ({{count}} sandık)",
+    "noChest": "Yeni sandık için harita parçası topla: {{count}} / {{total}}. Her anlayışlı okuma bir parça!",
+    "foundItem": "Sandıktan {{item}} çıktı!",
+    "foundGold": "Sandıktan {{count}} altın çıktı!",
+    "collection": "Koleksiyon ({{owned}} / {{total}})",
+    "unknown": "???",
+    "badges": "Rozetler ({{owned}} / {{total}})",
+    "back": "Haritaya dön"
+  },
+  "items": {
+    "raft": "Kano",
+    "sailboat": "Yelkenli",
+    "ship": "Büyük gemi",
+    "pirateFlag": "Korsan bayrağı",
+    "tophat": "Kaptan şapkası",
+    "crown": "Taç",
+    "spyglass": "Dürbün",
+    "compass": "Pusula",
+    "octopus": "Ahtapot dost",
+    "turtle": "Kaplumbağa dost",
+    "gem": "Elmas",
+    "trident": "Mızrak"
+  },
+  "badges": {
+    "firstVoyage": { "title": "İlk Yolculuk", "desc": "İlk okumayı başarıyla bitir." },
+    "bookworm": { "title": "Kitap Kurdu", "desc": "10 okumayı başarıyla bitir." },
+    "perfect": { "title": "Tam İsabet", "desc": "Bütün soruları doğru cevapla." },
+    "onTarget": { "title": "Okçu", "desc": "Hedef hızına 3 kez ulaş." },
+    "streak3": { "title": "Ateş Topu", "desc": "3 gün üst üste oku." },
+    "streak7": { "title": "Yanardağ", "desc": "7 gün üst üste oku." },
+    "allIslands": { "title": "Kaşif", "desc": "Keşif, Rüzgâr ve Şimşek adalarının hepsinde oku." },
+    "speed200": { "title": "Roket", "desc": "200 etkili okuma hızına ulaş." },
+    "recordBreaker": { "title": "Rekortmen", "desc": "Bir hikâyede kendi rekorunu kır." }
+  },
+  "sound": {
+    "toggle": "Sesi aç / kapat"
   },
   "textSelect": {
     "level": "Seviye {{level}}",
@@ -113,7 +164,10 @@
     "totalScore": "Toplam puan",
     "streak": "Seri",
     "streakDays": "{{count}} gün",
-    "comingSoon": "Yeni adalar çok yakında haritada belirecek!",
+    "map": "Ada haritası",
+    "locked": "{{island}}'nda {{count}} okuma daha",
+    "comingSoon": "Çok yakında",
+    "treasure": "Hazine",
     "retakePlacement": "Testi tekrar yap",
     "switchProfile": "Kaptan değiştir"
   },
@@ -123,8 +177,9 @@
     "check": "Kontrol et",
     "correct": "Harika, doğru!",
     "wrong": "Bu sefer olmadı.",
-    "orderingHint": "Maddelere doğru sırayla dokun.",
-    "orderingReset": "Baştan başla",
+    "orderingHint": "Maddeleri sürükleyerek ya da oklarla doğru sıraya diz.",
+    "moveUp": "Yukarı taşı",
+    "moveDown": "Aşağı taşı",
     "next": "Devam"
   },
   "glossary": {
