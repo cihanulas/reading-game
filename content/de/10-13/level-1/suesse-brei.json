@@ -1,0 +1,45 @@
+{
+  "id": "de-10-13-l1-suesse-brei",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 1,
+  "title": "Der süße Brei",
+  "author": "Brüder Grimm",
+  "source": "Der süße Brei (Kinder- und Hausmärchen, 1857). Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Der_süße_Brei_(1857)",
+  "simplified": true,
+  "body": "Es war einmal ein armes, frommes Mädchen, das lebte mit seiner Mutter allein, und sie hatten nichts mehr zu essen. Da ging das Kind hinaus in den Wald. Dort begegnete ihm eine alte Frau, die wusste seinen Jammer schon und schenkte ihm ein Töpfchen. Zu dem sollte es sagen: „Töpfchen, koche!“, so kochte es guten, süßen Hirsebrei. Und wenn es sagte: „Töpfchen, steh!“, so hörte es wieder auf zu kochen.\n\nDas Mädchen brachte den Topf seiner Mutter heim, und nun waren sie ihre Armut und ihren Hunger los und aßen süßen Brei, so oft sie wollten.\n\nEinmal war das Mädchen ausgegangen. Da sprach die Mutter: „Töpfchen, koche!“ Da kocht es, und sie isst sich satt. Nun will sie, dass das Töpfchen wieder aufhören soll, aber sie weiß das Wort nicht. Also kocht es fort, und der Brei steigt über den Rand hinaus und kocht immer weiter: die Küche und das ganze Haus voll, und das zweite Haus und dann die Straße, als wollte es die ganze Welt satt machen. Es ist die größte Not, und kein Mensch weiß sich zu helfen.\n\nEndlich, als nur noch ein einziges Haus übrig ist, kommt das Kind heim und spricht nur: „Töpfchen, steh!“ Da steht es und hört auf zu kochen. Und wer wieder in die Stadt wollte, der musste sich durchessen.",
+  "glossary": [
+    { "word": "Jammer", "meaning": "Großer Kummer, Not." },
+    { "word": "Hirsebrei", "meaning": "Brei aus Hirse, einem kleinen, runden Getreidekorn." },
+    { "word": "durchessen", "meaning": "Sich durchessen: so viel essen, bis man einen Weg frei hat." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Wer schenkte dem Mädchen das Töpfchen?",
+      "options": ["Eine alte Frau im Wald", "Seine Mutter", "Ein König", "Ein Bäcker"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Die Mutter kannte das Wort, mit dem man das Töpfchen anhält.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Was musste das Mädchen sagen, damit das Töpfchen aufhört?",
+      "options": ["Töpfchen, steh!", "Töpfchen, koche!", "Töpfchen, genug!", "Töpfchen, schlaf!"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "wordRecall",
+      "prompt": "Was war am Ende noch übrig, als das Kind heimkam?",
+      "options": ["Haus", "Brücke", "Kirche", "Garten"],
+      "answer": 0
+    }
+  ]
+}

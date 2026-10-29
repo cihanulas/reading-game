@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l2-gespensterschiff-2",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 2,
+  "title": "Das Gespensterschiff (2)",
+  "author": "Wilhelm Hauff",
+  "source": "Die Geschichte von dem Gespensterschiff (Märchen-Almanach auf das Jahr 1826), zweiter Teil. Originalschreibweise, gekürzt. Wikisource: https://de.wikisource.org/wiki/Die_Geschichte_von_dem_Gespensterschiff",
+  "simplified": false,
+  "body": "Mein Ibrahim versank in tiefes Nachdenken. „Jetzt hab ich’s!“ rief er endlich aus; es fiel ihm nämlich ein Sprüchlein ein, das ihn sein Großvater gelehrt hatte, und das gegen jeden Geister- und Zauberspuk helfen sollte. Neben der Kajütte war ein kleines Kämmerchen; dorthin zogen wir uns zurück. Wir bohrten mehrere Löcher in die Thüre, um die ganze Kajütte zu überschauen, und Ibrahim schrieb den Namen des Propheten in alle vier Ecken. Es mochte wieder ungefähr eilf Uhr sein, als es oben lebhaft wurde. Da hörten wir etwas die Treppe herabkommen, und der Alte fing an, seinen Spruch herzusagen. Die Thüre flog auf. Herein trat jener große, stattliche Mann, den ich am Mastbaum angenagelt gesehen hatte. Der Nagel ging ihm auch jetzt mitten durchs Hirn. Er schien gar nicht auf die Thüre zu achten, die uns verbarg. Mit einem andern setzte er sich an den Tisch; sie sprachen immer lauter in einer unbekannten Sprache, bis beide mit gezogenem Säbel das Gemach verließen. Oben ging ein wahrhaft höllischer Lärm los, Waffengeklirr und Geschrei – auf einmal aber tiefe Stille. Als wir hinaufgingen, lag nicht einer anders als früher. Alle waren steif wie Holz.\n\nBei Tag fuhr das Schiff nach Osten; bei Nacht aber schien es immer wieder zurückzukehren. Da schrieben wir den Namen des Propheten und das Sprüchlein des Großvaters auf Pergament und banden es um die eingezogenen Segel. Am anderen Morgen waren die Segel noch aufgerollt, und so legten wir in fünf Tagen eine gute Strecke zurück. Am sechsten Tage entdeckten wir Land und erreichten eine indische Stadt. Dort fand ich den weisen Muley, ein altes Männlein mit grauem Bart und langer Nase, das sich auf Zauberei verstand. Er meinte, die Leute des Schiffes seien wegen irgend eines Frevels auf das Meer verzaubert; der Zauber werde sich lösen, wenn man sie ans Land bringe.\n\nMit Sägen und Beilen lösten wir die Toten samt den Brettern, auf denen sie lagen; sobald man sie an Land auf die Erde legte, zerfielen sie in Staub. Endlich war keiner mehr an Bord als der, welcher am Mast angenagelt war. Da ließ Muley einen Topf mit Erde bringen, sprach geheimnisvolle Worte darüber und schüttete die Erde auf das Haupt des Toten. Sogleich schlug dieser die Augen auf und holte tief Atem. Wir zogen den Nagel jetzt leicht heraus.\n\n„Dank dir, unbekannter Fremdling“, sprach er, „du hast mich von langen Qualen errettet. Seit fünfzig Jahren schifft mein Leib durch diese Wogen. Vor fünfzig Jahren wohnte ich in Algier; die Sucht nach Gewinn trieb mich, Seeraub zu treiben. Da nahm ich einmal einen Derwisch an Bord. Als er mir meinen sündigen Lebenswandel verwiesen hatte, übermannte mich der Zorn, und ich tötete ihn. Sterbend verwünschte er mich und meine Mannschaft, nicht sterben und nicht leben zu können, bis wir unser Haupt auf die Erde legen. Noch in derselben Nacht empörte sich ein Teil meiner Mannschaft gegen mich, und ich wurde an den Mast genagelt. Seitdem erwachen wir jede Nacht und müssen wiederholen, was wir in jener Nacht gethan haben. Jetzt aber werde ich sterben. Nimm mein Schiff als Zeichen meiner Dankbarkeit!“\n\nDer Kapitano ließ sein Haupt sinken und zerfiel, wie seine Gefährten, in Staub. Ich ließ das Schiff in guten Zustand setzen, tauschte die Waren mit großem Gewinn und lief nach dreiviertel Jahren reich in Balsora ein. Meine Mitbürger glaubten, ich habe das Diamantenthal des berühmten Reisenden Sindbad gefunden. Ich ließ sie auf ihrem Glauben; alle fünf Jahre aber mache ich eine Reise nach Mekka, um für den Kapitano und seine Leute zu bitten, daß sie Frieden finden.",
+  "glossary": [
+    { "word": "Kajütte", "meaning": "Kajüte: Wohn- und Schlafraum auf einem Schiff." },
+    { "word": "Pergament", "meaning": "Bearbeitete Tierhaut, auf die man früher schrieb." },
+    { "word": "Frevels", "meaning": "Frevel: eine schwere, sündhafte Tat." },
+    { "word": "Seeraub", "meaning": "Piraterie; das Ausrauben von Schiffen auf dem Meer." },
+    { "word": "Derwisch", "meaning": "Ein frommer, oft umherziehender muslimischer Mönch." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Wie verhinderten die beiden, dass das Schiff nachts zurücksegelte?",
+      "options": [
+        "Sie banden Sprüche auf Pergament um die Segel",
+        "Sie warfen den Anker aus",
+        "Sie schnitten die Segel ab",
+        "Sie hielten die ganze Nacht Wache am Steuer"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Warum war die Mannschaft verflucht?",
+      "options": [
+        "Der Kapitän hatte einen Derwisch getötet",
+        "Sie hatten einen Schatz gestohlen",
+        "Sie waren vor einem Sturm geflohen",
+        "Sie hatten Muley betrogen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Der Zauber löste sich, als die Toten die Erde berührten.",
+      "answer": true
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Ibrahim sagt den Spruch seines Großvaters her.",
+        "Die beiden erreichen eine indische Stadt.",
+        "Muley schüttet Erde auf das Haupt des Kapitäns.",
+        "Der Erzähler kehrt reich nach Balsora zurück."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Wie hieß der weise Mann, der sich auf Zauberei verstand?",
+      "options": ["Muley", "Selim", "Hassan", "Omar"],
+      "answer": 0
+    }
+  ]
+}

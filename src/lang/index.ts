@@ -1,7 +1,8 @@
+import { de } from './de';
 import { tr } from './tr';
 import type { LanguagePack } from './types';
 
-export const languagePacks = { tr } satisfies Record<string, LanguagePack>;
+export const languagePacks = { tr, de } satisfies Record<string, LanguagePack>;
 
 export type LangCode = keyof typeof languagePacks;
 

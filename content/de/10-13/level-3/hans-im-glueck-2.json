@@ -1,0 +1,63 @@
+{
+  "id": "de-10-13-l3-hans-im-glueck-2",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 3,
+  "title": "Hans im Glück (2): Gans und Stein",
+  "author": "Brüder Grimm",
+  "source": "Hans im Glück (Kinder- und Hausmärchen, 1857), zweiter Teil. Leicht gekürzt, Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Hans_im_Glück_(1857)",
+  "simplified": true,
+  "body": "Hans zog weiter und dachte, wie ihm doch alles nach Wunsch ginge. Da gesellte sich ein Bursche zu ihm, der trug eine schöne weiße Gans unter dem Arm. Hans fing an, von seinem Glück zu erzählen und wie er immer so vorteilhaft getauscht hätte. Der Bursche erzählte, dass er die Gans zu einem Tauffest brächte. „Hebt einmal“, sagte er, „wie schwer sie ist!“ – „Ja“, sprach Hans, „die hat ihr Gewicht, aber mein Schwein ist auch nicht leicht.“\n\nIndessen sah sich der Bursche nach allen Seiten ganz bedenklich um und schüttelte den Kopf. „Hört“, fing er an, „mit Eurem Schwein mag es nicht ganz richtig sein. In dem Dorf, durch das ich gekommen bin, ist dem Bürgermeister eben eins aus dem Stall gestohlen worden. Ich fürchte, Ihr habt es da in der Hand. Wenn sie Euch mit dem Schwein erwischen, steckt man Euch ins finstere Loch.“ Dem guten Hans wurde angst und bange. „Ach Gott“, sprach er, „helft mir aus der Not! Nehmt mein Schwein und lasst mir Eure Gans.“ Der Bursche nahm das Seil und trieb das Schwein schnell auf einen Seitenweg fort. Der gute Hans aber ging mit der Gans unter dem Arm der Heimat zu. „Wenn ich es recht überlege“, sprach er mit sich selbst, „habe ich noch Vorteil bei dem Tausch: erst den guten Braten und dann die schönen weißen Federn, die lasse ich mir in mein Kopfkissen stopfen. Was wird meine Mutter für eine Freude haben!“\n\nAls er durch das letzte Dorf kam, stand da ein Scherenschleifer mit seinem Karren. Sein Rad schnurrte, und er sang dazu. Hans blieb stehen und sprach: „Euch geht es wohl gut, weil Ihr so lustig bei Eurem Schleifen seid.“ – „Ja“, antwortete der Scherenschleifer, „ein rechter Schleifer ist ein Mann, der, so oft er in die Tasche greift, auch Geld darin findet. Aber wo habt Ihr die schöne Gans gekauft?“ – „Die habe ich für mein Schwein eingetauscht.“ – „Und das Schwein?“ – „Das habe ich für eine Kuh bekommen.“ – „Und die Kuh?“ – „Die habe ich für ein Pferd bekommen.“ – „Und das Pferd?“ – „Dafür habe ich einen Klumpen Gold gegeben, so groß wie mein Kopf.“ – „Und das Gold?“ – „Ei, das war mein Lohn für sieben Jahre Dienst.“\n\n„Ihr müsst ein Schleifer werden wie ich“, sprach der Mann. „Dazu gehört nichts als ein Wetzstein. Da habe ich einen, der ist zwar ein wenig schadhaft, dafür sollt Ihr mir aber auch nichts weiter als Eure Gans geben.“ – „Wie könnt Ihr noch fragen“, antwortete Hans, „ich werde ja zum glücklichsten Menschen auf Erden!“ Er reichte ihm die Gans hin und nahm den Wetzstein. Dazu gab ihm der Schleifer noch einen gewöhnlichen, schweren Feldstein.\n\nHans lud die Steine auf und ging mit vergnügtem Herzen weiter. Doch bald wurde er müde, auch plagte ihn der Hunger, und die Steine drückten ihn ganz erbärmlich. Wie eine Schnecke kam er zu einem Brunnen, wollte da ruhen und trinken. Damit er die Steine nicht beschädigte, legte er sie vorsichtig auf den Rand des Brunnens. Als er sich zum Trinken bückte, stieß er ein klein wenig an, und beide Steine plumpsten hinab. Hans sprang vor Freude auf, denn nun war er von den schweren Steinen befreit. „So glücklich wie ich“, rief er aus, „gibt es keinen Menschen unter der Sonne!“ Mit leichtem Herzen und frei von aller Last sprang er nun fort, bis er daheim bei seiner Mutter war.",
+  "glossary": [
+    { "word": "vorteilhaft", "meaning": "So, dass man einen Nutzen oder Gewinn davon hat." },
+    { "word": "bedenklich", "meaning": "Besorgt, so als ob etwas nicht stimmt." },
+    { "word": "Scherenschleifer", "meaning": "Ein Handwerker, der Scheren und Messer wieder scharf macht." },
+    { "word": "Wetzstein", "meaning": "Ein Stein, mit dem man Klingen schärft." },
+    { "word": "schadhaft", "meaning": "Beschädigt, nicht mehr ganz in Ordnung." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Womit machte der Bursche Hans Angst?",
+      "options": ["Das Schwein sei vielleicht gestohlen", "Die Gans sei krank", "Ein Räuber sei in der Nähe", "Seine Mutter sei umgezogen"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Hans war traurig, als die Steine in den Brunnen fielen.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Hans tauscht sein Schwein gegen eine Gans.",
+        "Hans trifft einen singenden Scherenschleifer.",
+        "Hans bekommt einen Wetzstein und einen Feldstein.",
+        "Die Steine fallen in den Brunnen."
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Was zeigt die Geschichte über Hans?",
+      "options": [
+        "Er ist mit wenig zufrieden und glücklich",
+        "Er ist ein sehr kluger Händler",
+        "Er möchte unbedingt reich werden",
+        "Er traut niemandem"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Was wollte Hans mit den Federn der Gans füllen?",
+      "options": ["Kopfkissen", "Bettdecke", "Mantel", "Sessel"],
+      "answer": 0
+    }
+  ]
+}

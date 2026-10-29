@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l2-gespensterschiff-1",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 2,
+  "title": "Das Gespensterschiff (1)",
+  "author": "Wilhelm Hauff",
+  "source": "Die Geschichte von dem Gespensterschiff (Märchen-Almanach auf das Jahr 1826), erster Teil. Originalschreibweise, gekürzt. Wikisource: https://de.wikisource.org/wiki/Die_Geschichte_von_dem_Gespensterschiff",
+  "simplified": false,
+  "body": "Mein Vater hatte einen kleinen Laden in Balsora. Er war weder arm noch reich und war einer von jenen Leuten, die nicht gerne etwas wagen, aus Furcht, das Wenige zu verlieren, das sie haben. Gerade als ich achtzehn Jahr alt war, als er die erste größere Spekulation machte, starb er, wahrscheinlich aus Gram, tausend Goldstücke dem Meere anvertraut zu haben. Meinen jugendlichen Mut konnte aber dieser Unfall nicht beugen. Ich machte alles vollends zu Geld, was mein Vater hinterlassen hatte, und zog aus, um in der Fremde mein Glück zu probieren, nur von einem alten Diener meines Vaters begleitet, der sich aus alter Anhänglichkeit nicht von mir und meinem Schicksal trennen wollte.\n\nIm Hafen von Balsora schifften wir uns mit günstigem Winde ein. Das Schiff war nach Indien bestimmt. Wir waren schon fünfzehn Tage gefahren, als uns der Kapitän einen Sturm verkündete. Die Nacht war hell und kalt. Auf einmal schwebte ein Schiff, das wir vorher nicht gesehen hatten, dicht an dem unsrigen vorbei. Wildes Jauchzen und Geschrei erscholl aus dem Verdeck herüber. Aber der Kapitän an meiner Seite wurde blaß wie der Tod. „Mein Schiff ist verloren“, rief er, „dort segelt der Tod!“\n\nZusehends brauste der Sturm auf, und ehe eine Stunde verging, krachte das Schiff und blieb sitzen. Die Boote wurden ausgesetzt, und kaum hatten sich die letzten Matrosen gerettet, so versank das Schiff vor unsern Augen. Mit dem ersten Blick der Morgenröte faßte der Wind das Boot, in welchem wir saßen, und stürzte es um. Als ich aufwachte, befand ich mich in den Armen meines alten, treuen Dieners, der sich auf das umgeschlagene Boot gerettet und mich nachgezogen hatte. Nicht weit von uns entdeckten wir ein anderes Schiff, auf das die Wellen uns hintrieben. Es war dasselbe, das in der Nacht an uns vorbeifuhr.\n\nAm Vorderteil des Schiffes hing ein langes Tau herab. Da klimmten wir hinauf, ich als der jüngste voran. Aber Entsetzen! Zwanzig bis dreißig Leichname in türkischen Kleidern lagen auf dem Boden, am mittleren Mastbaum stand ein Mann, reich gekleidet, den Säbel in der Hand, aber das Gesicht war blaß und verzerrt, durch die Stirne ging ein großer Nagel, der ihn an den Mastbaum heftete; auch er war tot. Weit und breit nichts Lebendiges als wir und das Weltmeer. Im Schiffsraum fanden wir herrliche Vorräte in Seide, Perlen und Zucker. Wir beschlossen, die Toten über Bord zu werfen. Aber wie schauerlich ward uns zu Mut, als wir fanden, daß sich keiner aus seiner Lage bewegen ließ. Wie festgebannt lagen sie am Boden.\n\nAls es Nacht wurde, erlaubte ich dem alten Ibrahim, sich schlafen zu legen; ich selbst wollte auf dem Verdeck wachen. Als es wohl um die elfte Stunde war, überfiel mich ein unwiderstehlicher Schlaf. Auf einmal glaubte ich Stimmen und Männertritte auf dem Verdeck zu hören. Ich wollte mich aufrichten, aber eine unsichtbare Gewalt hielt meine Glieder gefesselt. Es war mir, als wenn ein fröhliches Schiffsvolk auf dem Verdeck sich umhertriebe; ich hörte Taue und Segel auf- und abziehen und zuletzt ein Geräusch von Waffen. Als ich erwachte, stand die Sonne schon hoch. Unbeweglich lagen die Toten, unbeweglich war der Kapitano an den Mastbaum geheftet. Ich lachte über meinen Traum. Doch mein Alter saß ganz nachdenklich in der Kajüte. „O Herr!“ rief er aus, „ich habe in der Nacht denselben Mann, der oben am Mast angenagelt ist, an jenem Tisch dort sitzen sehen, singend und trinkend.“",
+  "glossary": [
+    { "word": "Spekulation", "meaning": "Ein riskantes Geschäft in der Hoffnung auf großen Gewinn." },
+    { "word": "Gram", "meaning": "Tiefer Kummer, Sorge." },
+    { "word": "Anhänglichkeit", "meaning": "Treue Verbundenheit." },
+    { "word": "Verdeck", "meaning": "Das oberste Deck eines Schiffes." },
+    { "word": "klimmten", "meaning": "Klimmen: mühsam hinaufklettern." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Wie reagierte der Kapitän, als das fremde Schiff vorbeifuhr?",
+      "options": [
+        "Er erschrak tödlich und hielt sein Schiff für verloren",
+        "Er wollte das fremde Schiff angreifen",
+        "Er freute sich über die Gesellschaft",
+        "Er befahl, sofort umzukehren"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Die beiden Schiffbrüchigen konnten die Toten über Bord werfen.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Welche Charaktereigenschaft unterscheidet den Erzähler von seinem Vater?",
+      "options": [
+        "Er ist bereit, etwas zu wagen",
+        "Er ist besonders sparsam",
+        "Er fürchtet sich vor dem Meer",
+        "Er bleibt lieber zu Hause"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Ein fremdes Schiff fährt in der Nacht vorbei.",
+        "Das Schiff des Erzählers versinkt im Sturm.",
+        "Die beiden klettern an einem Tau auf das fremde Schiff.",
+        "In der Nacht hört der Erzähler Stimmen auf dem Verdeck."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Womit war der tote Mann an den Mastbaum geheftet?",
+      "options": ["Nagel", "Seil", "Kette", "Speer"],
+      "answer": 0
+    }
+  ]
+}

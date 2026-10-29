@@ -1,0 +1,53 @@
+{
+  "id": "de-10-13-l2-bremer-stadtmusikanten-1",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 2,
+  "title": "Die Bremer Stadtmusikanten (1): Vier Freunde",
+  "author": "Brüder Grimm",
+  "source": "Die Bremer Stadtmusikanten (Kinder- und Hausmärchen, 1857), erster Teil. Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Die_Bremer_Stadtmusikanten_(1857)",
+  "simplified": true,
+  "body": "Es hatte ein Mann einen Esel, der schon lange Jahre die Säcke unverdrossen zur Mühle getragen hatte. Nun aber gingen seine Kräfte zu Ende, sodass er zur Arbeit immer untauglicher wurde. Da wollte der Herr ihm kein Futter mehr geben. Aber der Esel merkte, dass kein guter Wind wehte, lief fort und machte sich auf den Weg nach Bremen: Dort, meinte er, könnte er ja Stadtmusikant werden.\n\nAls er ein Weilchen gegangen war, fand er einen Jagdhund auf dem Weg liegen, der japste wie einer, der sich müde gelaufen hat. „Nun, was japst du so, Packan?“, fragte der Esel. „Ach“, sagte der Hund, „weil ich alt bin und jeden Tag schwächer werde und auf der Jagd nicht mehr mitkann, wollte mein Herr mich loswerden. Da bin ich davongelaufen. Aber womit soll ich nun mein Brot verdienen?“ – „Weißt du was“, sprach der Esel, „ich gehe nach Bremen und werde dort Stadtmusikant. Geh mit und lass dich auch bei der Musik annehmen. Ich spiele die Laute, und du schlägst die Pauken.“ Der Hund war einverstanden, und sie gingen weiter.\n\nEs dauerte nicht lange, da saß eine Katze am Weg und machte ein Gesicht wie drei Tage Regenwetter. „Nun, was ist dir in die Quere gekommen, alter Bartputzer?“, sprach der Esel. „Wer kann da lustig sein“, antwortete die Katze, „weil ich nun alt werde, meine Zähne stumpf werden und ich lieber hinter dem Ofen sitze und schnurre, als nach Mäusen zu jagen, will meine Frau mich nicht mehr behalten. Ich bin zwar fortgelaufen, aber nun ist guter Rat teuer: Wo soll ich hin?“ – „Geh mit uns nach Bremen, du verstehst dich doch auf die Nachtmusik, da kannst du Stadtmusikant werden.“ Die Katze hielt das für gut und ging mit.\n\nDarauf kamen die drei an einem Hof vorbei. Da saß auf dem Tor der Haushahn und schrie aus Leibeskräften. „Du schreist einem durch Mark und Bein“, sprach der Esel, „was hast du vor?“ – „Morgen kommen Gäste“, sprach der Hahn, „und die Hausfrau hat der Köchin gesagt, sie will mich morgen in der Suppe essen. Nun schrei ich aus vollem Hals, solange ich noch kann.“ – „Ei was, du Rotkopf“, sagte der Esel, „zieh lieber mit uns fort, wir gehen nach Bremen. Etwas Besseres als den Tod findest du überall. Du hast eine gute Stimme, und wenn wir zusammen musizieren, so muss es eine Art haben.“ Der Hahn ließ sich den Vorschlag gefallen, und sie gingen alle vier zusammen fort.",
+  "glossary": [
+    { "word": "unverdrossen", "meaning": "Ohne zu klagen, geduldig und fleißig." },
+    { "word": "Stadtmusikant", "meaning": "Ein Musiker, der im Dienst einer Stadt spielt." },
+    { "word": "Laute", "meaning": "Ein altes Saiteninstrument, ähnlich einer Gitarre." },
+    { "word": "Bartputzer", "meaning": "Scherzhafter Name für die Katze, weil sie sich ständig den Bart putzt." },
+    { "word": "Leibeskräften", "meaning": "Aus Leibeskräften: so stark man nur kann." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Was wollte der Esel in Bremen werden?",
+      "options": ["Stadtmusikant", "Müller", "Bäcker", "Wächter"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "ordering",
+      "prompt": "In welcher Reihenfolge trifft der Esel die Tiere?",
+      "items": ["Hund", "Katze", "Hahn"]
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Die Katze jagt lieber Mäuse, als hinter dem Ofen zu sitzen.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Warum schrie der Hahn aus vollem Hals?",
+      "options": ["Er sollte in der Suppe landen", "Er hatte sich verlaufen", "Er hatte Hunger", "Der Hund hatte ihn erschreckt"],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Welches Instrument sollte der Hund spielen?",
+      "options": ["Pauken", "Flöte", "Geige", "Trompete"],
+      "answer": 0
+    }
+  ]
+}

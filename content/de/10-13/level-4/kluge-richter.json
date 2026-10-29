@@ -1,0 +1,59 @@
+{
+  "id": "de-10-13-l4-kluge-richter",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 4,
+  "title": "Der kluge Richter",
+  "author": "Johann Peter Hebel",
+  "source": "Der kluge Richter (Schatzkästlein des rheinischen Hausfreundes, 1811). Rechtschreibung modernisiert, leicht vereinfacht. Wikisource: https://de.wikisource.org/wiki/Der_kluge_Richter",
+  "simplified": true,
+  "body": "Dass nicht alles so verkehrt ist, was im Morgenland geschieht, das haben wir schon einmal gehört. Auch folgende Begebenheit soll sich dort zugetragen haben.\n\nEin reicher Mann hatte eine beträchtliche Geldsumme, die in ein Tuch eingenäht war, aus Unvorsichtigkeit verloren. Er machte daher seinen Verlust bekannt und bot, wie man es zu tun pflegt, dem ehrlichen Finder eine Belohnung an, und zwar hundert Taler. Da kam bald ein guter und ehrlicher Mann dahergegangen und sprach: „Dein Geld habe ich gefunden. Das wird es wohl sein! So nimm dein Eigentum zurück!“ So sprach er mit dem heiteren Blick eines ehrlichen Mannes und eines guten Gewissens, und das war schön.\n\nDer andere machte auch ein fröhliches Gesicht, aber nur, weil er sein Geld wiederhatte, das er schon verloren glaubte. Denn wie es um seine Ehrlichkeit stand, das wird sich bald zeigen. Er zählte das Geld und dachte unterdessen schnell nach, wie er den treuen Finder um seine versprochene Belohnung bringen könnte. „Guter Freund“, sprach er hierauf, „es waren eigentlich achthundert Taler in dem Tuch eingenäht. Ich finde aber nur noch siebenhundert. Ihr werdet also wohl eine Naht aufgetrennt und Eure hundert Taler Belohnung schon herausgenommen haben. Da habt Ihr wohl daran getan. Ich danke Euch.“\n\nDas war nicht schön. Aber wir sind auch noch nicht am Ende. Ehrlich währt am längsten, und Unrecht schlägt seinen eigenen Herrn. Dem ehrlichen Finder ging es weniger um die hundert Taler als um seinen guten Ruf. Er versicherte, dass er das Päckchen so gefunden habe, wie er es bringe, und es so bringe, wie er es gefunden habe. Am Ende kamen sie vor den Richter. Beide bestanden auch hier noch auf ihrer Behauptung: der eine, dass achthundert Taler eingenäht gewesen seien, der andere, dass er von dem Gefundenen nichts genommen und das Päckchen nicht beschädigt habe. Da war guter Rat teuer.\n\nAber der kluge Richter, der die Ehrlichkeit des einen und die schlechte Gesinnung des anderen im Voraus zu kennen schien, packte die Sache so an: Er ließ sich von beiden ihre Aussage feierlich versichern und sprach dann folgendes Urteil: „Wenn der eine von euch achthundert Taler verloren, der andere aber nur ein Päckchen mit siebenhundert Talern gefunden hat, so kann das Geld des Letzteren nicht dasselbe sein, auf das der Erstere ein Recht hat. Du, ehrlicher Freund, nimmst also das Geld, das du gefunden hast, wieder zurück und bewahrst es gut auf, bis der kommt, der nur siebenhundert Taler verloren hat. Und dir da weiß ich keinen anderen Rat, als dass du dich geduldest, bis derjenige sich meldet, der deine achthundert Taler findet.“ So sprach der Richter, und dabei blieb es.",
+  "glossary": [
+    { "word": "Morgenland", "meaning": "Alter Name für die Länder im Osten, den Orient." },
+    { "word": "beträchtliche", "meaning": "Beträchtlich: ziemlich groß." },
+    { "word": "Taler", "meaning": "Eine alte silberne Münze." },
+    { "word": "Gesinnung", "meaning": "Die Art, wie jemand denkt und was er will." },
+    { "word": "geduldest", "meaning": "Sich gedulden: geduldig warten." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Wie viel Belohnung hatte der reiche Mann versprochen?",
+      "options": ["Hundert Taler", "Siebenhundert Taler", "Achthundert Taler", "Zehn Taler"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Finder hatte wirklich hundert Taler aus dem Tuch genommen.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Warum behauptete der reiche Mann, es seien achthundert Taler gewesen?",
+      "options": [
+        "Er wollte die Belohnung nicht bezahlen",
+        "Er hatte sich verzählt",
+        "Er wollte dem Finder mehr schenken",
+        "Der Richter hatte es ihm geraten"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Wer bekam am Ende das Geld?",
+      "options": ["Der ehrliche Finder", "Der reiche Mann", "Der Richter", "Niemand, es wurde verbrannt"],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Worin war das Geld eingenäht?",
+      "options": ["Tuch", "Leder", "Mantel", "Kissen"],
+      "answer": 0
+    }
+  ]
+}

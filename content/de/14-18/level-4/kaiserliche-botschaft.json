@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l4-kaiserliche-botschaft",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 4,
+  "title": "Eine kaiserliche Botschaft",
+  "author": "Franz Kafka",
+  "source": "Eine kaiserliche Botschaft (Selbstwehr, Prag 1919). Originalschreibweise, vollständig. Wikisource: https://de.wikisource.org/wiki/Eine_kaiserliche_Botschaft",
+  "simplified": false,
+  "body": "Der Kaiser – so heißt es – hat Dir, dem Einzelnen, dem jämmerlichen Untertanen, dem winzig vor der kaiserlichen Sonne in die fernste Ferne geflüchteten Schatten, gerade Dir hat der Kaiser von seinem Sterbebett aus eine Botschaft gesendet. Den Boten hat er beim Bett niederknieen lassen und ihm die Botschaft ins Ohr zugeflüstert; so sehr war ihm an ihr gelegen, daß er sich sie noch ins Ohr wiedersagen ließ. Durch Kopfnicken hat er die Richtigkeit des Gesagten bestätigt. Und vor der ganzen Zuschauerschaft seines Todes – alle hindernden Wände werden niedergebrochen und auf den weit und hoch sich schwingenden Freitreppen stehen im Ring die Großen des Reichs – vor allen diesen hat er den Boten abgefertigt.\n\nDer Bote hat sich gleich auf den Weg gemacht; ein kräftiger, ein unermüdlicher Mann; einmal diesen, einmal den andern Arm vorstreckend schafft er sich Bahn durch die Menge; findet er Widerstand, zeigt er auf die Brust, wo das Zeichen der Sonne ist; er kommt auch leicht vorwärts, wie kein anderer. Aber die Menge ist so groß; ihre Wohnstätten nehmen kein Ende. Oeffnete sich freies Feld, wie würde er fliegen und bald wohl hörtest Du das herrliche Schlagen seiner Fäuste an Deiner Tür.\n\nAber statt dessen, wie nutzlos müht er sich ab; immer noch zwängt er sich durch die Gemächer des innersten Palastes; niemals wird er sie überwinden; und gelänge ihm dies, nichts wäre gewonnen; die Treppen hinab müßte er sich kämpfen; und gelänge ihm dies, nichts wäre gewonnen; die Höfe wären zu durchmessen; und nach den Höfen der zweite umschließende Palast; und wieder Treppen und Höfe; und wieder ein Palast; und so weiter durch Jahrtausende; und stürzte er endlich aus dem äußersten Tor – aber niemals, niemals kann es geschehen – liegt erst die Residenzstadt vor ihm, die Mitte der Welt, hochgeschüttet voll ihres Bodensatzes. Niemand dringt hier durch und gar mit der Botschaft eines Toten. – Du aber sitzt an Deinem Fenster und erträumst sie Dir, wenn der Abend kommt.",
+  "glossary": [
+    { "word": "Untertanen", "meaning": "Untertan: ein Mensch, der einem Herrscher untersteht." },
+    { "word": "Botschaft", "meaning": "Eine wichtige Nachricht, die überbracht wird." },
+    { "word": "Freitreppen", "meaning": "Freitreppe: große, offene Treppe vor oder in einem Gebäude." },
+    { "word": "Residenzstadt", "meaning": "Die Stadt, in der ein Herrscher seinen Sitz hat." },
+    { "word": "Bodensatzes", "meaning": "Bodensatz: was sich unten absetzt; hier: Schmutz, Masse." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum erreicht die Botschaft den Empfänger nie?",
+      "options": [
+        "Der Palast und die Stadt sind endlos groß und überfüllt",
+        "Der Bote ist zu faul",
+        "Der Bote hat die Botschaft vergessen",
+        "Der Empfänger ist umgezogen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Bote wird als schwacher und müder Mann beschrieben.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Was ist das Besondere an der Erzählperspektive?",
+      "options": [
+        "Der Leser wird direkt mit „Du“ angesprochen",
+        "Der Kaiser erzählt selbst in der Ich-Form",
+        "Der Bote schreibt einen Brief",
+        "Die Geschichte wird als Dialog erzählt"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Stationen des Boten in die richtige Reihenfolge.",
+      "items": [
+        "Der Kaiser flüstert dem Boten die Botschaft ins Ohr.",
+        "Der Bote drängt sich durch die Menge im Palast.",
+        "Treppen, Höfe und weitere Paläste liegen vor ihm.",
+        "Hinter dem äußersten Tor läge erst die Residenzstadt."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Welches Zeichen trägt der Bote auf der Brust?",
+      "options": ["Sonne", "Adler", "Krone", "Mond"],
+      "answer": 0
+    }
+  ]
+}

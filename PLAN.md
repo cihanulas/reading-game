@@ -103,7 +103,10 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
 - [x] **Faz 6 – İçerik ve yayın:** Metin kütüphanesi, PWA çevrimdışı, ilerleme grafiği.
   - Her yaş grubunda her seviyede (1-5) en az 2 metin var (Türkçe, 26 dosya). Seviye başına 6 metne çıkarmak sonraki içerik turlarına bırakıldı.
   - Not: Yeni içerik dosyası eklendikten sonra `npx vitest run --clearCache` gerekir; aksi halde vitest'in fs önbelleği eski glob sonucunu kullanır.
-- [ ] **Faz 7 – Almanca** (onaydan sonra): dil paketi, arayüz çevirisi, Almanca metinler, de-DE sesli mod testi.
+- [x] **Faz 7 – Almanca** (onaydan sonra): dil paketi, arayüz çevirisi, Almanca metinler, de-DE sesli mod testi.
+  - `src/lang/de.ts` (ß→ss, th→t normalizasyonu), `src/locales/de/common.json`; arayüz dili profil diline göre değişir (`setUiLanguage`).
+  - 24 Almanca metin (de.wikisource.org, kamu malı): 10-13 için Grimm, Hebel, Hauff (Kalif Storch sadeleştirilmiş); 14-18 için Hebel (Unverhofftes Wiedersehen), Hauff (Gespensterschiff), Keller (Kleider machen Leute), Kafka (Vor dem Gesetz, Eine kaiserliche Botschaft), Kleist (Das Bettelweib von Locarno), özgün yazımla.
+  - de-DE sesli mod, birim testleriyle doğrulandı; Chrome/Edge'de mikrofonla elle denenmesi gerekiyor.
 - [ ] **Faz 8 – İngilizce:** aynı adımlar.
 
 ## 9. Doğrulama

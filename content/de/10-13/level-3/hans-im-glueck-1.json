@@ -1,0 +1,53 @@
+{
+  "id": "de-10-13-l3-hans-im-glueck-1",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 3,
+  "title": "Hans im Glück (1): Gold, Pferd und Kuh",
+  "author": "Brüder Grimm",
+  "source": "Hans im Glück (Kinder- und Hausmärchen, 1857), erster Teil. Leicht gekürzt, Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Hans_im_Glück_(1857)",
+  "simplified": true,
+  "body": "Hans hatte sieben Jahre bei seinem Herrn gedient. Da sprach er zu ihm: „Herr, meine Zeit ist herum, nun wollte ich gerne wieder heim zu meiner Mutter. Gebt mir meinen Lohn.“ Der Herr antwortete: „Du hast mir treu und ehrlich gedient. Wie der Dienst war, so soll der Lohn sein“, und gab ihm ein Stück Gold, das so groß wie Hansens Kopf war. Hans zog sein Tüchlein aus der Tasche, wickelte den Klumpen hinein, setzte ihn auf die Schulter und machte sich auf den Weg nach Hause.\n\nWie er so dahinging und immer ein Bein vor das andere setzte, kam ein Reiter vorbei, der frisch und fröhlich auf einem munteren Pferd trabte. „Ach“, sprach Hans ganz laut, „was ist das Reiten für ein schönes Ding! Da sitzt einer wie auf einem Stuhl, stößt sich an keinen Stein, spart die Schuhe und kommt fort, er weiß nicht wie.“ Der Reiter hielt an und rief: „Ei, Hans, warum läufst du auch zu Fuß?“ – „Ich muss ja wohl“, antwortete er, „ich habe einen Klumpen heimzutragen. Es ist zwar Gold, aber ich kann den Kopf dabei nicht gerade halten, und es drückt mir auf die Schulter.“ – „Weißt du was“, sagte der Reiter, „wir wollen tauschen: Ich gebe dir mein Pferd, und du gibst mir deinen Klumpen.“ – „Von Herzen gern“, sprach Hans. Der Reiter stieg ab, nahm das Gold und half Hans hinauf. „Wenn es recht schnell gehen soll“, sprach er, „musst du mit der Zunge schnalzen und hopp, hopp rufen.“\n\nHans war seelenfroh, als er so frank und frei dahinritt. Nach einem Weilchen fiel ihm ein, es sollte noch schneller gehen, und er fing an, mit der Zunge zu schnalzen und hopp, hopp zu rufen. Das Pferd setzte sich in starken Trab, und ehe Hans sich versah, war er abgeworfen und lag in einem Graben. Das Pferd wäre auch davongelaufen, wenn es nicht ein Bauer aufgehalten hätte, der eine Kuh vor sich hertrieb. Hans war verdrießlich und sprach zu dem Bauern: „Es ist ein schlechter Spaß, das Reiten. Da lob ich mir Eure Kuh! Da kann einer gemächlich hinterhergehen und hat obendrein jeden Tag seine Milch, Butter und Käse. Was gäbe ich darum, wenn ich so eine Kuh hätte!“ – „Nun“, sprach der Bauer, „wenn es Euch so große Freude macht, will ich Euch die Kuh für das Pferd geben.“ Hans willigte mit tausend Freuden ein, und der Bauer ritt eilig davon.\n\nHans trieb seine Kuh ruhig vor sich her und dachte an den glücklichen Handel. Doch die Hitze wurde drückender, je näher der Mittag kam, und Hans befand sich in einer Heide. Vor Durst klebte ihm die Zunge am Gaumen. „Jetzt will ich meine Kuh melken“, dachte er. Er band sie an einen dürren Baum und stellte seine Ledermütze unter, aber es kam kein Tropfen Milch. Und weil er sich ungeschickt anstellte, gab ihm das ungeduldige Tier mit einem Hinterfuß einen solchen Schlag vor den Kopf, dass er zu Boden taumelte.\n\nZum Glück kam gerade ein Metzger des Weges, der auf einem Schubkarren ein junges Schwein liegen hatte. Er half Hans auf und sprach: „Die Kuh gibt keine Milch mehr, das ist ein altes Tier.“ – „Ei, ei“, sprach Hans, „wer hätte das gedacht! Ja, wer so ein junges Schwein hätte!“ – „Hört, Hans“, sprach da der Metzger, „Euch zuliebe will ich tauschen und Euch das Schwein für die Kuh lassen.“ – „Gott lohne Euch Eure Freundschaft“, sprach Hans, übergab ihm die Kuh und ließ sich den Strick geben, an dem das Schweinchen gebunden war.",
+  "glossary": [
+    { "word": "seelenfroh", "meaning": "Sehr froh, glücklich bis tief ins Herz." },
+    { "word": "frank", "meaning": "Frank und frei: ganz ungezwungen, ohne Sorgen." },
+    { "word": "verdrießlich", "meaning": "Schlecht gelaunt, verärgert." },
+    { "word": "gemächlich", "meaning": "Langsam und bequem, ohne Eile." },
+    { "word": "Metzger", "meaning": "Fleischer, jemand, der Fleisch und Wurst verkauft." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Wie lange hatte Hans bei seinem Herrn gedient?",
+      "options": ["Sieben Jahre", "Drei Jahre", "Ein Jahr", "Zehn Jahre"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "ordering",
+      "prompt": "Was hatte Hans nacheinander? Bringe es in die richtige Reihenfolge.",
+      "items": ["Gold", "Pferd", "Kuh", "Schwein"]
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Die Kuh gab Hans viel frische Milch.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Warum wollte Hans das Gold loswerden?",
+      "options": ["Es war schwer und drückte auf die Schulter", "Er hatte Angst vor Dieben", "Er wollte lieber Geld", "Seine Mutter mochte kein Gold"],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Was stellte Hans beim Melken unter die Kuh?",
+      "options": ["Ledermütze", "Eimer", "Schüssel", "Kanne"],
+      "answer": 0
+    }
+  ]
+}

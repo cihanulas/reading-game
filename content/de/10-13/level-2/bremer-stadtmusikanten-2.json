@@ -1,0 +1,52 @@
+{
+  "id": "de-10-13-l2-bremer-stadtmusikanten-2",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 2,
+  "title": "Die Bremer Stadtmusikanten (2): Das Räuberhaus",
+  "author": "Brüder Grimm",
+  "source": "Die Bremer Stadtmusikanten (Kinder- und Hausmärchen, 1857), zweiter Teil. Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Die_Bremer_Stadtmusikanten_(1857)",
+  "simplified": true,
+  "body": "Die vier konnten aber die Stadt Bremen nicht an einem Tag erreichen und kamen abends in einen Wald, wo sie übernachten wollten. Der Esel und der Hund legten sich unter einen großen Baum, die Katze und der Hahn setzten sich in die Äste. Der Hahn aber flog bis in die Spitze, wo es am sichersten für ihn war. Ehe er einschlief, sah er sich noch einmal nach allen vier Winden um. Da meinte er, in der Ferne ein Fünkchen brennen zu sehen, und rief seinen Gesellen zu, es müsse nicht weit ein Haus sein, denn es scheine ein Licht. Da sprach der Esel: „So müssen wir uns aufmachen und noch hingehen, denn hier ist die Herberge schlecht.“ Der Hund meinte, ein paar Knochen mit etwas Fleisch daran täten ihm auch gut.\n\nAlso machten sie sich auf den Weg, und bald kamen sie vor ein hell erleuchtetes Räuberhaus. Der Esel, als der größte, ging ans Fenster und schaute hinein. „Was siehst du, Grauschimmel?“, fragte der Hahn. „Einen gedeckten Tisch mit schönem Essen und Trinken, und Räuber sitzen daran und lassen es sich gut gehen.“ – „Das wäre was für uns“, sprach der Hahn.\n\nDa berieten die Tiere, wie sie die Räuber hinausjagen könnten, und fanden endlich ein Mittel. Der Esel stellte sich mit den Vorderfüßen auf das Fenster, der Hund sprang auf den Rücken des Esels, die Katze kletterte auf den Hund, und endlich flog der Hahn hinauf und setzte sich der Katze auf den Kopf. Auf ein Zeichen fingen sie alle zugleich an, ihre Musik zu machen: Der Esel schrie, der Hund bellte, die Katze miaute und der Hahn krähte. Dann stürzten sie durch das Fenster in die Stube, dass die Scheiben klirrten. Die Räuber dachten, ein Gespenst käme herein, und flohen in größter Furcht in den Wald. Nun setzten sich die vier Gesellen an den Tisch und aßen, als ob sie vier Wochen hungern sollten.\n\nDann löschten sie das Licht und suchten sich eine Schlafstelle: Der Esel legte sich auf den Mist, der Hund hinter die Tür, die Katze auf den Herd bei die warme Asche, und der Hahn setzte sich auf den Balken. Als Mitternacht vorbei war, schickte der Räuberhauptmann einen Räuber zurück, um das Haus zu untersuchen. Der ging in die Küche und hielt die glühenden Augen der Katze für Kohlen. Er hielt ein Streichholz daran, damit es Feuer fange. Aber die Katze verstand keinen Spaß, sprang ihm ins Gesicht und kratzte. Da erschrak er gewaltig und wollte zur Hintertür hinaus, aber der Hund sprang auf und biss ihn ins Bein. Als er über den Hof rannte, gab ihm der Esel noch einen tüchtigen Schlag mit dem Hinterfuß, und der Hahn rief vom Balken herab: „Kikeriki!“\n\nDa lief der Räuber zu seinem Hauptmann zurück und sprach: „Ach, in dem Haus sitzt eine gräuliche Hexe, die hat mir mit ihren langen Fingern das Gesicht zerkratzt. Vor der Tür steht ein Mann mit einem Messer, der hat mich ins Bein gestochen. Auf dem Hof liegt ein schwarzes Ungetüm, das hat mit einer Holzkeule auf mich losgeschlagen. Und oben auf dem Dach, da sitzt der Richter, der rief: Bringt mir den Schelm her!“ Von nun an trauten sich die Räuber nicht mehr in das Haus. Den vier Bremer Musikanten aber gefiel es so gut darin, dass sie nicht wieder heraus wollten.",
+  "glossary": [
+    { "word": "Gesellen", "meaning": "Gefährten, Kameraden." },
+    { "word": "Grauschimmel", "meaning": "Scherzhafter Name für den grauen Esel." },
+    { "word": "Ungetüm", "meaning": "Ein riesiges, schreckliches Wesen." },
+    { "word": "Schelm", "meaning": "Früher: ein Gauner, ein schlechter Mensch." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Wer entdeckte das Licht in der Ferne?",
+      "options": ["Der Hahn", "Der Esel", "Der Hund", "Die Katze"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "ordering",
+      "prompt": "Wie stellten sich die Tiere vor dem Fenster auf? Von unten nach oben:",
+      "items": ["Esel", "Hund", "Katze", "Hahn"]
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Der Räuber hielt die Augen der Katze für glühende Kohlen.",
+      "answer": true
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Für wen hielt der Räuber den Hahn auf dem Dach?",
+      "options": ["Für einen Richter", "Für eine Hexe", "Für einen Mann mit Messer", "Für ein Ungetüm"],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Wo legte sich der Esel zum Schlafen hin?",
+      "options": ["Mist", "Stroh", "Heu", "Teppich"],
+      "answer": 0
+    }
+  ]
+}

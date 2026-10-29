@@ -1,0 +1,46 @@
+{
+  "id": "de-10-13-l1-sterntaler",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 1,
+  "title": "Die Sterntaler",
+  "author": "Brüder Grimm",
+  "source": "Die Sternthaler (Kinder- und Hausmärchen, 1857). Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Die_Sternthaler_(1857)",
+  "simplified": true,
+  "body": "Es war einmal ein kleines Mädchen, dem waren Vater und Mutter gestorben. Es war so arm, dass es kein Kämmerchen mehr hatte, darin zu wohnen, und kein Bettchen mehr, darin zu schlafen, und endlich gar nichts mehr als die Kleider auf dem Leib und ein Stückchen Brot in der Hand, das ihm ein mitleidiges Herz geschenkt hatte. Es war aber gut und fromm. Und weil es so von aller Welt verlassen war, ging es im Vertrauen auf den lieben Gott hinaus ins Feld.\n\nDa begegnete ihm ein armer Mann, der sprach: „Ach, gib mir etwas zu essen, ich bin so hungrig.“ Es reichte ihm das ganze Stückchen Brot, sagte: „Gott segne dir's“, und ging weiter. Da kam ein Kind, das jammerte und sprach: „Es friert mich so an meinem Kopf, schenk mir etwas, womit ich ihn bedecken kann.“ Da nahm es seine Mütze ab und gab sie ihm. Und als es noch eine Weile gegangen war, kam wieder ein Kind, das hatte kein Leibchen an und fror. Da gab es ihm seins. Und noch weiter bat eins um ein Röcklein, das gab es auch von sich hin.\n\nEndlich gelangte es in einen Wald, und es war schon dunkel geworden. Da kam noch eins und bat um ein Hemdlein. Das fromme Mädchen dachte: „Es ist dunkle Nacht, da sieht dich niemand, du kannst wohl dein Hemd weggeben“, und gab es auch noch hin.\n\nUnd wie es so stand und gar nichts mehr hatte, fielen auf einmal die Sterne vom Himmel, und es waren lauter harte, blanke Taler. Und obwohl es sein Hemdlein weggegeben hatte, hatte es ein neues an, und das war vom allerfeinsten Leinen. Da sammelte es die Taler hinein und war reich für sein Leben lang.",
+  "glossary": [
+    { "word": "Kämmerchen", "meaning": "Ein kleines Zimmer." },
+    { "word": "mitleidiges", "meaning": "Mitleidig: so, dass man mit anderen fühlt und ihnen helfen will." },
+    { "word": "Leibchen", "meaning": "Ein kleines Oberteil, das man früher unter der Kleidung trug." },
+    { "word": "Taler", "meaning": "Eine alte silberne Münze." },
+    { "word": "Leinen", "meaning": "Ein Stoff aus den Fasern der Flachspflanze." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Was gab das Mädchen dem armen Mann?",
+      "options": ["Sein Stückchen Brot", "Seine Mütze", "Sein Hemd", "Eine Münze"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "ordering",
+      "prompt": "Bringe in die richtige Reihenfolge, was das Mädchen verschenkte.",
+      "items": ["Brot", "Mütze", "Leibchen", "Röcklein", "Hemdlein"]
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Am Ende fielen die Sterne als Taler vom Himmel.",
+      "answer": true
+    },
+    {
+      "id": "q4",
+      "type": "wordRecall",
+      "prompt": "Wo war das Mädchen, als es das letzte Hemdlein verschenkte?",
+      "options": ["Wald", "Dorf", "Kirche", "Stall"],
+      "answer": 0
+    }
+  ]
+}

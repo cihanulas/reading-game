@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l3-kleider-machen-leute-1",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 3,
+  "title": "Kleider machen Leute (1)",
+  "author": "Gottfried Keller",
+  "source": "Kleider machen Leute (Die Leute von Seldwyla, Bd. 3, 1874), Anfang. Originalschreibweise, gekürzt. Wikisource: https://de.wikisource.org/wiki/Kleider_machen_Leute",
+  "simplified": false,
+  "body": "An einem unfreundlichen Novembertage wanderte ein armes Schneiderlein auf der Landstraße nach Goldach, einer kleinen reichen Stadt, die nur wenige Stunden von Seldwyla entfernt ist. Der Schneider trug in seiner Tasche nichts, als einen Fingerhut, welchen er, in Ermangelung irgend einer Münze, unablässig zwischen den Fingern drehte, wenn er der Kälte wegen die Hände in die Hosen steckte. Er hatte noch nichts gefrühstückt, als einige Schneeflocken, die ihm in den Mund geflogen, und er sah noch weniger ab, wo das geringste Mittagsbrod herwachsen sollte. Das Fechten fiel ihm äußerst schwer, ja schien ihm gänzlich unmöglich, weil er über seinem schwarzen Sonntagskleide, welches sein einziges war, einen weiten dunkelgrauen Radmantel trug, mit schwarzem Sammt ausgeschlagen, der seinem Träger ein edles und romantisches Aussehen verlieh, zumal dessen lange schwarze Haare und Schnurrbärtchen sorgfältig gepflegt waren und er sich blasser aber regelmäßiger Gesichtszüge erfreute.\n\nSolcher Habitus war ihm zum Bedürfniß geworden ohne daß er etwas Schlimmes oder Betrügerisches dabei im Schilde führte; aber lieber wäre er verhungert, als daß er sich von seinem Radmantel und von seiner polnischen Pelzmütze getrennt hätte. Näherte er sich einem Hause, so betrachteten ihn die Leute mit Verwunderung und Neugierde und erwarteten eher alles andere, als daß er betteln würde; so erstarben ihm, da er überdies nicht beredt war, die Worte im Munde, also daß er der Märtyrer seines Mantels war und Hunger litt, so schwarz wie des letzteren Sammetfutter.\n\nAls er bekümmert und geschwächt eine Anhöhe hinauf ging, stieß er auf einen neuen und bequemen Reisewagen, welchen ein herrschaftlicher Kutscher seinem Herrn überbrachte, einem fremden Grafen, der irgendwo in der Ostschweiz auf einem alten Schlosse saß. Der Kutscher fragte den Schneider, ob er sich nicht in den leeren Wagen setzen wolle. Denn es fing eben an zu regnen und er hatte mit einem Blicke gesehen, daß der Fußgänger sich matt und kümmerlich durch die Welt schlug. Derselbe nahm das Anerbieten dankbar und bescheiden an, worauf der Wagen rasch mit ihm von dannen rollte und in einer kleinen Stunde stattlich und donnernd durch den Thorbogen von Goldach fuhr.\n\nVor dem ersten Gasthofe, zur Waage genannt, hielt das vornehme Fuhrwerk plötzlich. Da stürzten Wirth und Leute herunter und rissen den Schlag auf; Kinder und Nachbaren umringten schon den prächtigen Wagen, und als der verdutzte Schneider endlich hervorsprang in seinem Mantel, blaß und schön und schwermüthig zur Erde blickend, schien er ihnen wenigstens ein geheimnißvoller Prinz oder Grafensohn zu sein. Mochte es nun der Mangel an Geistesgegenwart oder an Muth sein, den Haufen zu durchbrechen und einfach seines Weges zu gehen, – er that dieses nicht, sondern ließ sich willenlos in das Haus und die Treppe hinangeleiten und bemerkte seine neue seltsame Lage erst recht, als er sich in einen wohnlichen Speisesaal versetzt sah und ihm sein ehrwürdiger Mantel dienstfertig abgenommen wurde.\n\nOhne eine Antwort abzuwarten lief der Waagwirth in die Küche und rief: Nun haben wir nichts als Rindfleisch und die Hammelskeule! Den einzigen Tag, wo wir keinen Gast erwarten, muß ein solcher Herr kommen! Und der Kutscher hat ein Wappen auf den Knöpfen und der Wagen ist wie der eines Herzogs! Doch die ruhige Köchin wußte Rath: es gab Forellen, eine Rebhuhnpastete, Cotelettes, und geschwind sollte die Lise zum Zuckerbeck laufen und frisches Backwerk holen. „Es ist um die Ehre!“ rief der Wirth. „Ein großer Herr soll sagen können, er habe ein ordentliches Essen gefunden!“\n\nWährend dieser umständlichen Zubereitungen befand sich der Schneider in der peinlichsten Angst, und so heiß sich der ausgehungerte Mann vor Kurzem noch nach einiger Nahrung gesehnt hatte, so ängstlich wünschte er jetzt, der drohenden Mahlzeit zu entfliehen. Endlich faßte er sich einen Muth, nahm seinen Mantel um, setzte die Mütze auf und begab sich hinaus, um den Ausweg zu gewinnen. Doch der Wirth, der ihn im Mantel dahin gehen sah, schrie: Der Herr friert! heizet mehr ein im Saal! Und als der Schneider wieder hervorkam, begleitete er ihn mit hundert Complimenten in den verwünschten Saal zurück. Dort wurde er an den Tisch gebeten, und da der Duft der kräftigen Suppe, dergleichen er lange nicht gerochen, ihn vollends seines Willens beraubte, so ließ er sich in Gottes Namen nieder und tauchte sofort den schweren Löffel in die braungoldene Brühe.",
+  "glossary": [
+    { "word": "Fingerhut", "meaning": "Kleine Kappe, die man beim Nähen auf den Finger setzt." },
+    { "word": "Fechten", "meaning": "Hier veraltet: als wandernder Handwerker um Gaben betteln." },
+    { "word": "Radmantel", "meaning": "Weiter, runder Umhang ohne Ärmel." },
+    { "word": "Habitus", "meaning": "Äußeres Erscheinungsbild und Auftreten." },
+    { "word": "Märtyrer", "meaning": "Jemand, der für etwas leidet; hier ironisch gemeint." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum fällt es dem Schneider so schwer zu betteln?",
+      "options": [
+        "Sein vornehmer Mantel lässt ihn wie einen reichen Herrn aussehen",
+        "Er ist zu stolz, um mit Fremden zu sprechen",
+        "In Goldach ist das Betteln verboten",
+        "Er spricht die Sprache des Landes nicht"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Schneider gibt sich von Anfang an absichtlich als Graf aus.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Was bedeutet der Titel „Kleider machen Leute“ in Bezug auf diesen Abschnitt?",
+      "options": [
+        "Die Menschen beurteilen den Schneider nach seiner Kleidung",
+        "Der Schneider näht Kleider für die Leute von Goldach",
+        "Die Leute von Goldach tragen besonders teure Kleider",
+        "Ohne Kleider kann man nicht reisen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Der Schneider wandert hungrig nach Goldach.",
+        "Ein Kutscher lässt ihn in den leeren Reisewagen steigen.",
+        "Der Wagen hält vor dem Gasthof zur Waage.",
+        "Der Schneider versucht vergeblich, der Mahlzeit zu entfliehen."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Was trug der Schneider als einzigen Besitz in der Tasche?",
+      "options": ["Fingerhut", "Nadel", "Schere", "Garnrolle"],
+      "answer": 0
+    }
+  ]
+}

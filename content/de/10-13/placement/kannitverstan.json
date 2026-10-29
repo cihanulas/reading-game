@@ -1,0 +1,57 @@
+{
+  "id": "de-10-13-placement-kannitverstan",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 0,
+  "title": "Kannitverstan",
+  "author": "Johann Peter Hebel",
+  "source": "Kannitverstan (Schatzkästlein des rheinischen Hausfreundes, 1811). Gekürzt, Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Kannitverstan",
+  "simplified": true,
+  "body": "Ein deutscher Handwerksbursche kam auf seiner Wanderschaft nach Amsterdam, in die große und reiche Handelsstadt voll prächtiger Häuser, wogender Schiffe und geschäftiger Menschen. Da fiel ihm sogleich ein großes und schönes Haus in die Augen, wie er auf seiner ganzen Reise von Tuttlingen bis nach Amsterdam noch keines gesehen hatte. Lange betrachtete er mit Verwunderung das kostbare Gebäude, die sechs Kamine auf dem Dach und die hohen Fenster, größer als daheim die Tür an Vaters Haus. Endlich sprach er einen Vorübergehenden an: „Guter Freund, könnt Ihr mir nicht sagen, wie der Herr heißt, dem dieses wunderschöne Haus mit den Fenstern voll Tulpen gehört?“\n\nDer Mann aber verstand von der deutschen Sprache genau so viel wie der Fragende von der holländischen, nämlich nichts. Er sagte kurz: „Kannitverstan“, und eilte vorüber. Das war Holländisch und heißt auf Deutsch: „Ich kann Euch nicht verstehen.“ Aber der gute Fremde glaubte, es sei der Name des Mannes. Das muss ein steinreicher Mann sein, der Herr Kannitverstan, dachte er und ging weiter.\n\nAm Hafen stand Schiff an Schiff und Mast an Mast. Ein großes Schiff war gerade aus Ostindien angekommen und wurde ausgeladen. Ganze Reihen von Kisten und Ballen standen schon am Land, und immer noch wurden Fässer voll Zucker und Kaffee, voll Reis und Pfeffer herausgerollt. Endlich fragte er einen Träger, wie der glückliche Mann heiße, dem das Meer all diese Waren bringe. „Kannitverstan“, war die Antwort. Da dachte er: Kein Wunder! Wem das Meer solche Reichtümer ans Land schwemmt, der kann leicht solche Häuser bauen. Traurig ging er zurück und dachte, was für ein armer Mensch er doch sei unter so vielen reichen Leuten.\n\nDa kam er um eine Ecke und sah einen großen Trauerzug. Vier schwarz verhüllte Pferde zogen langsam einen schwarzen Wagen, und ein langer Zug von Freunden in schwarzen Mänteln folgte stumm. In der Ferne läutete ein einsames Glöcklein. Der Fremde nahm den Hut in die Hände und blieb still stehen. Dann fragte er den Letzten im Zug: „Das muss wohl ein guter Freund von Euch gewesen sein, dass Ihr so betrübt mitgeht.“ „Kannitverstan!“, war die Antwort.\n\nDa fielen unserem Wanderer ein paar große Tränen aus den Augen, und es wurde ihm auf einmal schwer und wieder leicht ums Herz. „Armer Kannitverstan“, rief er, „was hast du nun von all deinem Reichtum? Dasselbe, was ich einmal von meiner Armut bekomme.“ Danach aß er in einer Herberge mit gutem Appetit ein Stück Käse. Und wenn es ihm wieder einmal schwerfiel, dass so viele Leute reich waren und er so arm, dann dachte er an den Herrn Kannitverstan in Amsterdam, an sein großes Haus, an sein reiches Schiff und an sein enges Grab.",
+  "glossary": [
+    { "word": "Handwerksbursche", "meaning": "Ein junger Handwerker, der früher von Stadt zu Stadt wanderte, um zu lernen und zu arbeiten." },
+    { "word": "Wanderschaft", "meaning": "Eine lange Reise zu Fuß, besonders von jungen Handwerkern." },
+    { "word": "Ballen", "meaning": "Fest zusammengeschnürtes Paket aus Stoff, Baumwolle oder anderen Waren." },
+    { "word": "betrübt", "meaning": "Traurig." },
+    { "word": "Herberge", "meaning": "Ein einfaches Gasthaus, in dem Reisende essen und schlafen." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Was bedeutet „Kannitverstan“ auf Deutsch?",
+      "options": ["Ich kann Euch nicht verstehen", "Das ist mein Haus", "Ich bin sehr reich", "Guten Tag, Freund"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Handwerksbursche glaubte, Kannitverstan sei der Name eines reichen Mannes.",
+      "answer": true
+    },
+    {
+      "id": "q3",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Er fragt nach dem Besitzer eines schönen Hauses.",
+        "Er fragt am Hafen, wem die Waren gehören.",
+        "Er sieht einen Trauerzug.",
+        "Er isst in einer Herberge ein Stück Käse."
+      ]
+    },
+    {
+      "id": "q4",
+      "type": "trueFalse",
+      "prompt": "Am Ende ist der Handwerksbursche noch trauriger über seine Armut als vorher.",
+      "answer": false
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Welche Blumen standen in den Fenstern des schönen Hauses?",
+      "options": ["Tulpen", "Rosen", "Veilchen", "Nelken"],
+      "answer": 0
+    }
+  ]
+}

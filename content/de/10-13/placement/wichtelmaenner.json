@@ -1,0 +1,53 @@
+{
+  "id": "de-10-13-placement-wichtelmaenner",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 0,
+  "title": "Die Wichtelmänner",
+  "author": "Brüder Grimm",
+  "source": "Die Wichtelmänner, Erstes Märchen (Kinder- und Hausmärchen, 1857). Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Die_Wichtelmänner_(1857)",
+  "simplified": true,
+  "body": "Es war ein Schuster ohne seine Schuld so arm geworden, dass ihm endlich nichts mehr übrig blieb als Leder zu einem einzigen Paar Schuhe. Nun schnitt er am Abend die Schuhe zu, die wollte er am nächsten Morgen in Arbeit nehmen. Und weil er ein gutes Gewissen hatte, legte er sich ruhig zu Bett und schlief ein. Morgens, als er sich zur Arbeit niedersetzen wollte, standen die beiden Schuhe ganz fertig auf seinem Tisch. Er wunderte sich und wusste nicht, was er dazu sagen sollte. Er nahm die Schuhe in die Hand, um sie näher zu betrachten: Sie waren so sauber gearbeitet, dass kein Stich daran falsch war, gerade als ob es ein Meisterstück sein sollte.\n\nBald darauf trat auch schon ein Käufer ein, und weil ihm die Schuhe so gut gefielen, bezahlte er mehr als gewöhnlich dafür. Der Schuster konnte von dem Geld Leder zu zwei Paar Schuhen kaufen. Er schnitt sie abends zu und wollte am nächsten Morgen mit frischem Mut an die Arbeit gehen. Aber er brauchte es nicht, denn als er aufstand, waren sie schon fertig. Bald hatte er Leder zu vier Paar Schuhen, und auch die fand er am Morgen fertig. So ging es immer fort: Was er abends zuschnitt, war am Morgen verarbeitet, und bald war er ein wohlhabender Mann.\n\nNun geschah es eines Abends nicht lange vor Weihnachten, dass der Mann zu seiner Frau sprach: „Wie wäre es, wenn wir diese Nacht aufblieben, um zu sehen, wer uns so hilft?“ Die Frau war einverstanden und steckte ein Licht an. Dann versteckten sie sich in den Stubenecken hinter den Kleidern, die dort hingen, und gaben acht. Als es Mitternacht war, kamen zwei kleine, niedliche, nackte Männlein, setzten sich an den Tisch des Schusters und fingen an, mit ihren Fingerlein so flink zu stechen, zu nähen und zu klopfen, dass der Schuster vor Verwunderung die Augen nicht abwenden konnte. Sie hörten nicht auf, bis alles fertig auf dem Tisch stand. Dann sprangen sie schnell fort.\n\nAm anderen Morgen sprach die Frau: „Die kleinen Männer haben uns reich gemacht. Sie haben nichts am Leib und müssen frieren. Ich will ihnen Hemdlein, Rock, Wams und Höslein nähen und jedem ein Paar Strümpfe stricken. Mach du jedem ein Paar Schühlein dazu.“ Am Abend legten sie die Geschenke auf den Tisch und versteckten sich. Um Mitternacht kamen die Männlein, fanden die niedlichen Kleider, wunderten sich erst und freuten sich dann gewaltig. Schnell zogen sie sich an und sangen:\n\n„Sind wir nicht Knaben glatt und fein? Was sollen wir länger Schuster sein!“\n\nDann hüpften und tanzten sie, sprangen über Stühle und Bänke und tanzten endlich zur Tür hinaus. Von nun an kamen sie nicht wieder. Dem Schuster aber ging es gut, solange er lebte, und es glückte ihm alles, was er unternahm.",
+  "glossary": [
+    { "word": "Schuster", "meaning": "Ein Handwerker, der Schuhe macht und repariert." },
+    { "word": "Gewissen", "meaning": "Das innere Gefühl dafür, ob man richtig oder falsch gehandelt hat." },
+    { "word": "Meisterstück", "meaning": "Eine besonders gut gemachte Arbeit." },
+    { "word": "wohlhabender", "meaning": "Wohlhabend: ziemlich reich, mit genug Geld." },
+    { "word": "Wams", "meaning": "Eine alte Art von Jacke." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Was hatte der Schuster am Anfang noch übrig?",
+      "options": ["Leder für ein einziges Paar Schuhe", "Einen Sack voll Gold", "Zehn Paar fertige Schuhe", "Nur ein Stück Brot"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Schuster und seine Frau versteckten sich in der Nacht, um zu sehen, wer ihnen hilft.",
+      "answer": true
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Wie bedankten sich der Schuster und seine Frau bei den Männlein?",
+      "options": ["Sie nähten ihnen Kleider und Schuhe", "Sie gaben ihnen Geld", "Sie kochten ihnen ein Festessen", "Sie bauten ihnen ein Haus"],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "trueFalse",
+      "prompt": "Nach dem Geschenk kamen die Männlein jede Nacht wieder.",
+      "answer": false
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Vor welchem Fest geschah es, dass der Schuster aufbleiben wollte?",
+      "options": ["Weihnachten", "Ostern", "Pfingsten", "Neujahr"],
+      "answer": 0
+    }
+  ]
+}

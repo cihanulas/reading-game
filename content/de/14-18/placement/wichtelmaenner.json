@@ -1,0 +1,64 @@
+{
+  "id": "de-14-18-placement-wichtelmaenner",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 0,
+  "title": "Die Wichtelmänner",
+  "author": "Brüder Grimm",
+  "source": "Die Wichtelmänner, Erstes Märchen (Kinder- und Haus-Märchen, 7. Auflage 1857). Originalschreibweise. Wikisource: https://de.wikisource.org/wiki/Die_Wichtelmänner_(1857)",
+  "simplified": false,
+  "body": "Es war ein Schuster ohne seine Schuld so arm geworden, daß ihm endlich nichts mehr übrig blieb als Leder zu einem einzigen Paar Schuhe. Nun schnitt er am Abend die Schuhe zu, die wollte er den nächsten Morgen in Arbeit nehmen; und weil er ein gutes Gewissen hatte, so legte er sich ruhig zu Bett, befahl sich dem lieben Gott und schlief ein. Morgens, nachdem er sein Gebet verrichtet hatte und sich zur Arbeit niedersetzen wollte, so standen die beiden Schuhe ganz fertig auf seinem Tisch. Er verwunderte sich und wußte nicht was er dazu sagen sollte. Er nahm die Schuhe in die Hand um sie näher zu betrachten: sie waren so sauber gearbeitet, daß kein Stich daran falsch war, gerade als wenn es ein Meisterstück sein sollte. Bald darauf trat auch schon ein Käufer ein, und weil ihm die Schuhe so gut gefielen, so bezahlte er mehr als gewöhnlich dafür, und der Schuster konnte von dem Geld Leder zu zwei Paar Schuhen erhandeln. Er schnitt sie Abends zu und wollte den nächsten Morgen mit frischem Muth an die Arbeit gehen, aber er brauchte es nicht, denn als er aufstand waren sie schon fertig, und es blieben auch nicht die Käufer aus, die ihm so viel Geld gaben daß er Leder zu vier Paar Schuhen einkaufen konnte. Er fand früh Morgens auch die vier Paar fertig; und so giengs immer fort, was er Abends zuschnitt, das war am Morgen verarbeitet, also daß er bald wieder sein ehrliches Auskommen hatte und endlich ein wohlhabender Mann ward.\n\nNun geschah es eines Abends nicht lange vor Weihnachten, als der Mann wieder zugeschnitten hatte, daß er vor Schlafengehen zu seiner Frau sprach „wie wärs wenn wir diese Nacht aufblieben um zu sehen wer uns solche hilfreiche Hand leistet?“ Die Frau wars zufrieden und steckte ein Licht an; darauf verbargen sie sich in den Stubenecken, hinter den Kleidern, die da aufgehängt waren und gaben acht. Als es Mitternacht war, da kamen zwei kleine niedliche nackte Männlein, setzten sich vor des Schusters Tisch, nahmen alle zugeschnittene Arbeit zu sich und fiengen an mit ihren Fingerlein so behend und schnell zu stechen, zu nähen, zu klopfen, daß der Schuster vor Verwunderung die Augen nicht abwenden konnte. Sie ließen nicht nach, bis alles zu Ende gebracht war und fertig auf dem Tische stand, dann sprangen sie schnell fort.\n\nAm andern Morgen sprach die Frau „die kleinen Männer haben uns reich gemacht, wir müßten uns doch dankbar dafür bezeigen. Sie laufen so herum, haben nichts am Leib und müssen frieren. Weißt du was? ich will Hemdlein, Rock, Wams und Höslein für sie nähen, auch jedem ein Paar Strümpfe stricken; mach du jedem ein Paar Schühlein dazu.“ Der Mann sprach „das bin ich wohl zufrieden,“ und Abends, wie sie alles fertig hatten, legten sie die Geschenke statt der zugeschnittenen Arbeit zusammen auf den Tisch und versteckten sich dann, um mit anzusehen wie sich die Männlein dazu anstellen würden. Um Mitternacht kamen sie herangesprungen und wollten sich gleich an die Arbeit machen, als sie aber kein zugeschnittenes Leder, sondern die niedlichen Kleidungsstücke fanden, verwunderten sie sich erst, dann aber bezeigten sie eine gewaltige Freude. Mit der größten Geschwindigkeit zogen sie sich an, strichen die schönen Kleider am Leib und sangen\n\n„sind wir nicht Knaben glatt und fein?\nwas sollen wir länger Schuster sein!“\n\nDann hüpften und tanzten sie, und sprangen über Stühle und Bänke. Endlich tanzten sie zur Thüre hinaus. Von nun an kamen sie nicht wieder, dem Schuster aber gieng es wohl so lang er lebte, und es glückte ihm alles was er unternahm.",
+  "glossary": [
+    { "word": "erhandeln", "meaning": "Durch Handeln, also Kaufen, bekommen." },
+    { "word": "Auskommen", "meaning": "Genug Geld, um davon leben zu können." },
+    { "word": "ward", "meaning": "Alte Form von „wurde“." },
+    { "word": "behend", "meaning": "Flink, geschickt und schnell." },
+    { "word": "bezeigen", "meaning": "Zeigen, erweisen (z. B. Dankbarkeit)." },
+    { "word": "Wams", "meaning": "Eine eng anliegende Jacke, wie man sie früher trug." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum war der Schuster arm geworden?",
+      "options": ["Ohne eigene Schuld", "Weil er faul war", "Weil man ihn bestohlen hatte", "Weil er sein Geld verspielt hatte"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Der Schuster findet ein fertiges Paar Schuhe auf dem Tisch.",
+        "Der Schuster und seine Frau verstecken sich in der Nacht.",
+        "Die Frau näht kleine Kleider für die Männlein.",
+        "Die Männlein tanzen zur Tür hinaus."
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Die Männlein waren enttäuscht, als sie kein Leder auf dem Tisch fanden.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Was bedeutet das Lied der Männlein „Was sollen wir länger Schuster sein“?",
+      "options": [
+        "Mit den neuen Kleidern wollen sie nicht mehr arbeiten",
+        "Sie wollen einen besseren Lohn",
+        "Sie wollen dem Schuster das Handwerk beibringen",
+        "Sie haben Angst vor dem Schuster"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Was sollte der Mann für die Männlein machen?",
+      "options": ["Schühlein", "Mützen", "Gürtel", "Handschuhe"],
+      "answer": 0
+    }
+  ]
+}

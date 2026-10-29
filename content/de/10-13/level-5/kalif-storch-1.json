@@ -1,0 +1,63 @@
+{
+  "id": "de-10-13-l5-kalif-storch-1",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 5,
+  "title": "Kalif Storch (1): Das Zauberwort",
+  "author": "Wilhelm Hauff",
+  "source": "Die Geschichte von Kalif Storch (Märchen-Almanach auf das Jahr 1826), Kapitel I–II. Gekürzt, Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Die_Geschichte_von_Kalif_Storch",
+  "simplified": true,
+  "body": "Der Kalif Chasid zu Bagdad saß einmal an einem schönen Nachmittag behaglich auf seinem Sofa. Er hatte ein wenig geschlafen, denn es war ein heißer Tag, und sah nun recht heiter aus. Um diese Stunde konnte man gut mit ihm reden, weil er da immer mild und freundlich war. Deswegen besuchte ihn auch sein Großwesir Mansor jeden Tag um diese Zeit. An diesem Nachmittag sah Mansor aber sehr nachdenklich aus. „Herr“, sagte er, „da drunten am Schloss steht ein Krämer, der hat so schöne Sachen, dass es mich ärgert, nicht mehr Geld zu haben.“\n\nDer Kalif, der seinem Großwesir gern eine Freude machen wollte, ließ den Krämer heraufholen. Der hatte in seinem Kasten Perlen und Ringe, Becher und Kämme. Der Kalif kaufte für sich und Mansor schöne Pistolen und für die Frau des Wesirs einen Kamm. Da sah der Kalif eine kleine Schublade. Darin lagen eine Dose mit schwärzlichem Pulver und ein Papier mit sonderbarer Schrift, die keiner lesen konnte. Der Kalif kaufte beides für wenig Geld.\n\nNun ließ er Selim den Gelehrten holen, der alle Sprachen verstand. Selim betrachtete die Schrift lange und rief dann: „Das ist Latein, o Herr!“ Und er übersetzte: „Mensch, der du dies findest! Wer von dem Pulver in dieser Dose schnupft und dazu spricht: Mutabor, der kann sich in jedes Tier verwandeln und versteht auch die Sprache der Tiere. Will er wieder ein Mensch werden, so neige er sich dreimal nach Osten und spreche jenes Wort. Aber hüte dich, wenn du verwandelt bist, dass du nicht lachst! Sonst verschwindet das Zauberwort ganz aus deinem Gedächtnis, und du bleibst ein Tier.“\n\nDer Kalif war über die Maßen vergnügt. „Morgen früh“, sagte er zu Mansor, „gehen wir aufs Feld, schnupfen etwas aus meiner Dose und belauschen, was in der Luft und im Wasser, im Wald und auf dem Feld gesprochen wird!“\n\nAm nächsten Morgen gingen die beiden ganz allein zu einem Teich. Dort sahen sie einen Storch ernsthaft auf und ab gehen, und hoch in der Luft kam ein zweiter Storch herangeschwebt. „Ich wette meinen Bart“, sagte der Großwesir, „dass diese zwei Langbeine ein schönes Gespräch führen werden. Wie wäre es, wenn wir Störche würden?“ – „Gut gesprochen!“, antwortete der Kalif. „Aber vorher wollen wir uns merken, wie man wieder Mensch wird: Dreimal nach Osten geneigt und Mutabor gesagt. Aber nur um Himmels willen nicht gelacht!“ Er nahm eine Prise, gab auch dem Wesir davon, und beide riefen: „Mutabor!“\n\nDa schrumpften ihre Beine und wurden dünn und rot, die gelben Pantoffeln wurden zu Storchenfüßen, die Arme zu Flügeln, der Hals wurde eine Elle lang, und weiche Federn bedeckten ihren Körper. „Ihr habt einen hübschen Schnabel, Herr Großwesir“, sprach der Kalif.\n\nNun hörten sie, wie die beiden Störche miteinander sprachen. „Guten Morgen, Frau Langbein, so früh schon auf der Wiese?“ – „Schönen Dank, liebe Klapperschnabel! Ich soll heute vor den Gästen meines Vaters tanzen, und da will ich mich ein wenig üben.“ Und die junge Störchin schritt in wunderlichen Bewegungen durch das Feld. Als sie aber auf einem Fuß stand und mit den Flügeln anmutig dazu wedelte, konnten sich die beiden nicht mehr halten. Ein unaufhaltsames Gelächter brach aus ihren Schnäbeln hervor.\n\nDa fiel dem Großwesir ein, dass das Lachen verboten war. „Besinne dich doch auf das dumme Wort!“, rief der Kalif. „Dreimal nach Osten müssen wir uns bücken und dazu sprechen: Mu – Mu – Mu –“ Sie bückten sich immer wieder, dass ihre Schnäbel beinahe die Erde berührten. Aber, o Jammer! Das Zauberwort war ihnen entfallen, und der arme Chasid und sein Wesir waren und blieben Störche.",
+  "glossary": [
+    { "word": "Kalif", "meaning": "Ein Herrscher in einem islamischen Reich, z. B. in Bagdad." },
+    { "word": "Großwesir", "meaning": "Der wichtigste Minister und Berater des Herrschers." },
+    { "word": "Krämer", "meaning": "Ein Händler, der allerlei kleine Waren verkauft." },
+    { "word": "schnupft", "meaning": "Schnupfen: ein Pulver durch die Nase einziehen." },
+    { "word": "Elle", "meaning": "Ein altes Längenmaß, etwa so lang wie ein Unterarm." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Was durfte man nach der Verwandlung auf keinen Fall tun?",
+      "options": ["Lachen", "Fliegen", "Sprechen", "Essen"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Der Kalif kauft dem Krämer eine Dose und ein Papier ab.",
+        "Selim liest die geheimnisvolle Schrift vor.",
+        "Der Kalif und Mansor verwandeln sich in Störche.",
+        "Die beiden lachen über die tanzende Störchin."
+      ]
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Die Schrift auf dem Papier war in arabischer Sprache geschrieben.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Was muss man tun, um wieder ein Mensch zu werden?",
+      "options": [
+        "Sich dreimal nach Osten neigen und das Zauberwort sagen",
+        "Noch einmal vom Pulver schnupfen",
+        "Dreimal um den Teich laufen",
+        "Bis zum Sonnenuntergang warten"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Was kaufte der Kalif für die Frau des Wesirs?",
+      "options": ["Kamm", "Spiegel", "Schleier", "Armband"],
+      "answer": 0
+    }
+  ]
+}

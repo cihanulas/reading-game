@@ -1,0 +1,45 @@
+
+> okuma-adasi@0.1.0 build
+> tsc --noEmit && vite build
+
+[36mvite v8.3.4 [32mbuilding client environment for production...[36m[39m
+transforming...
+Γ£ô 3038 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/registerSW.js                                          0.13 kB
+dist/manifest.webmanifest                                   0.29 kB
+dist/index.html                                             0.64 kB Γöé gzip:   0.37 kB
+dist/assets/nunito-latin-ext-700-normal-BWeMsAzO.woff2     15.82 kB
+dist/assets/nunito-latin-ext-400-normal-i-8OOpdj.woff2     15.88 kB
+dist/assets/nunito-latin-700-normal-Dort48En.woff2         16.22 kB
+dist/assets/nunito-latin-ext-800-normal-CtU8tJOV.woff2     16.28 kB
+dist/assets/nunito-latin-400-normal-r8SDr6Up.woff2         16.31 kB
+dist/assets/nunito-latin-800-normal-Dz8SOQK_.woff2         16.52 kB
+dist/assets/fraunces-latin-ext-700-normal-CanUGppC.woff2   17.66 kB
+dist/assets/fraunces-latin-700-normal-CEOla-zY.woff2       18.21 kB
+dist/assets/nunito-latin-700-normal-OcDqTBcA.woff          19.98 kB
+dist/assets/nunito-latin-400-normal-DKg4f3fz.woff          20.33 kB
+dist/assets/nunito-latin-800-normal-D-J0wlBY.woff          20.36 kB
+dist/assets/nunito-latin-ext-700-normal-D4woHhbd.woff      21.00 kB
+dist/assets/nunito-latin-ext-400-normal-CjMJVfGn.woff      21.28 kB
+dist/assets/nunito-latin-ext-800-normal-CDcxIxx8.woff      21.42 kB
+dist/assets/fraunces-latin-700-normal-DTjk5d1Q.woff        22.51 kB
+dist/assets/fraunces-latin-ext-700-normal-DuBstVeD.woff    22.60 kB
+dist/assets/index-CuVhln37.css                             26.31 kB Γöé gzip:   6.52 kB
+dist/assets/ProgressScreen-gxok_sNL.js                    372.23 kB Γöé gzip: 107.32 kB
+dist/assets/index-C-ux1O5m.js                             838.12 kB Γöé gzip: 279.48 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+[32mΓ£ô built in 2.05s[39m
+
+PWA v2.0.0
+mode      generateSW
+precache  27 entries (1505.48 KiB)
+files generated
+  dist/sw.js
+  dist/workbox-9c191d2f.js

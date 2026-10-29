@@ -7,6 +7,9 @@ const keysOf = (obj: unknown, prefix = ''): string[] =>
     ? Object.entries(obj).flatMap(([k, v]) => keysOf(v, prefix ? `${prefix}.${k}` : k))
     : [prefix];
 
+// Plural forms differ per language (Turkish needs only "other"), so compare base keys.
+const baseKeys = (obj: unknown) => [...new Set(keysOf(obj).map((k) => k.replace(/_(zero|one|two|few|many|other)$/, '')))].sort();
+
 describe('locales', () => {
   const reference = resources[DEFAULT_LANGUAGE];
 
@@ -16,7 +19,7 @@ describe('locales', () => {
 
   it.each(Object.keys(resources))('%s has the same keys as the default language', (lang) => {
     for (const ns of Object.keys(reference)) {
-      expect(keysOf(resources[lang][ns]).sort()).toEqual(keysOf(reference[ns]).sort());
+      expect(baseKeys(resources[lang][ns])).toEqual(baseKeys(reference[ns]));
     }
   });
 });

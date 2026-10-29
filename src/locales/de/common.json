@@ -1,0 +1,237 @@
+{
+  "app": {
+    "title": "Leseinsel",
+    "guide": "Käpt’n Wort"
+  },
+  "language": {
+    "tr": "Türkçe",
+    "de": "Deutsch",
+    "en": "English"
+  },
+  "ageGroup": {
+    "label": "Altersgruppe",
+    "10-13": "10–13 Jahre",
+    "14-18": "14–18 Jahre"
+  },
+  "profiles": {
+    "title": "Wer geht auf Abenteuerreise?",
+    "empty": "Noch gibt es keinen Kapitän. Los, erstellen wir den ersten!",
+    "new": "Neuer Kapitän",
+    "target": "Ziel: {{wpm}} WpM"
+  },
+  "createProfile": {
+    "title": "Neuer Kapitän",
+    "greeting": "Ahoi! Ich bin Käpt’n Wort. Erzähl mir von dir!",
+    "name": "Dein Name",
+    "namePlaceholder": "Kapitänsname",
+    "avatar": "Wähle deine Figur",
+    "language": "Lesesprache",
+    "submit": "Abenteuer starten",
+    "cancel": "Abbrechen"
+  },
+  "placement": {
+    "introTitle": "Schatzkarten-Test",
+    "intro": "Damit ich deine Karte zeichnen kann, liest du {{count}} kurze Texte. Keine Eile, lies so wie immer. Danach stelle ich dir ein paar Fragen.",
+    "progress": "Text {{current}} / {{total}}",
+    "next": "Weiter",
+    "noTexts": "Für diese Sprache und Altersgruppe gibt es noch keine Texte."
+  },
+  "placementResult": {
+    "title": "Deine Karte ist fertig!",
+    "speed": "Dein Lesetempo",
+    "comprehension": "Verständnis",
+    "effective": "Effektives Lesetempo",
+    "target": "Dein Startziel",
+    "unitWpm": "{{value}} WpM",
+    "percent": "{{value}} %",
+    "continue": "Zur Karte"
+  },
+  "reading": {
+    "glossaryHint": "Tippe auf gepunktet unterstrichene Wörter, dann erkläre ich sie dir. Solange hält die Uhr an.",
+    "start": "Lesen starten",
+    "finish": "Fertig",
+    "paused": "Uhr angehalten",
+    "simplified": "Dieser Text wurde vereinfacht.",
+    "questionsTitle": "Mal sehen, was du dir gemerkt hast!"
+  },
+  "speed": {
+    "label": "Lesetempo",
+    "slower": "Langsamer",
+    "faster": "Schneller",
+    "value": "{{value}} WpM",
+    "choose": "Wähle dein Tempo",
+    "pause": "Pause",
+    "resume": "Weiter",
+    "tapToPause": "Tippen zum Anhalten oder Weiterlesen",
+    "pacerHint": "Der Wind färbt die Zeilen für dich ein. Folge der leuchtenden Zeile und versuche, den Wind zu überholen!",
+    "rsvpIntro": "Die Wörter blitzen einzeln auf dem Bildschirm auf. Halte den Blick auf den orangen Buchstaben in der Mitte!",
+    "rsvpHint": "Tippe auf den Bildschirm oder drücke die Leertaste, um anzuhalten."
+  },
+  "modes": {
+    "explore": {
+      "title": "Entdeckerinsel",
+      "intro": "Wähle eine Geschichte, lies sie leise und beantworte dann die Fragen. Wer schnell und aufmerksam liest, bekommt mehr Punkte!"
+    },
+    "pacer": {
+      "title": "Windinsel",
+      "intro": "Der Wind färbt die Zeilen in deinem Tempo ein. Stell dein Tempo ein und halte mit dem Wind mit!"
+    },
+    "rsvp": {
+      "title": "Blitzinsel",
+      "intro": "Die Wörter kommen einzeln, blitzschnell. Nicht blinzeln – und dann die Fragen beantworten!"
+    },
+    "voice": {
+      "title": "Echohöhle",
+      "intro": "Lies den Text laut vor und lass die Höhle widerhallen!"
+    }
+  },
+  "rewards": {
+    "islandUnlocked": "Neue Insel entdeckt: {{island}}!",
+    "newBadge": "Neues Abzeichen: {{badge}}",
+    "chestEarned": "Karte vollständig – du hast eine Schatztruhe gewonnen!",
+    "pieces": "Kartenteile: {{count}} / {{total}}",
+    "openChest": "Truhe öffnen"
+  },
+  "treasure": {
+    "title": "Schatzhöhle",
+    "open_one": "Truhe öffnen",
+    "open_other": "Truhe öffnen ({{count}} Truhen)",
+    "noChest": "Sammle Kartenteile für eine neue Truhe: {{count}} / {{total}}. Jedes Lesen mit gutem Verständnis bringt ein Teil!",
+    "foundItem": "In der Truhe war: {{item}}!",
+    "foundGold_one": "In der Truhe war {{count}} Goldstück!",
+    "foundGold_other": "In der Truhe waren {{count}} Goldstücke!",
+    "collection": "Sammlung ({{owned}} / {{total}})",
+    "unknown": "???",
+    "badges": "Abzeichen ({{owned}} / {{total}})",
+    "back": "Zurück zur Karte"
+  },
+  "items": {
+    "raft": "Kanu",
+    "sailboat": "Segelboot",
+    "ship": "Großes Schiff",
+    "pirateFlag": "Piratenflagge",
+    "tophat": "Kapitänshut",
+    "crown": "Krone",
+    "spyglass": "Fernrohr",
+    "compass": "Kompass",
+    "octopus": "Tintenfisch-Freund",
+    "turtle": "Schildkröten-Freund",
+    "gem": "Diamant",
+    "trident": "Dreizack"
+  },
+  "badges": {
+    "firstVoyage": { "title": "Erste Fahrt", "desc": "Schließe dein erstes Lesen erfolgreich ab." },
+    "bookworm": { "title": "Bücherwurm", "desc": "Schließe 10 Lesungen erfolgreich ab." },
+    "perfect": { "title": "Volltreffer", "desc": "Beantworte alle Fragen richtig." },
+    "onTarget": { "title": "Bogenschütze", "desc": "Erreiche 3-mal dein Zieltempo." },
+    "streak3": { "title": "Feuerball", "desc": "Lies 3 Tage hintereinander." },
+    "streak7": { "title": "Vulkan", "desc": "Lies 7 Tage hintereinander." },
+    "allIslands": { "title": "Entdecker", "desc": "Lies auf der Entdecker-, Wind- und Blitzinsel." },
+    "speed200": { "title": "Rakete", "desc": "Erreiche ein effektives Lesetempo von 200." },
+    "recordBreaker": { "title": "Rekordbrecher", "desc": "Brich bei einer Geschichte deinen eigenen Rekord." }
+  },
+  "progress": {
+    "title": "Logbuch",
+    "reads": "Anzahl Lesungen",
+    "best": "Bestes effektives Tempo",
+    "recentComprehension": "Verständnis zuletzt",
+    "gain": "Fortschritt",
+    "filter": "Insel wählen",
+    "all": "Alle",
+    "empty": "Für die Kurve brauche ich mindestens zwei Lesungen. Auf ins Abenteuer!",
+    "chartLabel": "Tempokurve der letzten {{count}} Lesungen",
+    "wpm": "Lesetempo (WpM)",
+    "effective": "Effektives Lesetempo",
+    "target": "Ziel",
+    "back": "Zurück zur Karte",
+    "mode": {
+      "placement": "Kartentest",
+      "explore": "Entdecker",
+      "pacer": "Wind",
+      "rsvp": "Blitz",
+      "voice": "Echo"
+    }
+  },
+  "sound": {
+    "toggle": "Ton an / aus"
+  },
+  "voice": {
+    "intro": "Lies den Text laut vor. Richtig gelesene Wörter werden grün, und die Höhle folgt dir!",
+    "privacy": "Das Mikrofon ist nur beim Lesen an. Deine Stimme wird vom Spracherkennungsdienst des Browsers in Text umgewandelt; die Leseinsel nimmt deine Stimme nicht auf und speichert sie nicht.",
+    "listening": "Ich höre zu",
+    "notListening": "Ich höre nicht zu",
+    "permission": "Der Zugriff aufs Mikrofon wurde nicht erlaubt. Du kannst ihn über das Mikrofonsymbol in der Adressleiste erlauben oder mit „Fertig“ zu den Fragen gehen.",
+    "network": "Für die Spracherkennung brauchst du eine Internetverbindung. Prüfe die Verbindung oder gehe mit „Fertig“ zu den Fragen.",
+    "unsupported": "Dieser Browser unterstützt das nicht (nutze Chrome oder Edge)",
+    "wcpm": "Richtige Wörter pro Minute",
+    "accuracy": "Richtig gelesen",
+    "accuracyValue": "{{matched}} / {{total}}",
+    "stumbles": "Stolperer",
+    "resultGood": "Deine Stimme hallte durch die Höhle! Wenig stolpern und gut verstehen ist der größte Schatz."
+  },
+  "textSelect": {
+    "levels": "Lesestufen",
+    "level": "Stufe {{level}}",
+    "words_one": "{{count}} Wort",
+    "words_other": "{{count}} Wörter",
+    "best": "Bestes: {{score}} Punkte",
+    "empty": "Für diese Sprache und Altersgruppe gibt es noch keine Geschichten.",
+    "back": "Zurück"
+  },
+  "playResult": {
+    "title": "Abenteuer geschafft!",
+    "targetReached": "Du hast dein Ziel übertroffen! Toll gelesen.",
+    "targetMissed": "Fast am Ziel. Nächstes Mal klappt es noch besser!",
+    "lowComprehension": "Vielleicht warst du zu schnell. Versuch, etwas aufmerksamer zu lesen.",
+    "targetUp": "Dein Ziel ist gestiegen: {{from}} → {{to}} WpM ⬆️",
+    "targetDown": "Ich habe dein Ziel etwas gesenkt: {{from}} → {{to}} WpM",
+    "targetSame": "Dein Ziel: {{value}} WpM",
+    "newRecord": "Neuer Rekord! Dein bisher Bestes: {{value}} WpM",
+    "previousBest": "Dein Bestes bei dieser Geschichte: {{value}} WpM",
+    "score": "Punkte",
+    "base": "Punkte für effektives Lesetempo (×{{multiplier}})",
+    "targetBonus": "Zielbonus",
+    "perfectBonus": "Bonus für alles richtig",
+    "streakBonus": "Serienbonus ({{days}} Tage)",
+    "total": "Gesamt",
+    "again": "Andere Geschichte",
+    "home": "Zurück zum Hafen"
+  },
+  "home": {
+    "welcome": "Willkommen, {{name}}!",
+    "target": "Dein aktuelles Ziel: {{wpm}} Wörter pro Minute",
+    "totalScore": "Gesamtpunkte",
+    "streak": "Serie",
+    "streakDays_one": "{{count}} Tag",
+    "streakDays_other": "{{count}} Tage",
+    "map": "Inselkarte",
+    "locked": "Noch {{count}}-mal lesen auf der {{island}}",
+    "treasure": "Schatz",
+    "progress": "Mein Fortschritt",
+    "retakePlacement": "Test wiederholen",
+    "switchProfile": "Kapitän wechseln"
+  },
+  "question": {
+    "true": "Richtig",
+    "false": "Falsch",
+    "check": "Prüfen",
+    "correct": "Super, richtig!",
+    "wrong": "Diesmal leider nicht.",
+    "orderingHint": "Bring die Punkte durch Ziehen oder mit den Pfeilen in die richtige Reihenfolge.",
+    "moveUp": "Nach oben",
+    "moveDown": "Nach unten",
+    "next": "Weiter"
+  },
+  "navigation": {
+    "pages": "Seiten",
+    "previous": "Vorherige Seite",
+    "next": "Nächste Seite",
+    "page": "{{current}} / {{total}}"
+  },
+  "glossary": {
+    "close": "OK"
+  },
+  "about": {
+    "credits": "Quellen"
+  }
+}

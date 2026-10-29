@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { db, type Profile } from '../db/db';
+import { setUiLanguage } from '../i18n';
 import { useApp } from '../store/app';
 import { CharacterArt, IslandArt, OceanDecor } from '../ui/GameArt';
 import { ArrowRight, Plus } from 'lucide-react';
@@ -34,7 +35,10 @@ export function ProfilesScreen() {
               <button
                 type="button"
                 className="btn profile"
-                onClick={() => selectProfile(p.id, p.targetWpm === null ? 'placement' : 'home')}
+                onClick={() => {
+                  setUiLanguage(p.lang);
+                  selectProfile(p.id, p.targetWpm === null ? 'placement' : 'home');
+                }}
               >
                 <CharacterArt value={p.avatar} />
                 <span className="profile-info">

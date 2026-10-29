@@ -1,0 +1,13 @@
+
+> okuma-adasi@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.5 C:/MyProjects/okuma
+
+
+ Test Files  10 passed (10)
+      Tests  111 passed (111)
+   Start at  14:36:56
+   Duration  968ms (transform 43%, import 36%, worker 17%, tests 4%)
+

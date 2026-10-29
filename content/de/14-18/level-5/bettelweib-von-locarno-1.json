@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l5-bettelweib-von-locarno-1",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 5,
+  "title": "Das Bettelweib von Locarno (1)",
+  "author": "Heinrich von Kleist",
+  "source": "Das Bettelweib von Locarno (Berliner Abendblätter, 1810), erster Teil. Originalschreibweise. Wikisource: https://de.wikisource.org/wiki/Das_Bettelweib_von_Locarno",
+  "simplified": false,
+  "body": "Am Fuße der Alpen, bei Locarno im oberen Italien, befand sich ein altes, einem Marchese gehöriges Schloß, das man jetzt, wenn man vom St. Gotthard kommt, in Schutt und Trümmern liegen sieht; ein Schloß, mit hohen und weitläufigen Zimmern, in deren Einem einst, auf Stroh, das man ihr unterschüttete, eine alte, kranke Frau, die sich bettelnd vor der Thür eingefunden hatte, von der Hausfrau, aus Mitleiden, gebettet worden war. Der Marchese, der, bei der Rückkehr von der Jagd, zufällig in das Zimmer trat, wo er seine Büchse abzusetzen pflegte, befahl der Frau unwillig, aus dem Winkel, in welchem sie lag, aufzustehn, und sich hinter den Ofen zu verfügen. Die Frau, da sie sich erhob, glitschte mit der Krücke auf dem glatten Boden aus, und beschädigte sich auf eine gefährliche Weise das Kreuz; dergestalt, daß sie zwar noch mit unsäglicher Mühe aufstand, und quer, wie es ihr vorgeschrieben war, über das Zimmer ging: hinter den Ofen aber, unter Stöhnen und Aechzen, niedersank und verschied.\n\nMehrere Jahre darauf, da der Marchese, durch Krieg und Mißwachs, in bedenkliche Vermögensumstände gerathen war, fand sich ein Genuesischer Ritter bei ihm ein, der das Schloß, seiner schönen Lage wegen, von ihm kaufen wollte. Der Marchese, dem viel an dem Handel gelegen war, gab seiner Frau auf, den Fremden in dem obenerwähnten, leerstehenden Zimmer, das sehr schön und bequem eingerichtet war, unterzubringen. Aber wie betreten war das Ehepaar, als der Ritter mitten in der Nacht, verstört und bleich, zu ihnen herunter kam, hoch und theuer versichernd, daß es in dem Zimmer spuke, indem etwas, das dem Blick unsichtbar gewesen, mit einem Geräusch, als ob es auf Stroh gelegen, im Zimmerwinkel aufgestanden, mit vernehmlichen Schritten, langsam und gebrechlich, quer über das Zimmer gegangen, und hinter dem Ofen, unter Stöhnen und Aechzen niedergesunken sei.\n\nDer Marchese erschrocken, er wußte selbst nicht recht warum, lachte den Ritter mit erkünstelter Heiterkeit aus, und sagte, er wolle sogleich aufstehen, und die Nacht, zu seiner Beruhigung, mit ihm in dem Zimmer zubringen. Doch der Ritter bat um die Gefälligkeit, ihm zu erlauben, daß er auf dem Lehnstuhl, in seinem Schlafzimmer übernachte; und als der Morgen kam, ließ er anspannen, empfahl sich und reiste ab.\n\nDieser Vorfall, der außerordentliches Aufsehen machte, schreckte, auf eine dem Marchese höchst unangenehme Weise, mehrere Käufer ab; dergestalt, daß, da sich unter seinem eigenen Hausgesinde, befremdend und unbegreiflich, das Gerücht erhob, daß es in dem Zimmer, zur Mitternachtstunde, umgehe, er, um es, mit einem kurzen Verfahren, niederzuschlagen, beschloß, die Sache in der nächsten Nacht selbst zu untersuchen. Demnach ließ er, beim Einbruch der Dämmerung, sein Bett in dem besagten Zimmer aufschlagen, und erharrte, ohne zu schlafen, die Mitternacht. Aber wie erschüttert war er, als er in der That, mit dem Schlage der Geisterstunde, das unbegreifliche Geräusch wahrnahm; es war, als ob ein Mensch sich von Stroh, das unter ihm knisterte, erhob, quer über das Zimmer ging, und hinter dem Ofen, unter Geseufz und Geröchel niedersank.",
+  "glossary": [
+    { "word": "Marchese", "meaning": "Italienischer Adelstitel, entspricht etwa einem Markgrafen." },
+    { "word": "verschied", "meaning": "verscheiden: sterben (gehoben)." },
+    { "word": "Mißwachs", "meaning": "Schlechte Ernte, Missernte." },
+    { "word": "Hausgesinde", "meaning": "Die Dienerschaft eines Hauses." },
+    { "word": "erkünstelter", "meaning": "erkünstelt: gespielt, nicht echt." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum stürzt die alte Frau?",
+      "options": [
+        "Der Marchese befiehlt ihr, hinter den Ofen zu gehen, und sie rutscht mit der Krücke aus",
+        "Sie wird von einem Hund umgestoßen",
+        "Sie fällt die Treppe hinunter",
+        "Sie stolpert über die Büchse des Marchese"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Ritter aus Genua kauft das Schloss nach der ersten Nacht.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Was hört man nachts in dem Zimmer?",
+      "options": [
+        "Jemand steht vom Stroh auf, geht quer durchs Zimmer und sinkt hinter dem Ofen nieder",
+        "Eine Glocke läutet zwölfmal",
+        "Eine Frau singt ein altes Lied",
+        "Jemand klopft an das Fenster"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Die Hausfrau bettet eine kranke Bettlerin auf Stroh.",
+        "Die Frau stürzt und stirbt hinter dem Ofen.",
+        "Ein Ritter aus Genua flieht nachts aus dem Zimmer.",
+        "Der Marchese hört das Geräusch selbst."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Womit glitt die alte Frau auf dem Boden aus?",
+      "options": ["Krücke", "Stock", "Korb", "Laterne"],
+      "answer": 0
+    }
+  ]
+}

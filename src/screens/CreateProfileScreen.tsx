@@ -1,7 +1,8 @@
 import { useState, type FormEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { db } from '../db/db';
-import { AGE_GROUPS, DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES, type AgeGroup, type LangCode } from '../lang';
+import { setUiLanguage } from '../i18n';
+import { AGE_GROUPS, DEFAULT_LANGUAGE, isLangCode, SUPPORTED_LANGUAGES, type AgeGroup, type LangCode } from '../lang';
 import { useApp } from '../store/app';
 import { AVATARS } from '../ui/avatars';
 import { CharacterArt } from '../ui/GameArt';
@@ -9,12 +10,17 @@ import { CharacterArt } from '../ui/GameArt';
 const MAX_NAME_LENGTH = 20;
 
 export function CreateProfileScreen() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const { go, selectProfile } = useApp();
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState<string>(AVATARS[0]);
   const [ageGroup, setAgeGroup] = useState<AgeGroup | null>(null);
-  const [lang, setLang] = useState<LangCode>(DEFAULT_LANGUAGE);
+  const [lang, setLang] = useState<LangCode>(isLangCode(i18n.language) ? i18n.language : DEFAULT_LANGUAGE);
+
+  const chooseLang = (l: LangCode) => {
+    setLang(l);
+    setUiLanguage(l);
+  };
 
   const trimmed = name.trim();
   const valid = trimmed.length > 0 && ageGroup !== null;
@@ -87,7 +93,7 @@ export function CreateProfileScreen() {
         {SUPPORTED_LANGUAGES.length > 1 && (
           <label className="language-field">
             {t('createProfile.language')}
-            <select value={lang} onChange={(e) => setLang(e.target.value as LangCode)}>
+            <select value={lang} onChange={(e) => chooseLang(e.target.value as LangCode)}>
               {SUPPORTED_LANGUAGES.map((l) => (
                 <option key={l} value={l}>
                   {t(`language.${l}`)}

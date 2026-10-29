@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l5-bettelweib-von-locarno-2",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 5,
+  "title": "Das Bettelweib von Locarno (2)",
+  "author": "Heinrich von Kleist",
+  "source": "Das Bettelweib von Locarno (Berliner Abendblätter, 1810), zweiter Teil. Originalschreibweise. Wikisource: https://de.wikisource.org/wiki/Das_Bettelweib_von_Locarno",
+  "simplified": false,
+  "body": "Die Marquise, am andern Morgen, da er herunter kam, fragte ihn, wie die Untersuchung abgelaufen; und da er sich, mit scheuen und ungewissen Blicken, umsah, und, nachdem er die Thür verriegelt, versicherte, daß es mit dem Spuk seine Richtigkeit habe: so erschrak sie, wie sie in ihrem Leben nicht gethan, und bat ihn, bevor er die Sache verlauten ließe, sie noch einmal, in ihrer Gesellschaft, einer kaltblütigen Prüfung zu unterwerfen. Sie hörten aber sammt einen treuen Bedienten, den sie mitgenommen hatten, in der That, in der nächsten Nacht, dasselbe unbegreifliche, gespensterartige Geräusch; und nur der dringende Wunsch, das Schloß, es koste was es wolle, los zu werden, vermochte sie, das Entsetzen, das sie griff, in Gegenwart ihres Dieners, zu unterdrücken, und dem Vorfall irgend eine gleichgültige und zufällige Ursache, die sich entdecken lassen müsse, unterzuschieben.\n\nAm Abend des dritten Tages, da beide, um der Sache auf den Grund zu kommen, mit Herzklopfen wieder die Treppe zu dem Fremdenzimmer bestiegen, fand sich zufällig der Haushund, den man von der Kette losgelassen hatte, vor der Thür desselben ein; dergestalt, daß die Marquise, in der unwillkührlichen Absicht, außer ihrem Mann noch etwas Drittes, Lebendiges, bei sich zu haben, den Hund mit sich ins Zimmer nahm. Das Ehepaar, zwei Lichter auf dem Tisch, die Marquise unausgezogen, der Marchese Degen und Pistolen, die er aus dem Schrank genommen, neben sich, setzen sich, gegen eilf Uhr, jeder auf sein Bett; und während sie sich mit Gesprächen, so gut es sein kann, zu unterhalten suchen, legt sich der Hund, Kopf und Beine zusammengekauert, in der Mitte des Zimmers nieder, und schläft ein.\n\nDrauf, in dem Augenblick der Mitternacht, läßt sich das entsetzliche Geräusch wieder hören; jemand, den kein Mensch mit Augen sehen kann, hebt sich, auf Krücken, im Zimmerwinkel empor; man hört das Stroh, das unter ihm rauscht; und mit dem ersten Schritt: tapp! tapp! erwacht der Hund, hebt sich plötzlich, die Ohren spitzend, vom Boden empor, und knurrend und bellend, grad’ als ob ein Mensch auf ihn eingeschritten käme, rückwärts gegen den Ofen, weicht er aus. Bei diesem Anblick stürzt die Marquise, mit sträubenden Haaren, aus dem Zimmer; und während der Marchese, der den Degen ergriffen: werda? ruft, und da ihm niemand antwortet, gleich einem Rasenden, nach allen Richtungen, die Luft durchhaut, läßt sie den Wagen anspannen, in der Absicht, um nach der Stadt zu fahren.\n\nAber ehe sie noch aus dem Thor gerasselt, sieht sie schon das Schloß ringsum in Flammen aufgehen. Der Marchese, von Entsetzen überreizt, hatte eine brennende Kerze genommen, und es an allen vier Ecken, müde seines Lebens, angesteckt. Vergebens schickte sie Leute hinein, den Unglücklichen zu retten; er war, auf die elendiglichste Weise bereits umgekommen, und noch jetzt liegen, von den Landleuten zusammengetragen, seine weißen Gebeine in dem Winkel des Zimmers, von welchem er, als er von der Jagd kam, das Bettelweib hatte aufstehen heißen.",
+  "glossary": [
+    { "word": "Marquise", "meaning": "Ehefrau eines Marchese (Markgräfin)." },
+    { "word": "unwillkührlichen", "meaning": "unwillkürlich: ohne bewusste Absicht." },
+    { "word": "Degen", "meaning": "Lange, schmale Stichwaffe." },
+    { "word": "werda", "meaning": "„Wer da?“ – Ruf eines Wächters an einen Unbekannten." },
+    { "word": "Gebeine", "meaning": "Knochen eines Toten." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum unterdrücken Marchese und Marquise ihr Entsetzen vor dem Diener?",
+      "options": [
+        "Sie wollen das Schloss unbedingt verkaufen",
+        "Sie glauben nicht an Geister",
+        "Der Diener ist sehr ängstlich",
+        "Sie wollen den Diener prüfen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Hund schläft die ganze Nacht ruhig durch.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Wo liegen am Ende die Gebeine des Marchese?",
+      "options": [
+        "In dem Winkel, aus dem er einst das Bettelweib aufstehen hieß",
+        "Im Familiengrab in Locarno",
+        "Hinter dem Ofen",
+        "Auf dem Weg zum St. Gotthard"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Das Ehepaar hört das Geräusch zusammen mit einem Diener.",
+        "Die Marquise nimmt den Haushund mit ins Zimmer.",
+        "Der Hund weicht knurrend gegen den Ofen zurück.",
+        "Das Schloss geht in Flammen auf."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Welches Tier nahm die Marquise mit ins Zimmer?",
+      "options": ["Hund", "Katze", "Pferd", "Rabe"],
+      "answer": 0
+    }
+  ]
+}

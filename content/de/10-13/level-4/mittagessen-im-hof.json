@@ -1,0 +1,64 @@
+{
+  "id": "de-10-13-l4-mittagessen-im-hof",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 4,
+  "title": "Das Mittagessen im Hof",
+  "author": "Johann Peter Hebel",
+  "source": "Das Mittagessen im Hof (Schatzkästlein des rheinischen Hausfreundes, 1811). Rechtschreibung modernisiert, leicht vereinfacht. Wikisource: https://de.wikisource.org/wiki/Das_Mittagessen_im_Hof",
+  "simplified": true,
+  "body": "Man klagt häufig darüber, wie schwer und unmöglich es sei, mit manchen Menschen auszukommen. Das mag freilich auch wahr sein. Indessen sind viele von solchen Menschen nicht schlimm, sondern nur wunderlich. Wenn man sie nur immer recht kennte, innen und außen, und recht mit ihnen umzugehen wüsste, nie zu eigensinnig und nie zu nachgiebig, so wäre mancher wohl leicht zur Besinnung zu bringen.\n\nDas ist doch einem Diener mit seinem Herrn gelungen. Dem konnte er manchmal gar nichts recht machen, und er musste vieles büßen, woran er unschuldig war, wie es oft geht. So kam einmal der Herr sehr verdrießlich nach Hause und setzte sich zum Mittagessen. Da war die Suppe zu heiß oder zu kalt, oder keines von beiden; aber genug, der Herr war verdrießlich. Er fasste daher die Schüssel mit allem, was darin war, und warf sie durch das offene Fenster in den Hof hinab.\n\nWas tat der Diener? Kurz besonnen warf er das Fleisch, das er eben auf den Tisch stellen wollte, mir nichts, dir nichts, der Suppe nach, auch in den Hof hinab, dann das Brot, dann den Krug und endlich das Tischtuch mit allem, was noch darauf war.\n\n„Frecher Kerl, was soll das sein?“, fragte der Herr und fuhr mit drohendem Zorn von seinem Sessel auf. Aber der Diener erwiderte kalt und ruhig: „Verzeihen Sie mir, wenn ich Ihre Meinung nicht erraten habe. Ich glaubte nicht anders, als dass Sie heute im Hof speisen wollten. Die Luft ist so heiter, der Himmel so blau, und sehen Sie nur, wie lieblich der Apfelbaum blüht und wie fröhlich die Bienen ihren Mittag halten.“\n\nDiesmal die Suppe hinabgeworfen, und nie wieder! Der Herr erkannte seinen Fehler, heiterte sich beim Anblick des schönen Frühlingshimmels auf, lächelte heimlich über den schnellen Einfall seines Dieners und dankte ihm im Herzen für die gute Lehre.",
+  "glossary": [
+    { "word": "wunderlich", "meaning": "Seltsam, eigenartig." },
+    { "word": "Besinnung", "meaning": "Zur Besinnung bringen: dafür sorgen, dass jemand wieder vernünftig nachdenkt." },
+    { "word": "büßen", "meaning": "Für etwas bestraft werden oder dafür bezahlen müssen." },
+    { "word": "verdrießlich", "meaning": "Schlecht gelaunt, verärgert." },
+    { "word": "speisen", "meaning": "Essen (vornehmes Wort)." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Was warf der Herr zuerst aus dem Fenster?",
+      "options": ["Die Suppenschüssel", "Das Tischtuch", "Das Fleisch", "Den Krug"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Diener schimpfte laut mit seinem Herrn.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Welche Ausrede hatte der Diener?",
+      "options": [
+        "Er dachte, der Herr wolle im Hof essen",
+        "Er sei gestolpert",
+        "Das Essen sei verdorben gewesen",
+        "Der Herr habe es ihm befohlen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "multipleChoice",
+      "prompt": "Was lernt man aus der Geschichte?",
+      "options": [
+        "Mit Klugheit kann man schwierige Menschen zur Vernunft bringen",
+        "Man soll immer tun, was der Herr sagt",
+        "Man soll im Garten essen",
+        "Diener dürfen nie widersprechen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Welcher Baum blühte im Hof?",
+      "options": ["Apfelbaum", "Kirschbaum", "Lindenbaum", "Birnbaum"],
+      "answer": 0
+    }
+  ]
+}

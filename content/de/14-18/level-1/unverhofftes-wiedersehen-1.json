@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l1-unverhofftes-wiedersehen-1",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 1,
+  "title": "Unverhofftes Wiedersehen (1)",
+  "author": "Johann Peter Hebel",
+  "source": "Unverhoftes Wiedersehen (Schatzkästlein des rheinischen Hausfreundes, 1811), erster Teil. Originalschreibweise. Wikisource: https://de.wikisource.org/wiki/Unverhoftes_Wiedersehen",
+  "simplified": false,
+  "body": "In Falun in Schweden küßte vor guten fünfzig Jahren und mehr ein junger Bergmann seine junge hübsche Braut und sagte zu ihr: „Auf Sanct Luciä wird unsere Liebe von des Priesters Hand gesegnet. Dann sind wir Mann und Weib, und bauen uns ein eigenes Nestlein.“ – „Und Friede und Liebe soll darinn wohnen,“ sagte die schöne Braut mit holdem Lächeln, „denn du bist mein Einziges und Alles, und ohne dich möchte ich lieber im Grab seyn, als an einem andern Ort.“\n\nAls sie aber vor St. Luciä der Pfarrer zum zweytenmal in der Kirche ausgerufen hatte: „So nun jemand Hinderniß wüßte anzuzeigen, warum diese Personen nicht möchten ehelich zusammen kommen.“ Da meldete sich der Tod. Denn als der Jüngling den andern Morgen in seiner schwarzen Bergmannskleidung an ihrem Haus vorbey gieng, der Bergmann hat sein Todtenkleid immer an, da klopfte er zwar noch einmal an ihrem Fenster, und sagte ihr guten Morgen, aber keinen guten Abend mehr. Er kam nimmer aus dem Bergwerk zurück, und sie saumte vergeblich selbigen Morgen ein schwarzes Halstuch mit rothem Rand für ihn zum Hochzeittag, sondern als er nimmer kam, legte sie es weg, und weinte um ihn und vergaß ihn nie.\n\nUnterdessen wurde die Stadt Lissabon in Portugall durch ein Erdbeben zerstört, und der siebenjährige Krieg gieng vorüber, und Kayser Franz der erste starb, und der JesuitenOrden wurde aufgehoben und Polen getheilt, und die Kaiserin Maria Theresia starb, und der Struensee wurde hingerichtet, Amerika wurde frey, und die vereinigte französische und spanische Macht konnte Gibraltar nicht erobern. Die Türken schloßen den General Stein in der Veteraner Höle in Ungarn ein, und der Kayser Joseph starb auch. Der König Gustav von Schweden eroberte russisch Finnland, und die französische Revolution und der lange Krieg fieng an, und der Kaiser Leopold der zweyte gieng auch ins Grab. Napoleon eroberte Preußen, und die Engländer bombardirten Koppenhagen, und die Ackerleute säeten und schnitten. Der Müller mahlte, und die Schmiede hämmerten, und die Bergleute gruben nach den Metalladern in ihrer unterirrdischen Werkstatt.",
+  "glossary": [
+    { "word": "Bergmann", "meaning": "Jemand, der unter Tage im Bergwerk arbeitet." },
+    { "word": "Hinderniß", "meaning": "Hindernis; hier: ein Grund, der gegen die Heirat spricht." },
+    { "word": "saumte", "meaning": "Säumen: den Rand eines Stoffes umnähen." },
+    { "word": "Todtenkleid", "meaning": "Totenkleid: Kleidung, in der man begraben wird." },
+    { "word": "Erdbeben", "meaning": "Starke Erschütterung des Erdbodens." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum fand die Hochzeit nicht statt?",
+      "options": [
+        "Der Bräutigam kam aus dem Bergwerk nicht zurück",
+        "Der Pfarrer verbot die Ehe",
+        "Die Braut zog nach Lissabon",
+        "Der Bräutigam musste in den Krieg ziehen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Wozu dient die lange Aufzählung historischer Ereignisse im dritten Absatz?",
+      "options": [
+        "Sie zeigt, wie viel Zeit vergeht, während die Braut wartet",
+        "Sie erklärt, warum das Bergwerk einstürzte",
+        "Sie beschreibt die Reisen des Bergmanns",
+        "Sie nennt die Gäste der Hochzeit"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Die Braut vergaß ihren Bräutigam nach einigen Jahren.",
+      "answer": false
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Der Bergmann küsst seine Braut und spricht von der Hochzeit.",
+        "Der Pfarrer ruft das Paar in der Kirche aus.",
+        "Der Bergmann klopft ein letztes Mal an ihr Fenster.",
+        "Die Braut legt das Halstuch weg."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Welche Farbe hatte das Halstuch, das die Braut für den Hochzeitstag nähte?",
+      "options": ["Schwarz", "Weiß", "Blau", "Grün"],
+      "answer": 0
+    }
+  ]
+}

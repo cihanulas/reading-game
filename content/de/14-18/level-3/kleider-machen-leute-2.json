@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l3-kleider-machen-leute-2",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 3,
+  "title": "Kleider machen Leute (2)",
+  "author": "Gottfried Keller",
+  "source": "Kleider machen Leute (Die Leute von Seldwyla, Bd. 3, 1874), Fortsetzung des Anfangs. Originalschreibweise, gekürzt. Wikisource: https://de.wikisource.org/wiki/Kleider_machen_Leute",
+  "simplified": false,
+  "body": "Nun wurde die Forelle aufgetragen, mit Grünem bekränzt, und der Wirth legte ein schönes Stück vor. Doch der Schneider, von Sorgen gequält, wagte in seiner Blödigkeit nicht, das blanke Messer zu brauchen, sondern handtirte schüchtern und zimperlich mit der silbernen Gabel daran herum. Das bemerkte die Köchin, welche zur Thür hereinguckte, den großen Herren zu sehen, und sie sagte zu den Umstehenden: Der weiß noch einen feinen Fisch zu essen, wie es sich gehört, der sägt nicht mit dem Messer in dem zarten Wesen herum, wie wenn er ein Kalb schlachten wollte. Das ist ein Herr von großem Hause! Und wie schön und traurig er ist! Gewiß ist er in ein armes Fräulein verliebt, das man ihm nicht lassen will!\n\nSo nahm die Mahlzeit ihren Verlauf und zwar sehr langsam, weil der arme Schneider immer zimperlich und unentschlossen aß. Doch der Hunger, der immerfort so gefährlich gereizt wurde, begann nun den Schrecken zu überwinden, und als die Pastete von Rebhühnern erschien, schlug die Stimmung des Schneiders um und ein fester Gedanke begann sich in ihm zu bilden. Es ist jetzt einmal, wie es ist, sagte er sich; nun wäre ich ein Thor, wenn ich die kommende Schande und Verfolgung ertragen wollte ohne mich dafür satt gegessen zu haben! Was ich einmal im Leibe habe, kann mir kein König wieder rauben! Gesagt, gethan; mit dem Muthe der Verzweiflung hieb er in die leckere Pastete, so daß sie in weniger als fünf Minuten zur Hälfte geschwunden war. Abermals lief der Wirth in die Küche und rief: Köchin! Er ißt die Pastete auf, während er den Braten kaum berührt hat! Wohl bekomm’ es ihm, sagte die Köchin, der weiß, was Rebhühner sind! Wär’ er ein gemeiner Kerl, so hätte er sich an den Braten gehalten!\n\nUnterdessen hatte der Kutscher die Pferde füttern lassen, und da er Eile hatte, ließ er bald wieder anspannen. Die Angehörigen des Gasthofes konnten sich nun nicht länger enthalten und fragten den herrschaftlichen Kutscher geradezu, wer sein Herr da oben sei, und wie er heiße? Der Kutscher, ein schalkhafter und durchtriebener Kerl, versetzte: Hat er es noch nicht selbst gesagt? Nein, hieß es, und er erwiederte: Das glaub’ ich wohl, der spricht nicht viel in einem Tage; nun, es ist der Graf Strapinski! Er machte diesen schlechten Spaß, um sich an dem Schneiderlein zu rächen, das, wie er glaubte, statt ihm für seine Gefälligkeit ein Wort des Dankes zu sagen, sich ohne Umsehen in das Haus begeben hatte. Dann bestieg er den Wagen, schwang die Peitsche und fuhr aus der Stadt.\n\nNun mußte es sich aber fügen, daß dieser, ein geborener Schlesier, wirklich Strapinski hieß, Wenzel Strapinski, mochte es nun ein Zufall sein, oder mochte der Schneider sein Wanderbuch im Wagen vergessen und der Kutscher es zu sich genommen haben. Genug, als der Wirth freudestrahlend vor ihn hintrat und fragte, ob der Herr Graf Strapinski zum Nachtisch noch etwas wünsche, und ihm meldete, daß die Zimmer soeben zubereitet würden, da erblaßte der arme Strapinski, verwirrte sich von neuem und erwiederte gar nichts.\n\nInzwischen waren der Stadtschreiber, der Notar und einige junge Herren aus den ersten Handelshäusern gekommen, um den Kafee zu trinken. Statt ihre Partie zu spielen, gingen sämmtliche Herren in weitem Bogen hinter dem polnischen Grafen herum, die Hände in den hintern Rocktaschen, mit den Augen blinzelnd. Die Kreise, welche die neugierigen Herren um den Fremden zogen, wurden immer kleiner, bis sie sich zuletzt vertraulich an den gleichen Tisch setzten. Nur Melcher Böhni, der Buchhalter, als ein geborener Zweifler, rieb sich vergnügt die Hände und sagte zu sich selbst: Der Mann dort hat mir so wunderlich zerstochene Finger! Nun, ich werde mich hüten, den Verlauf zu stören!",
+  "glossary": [
+    { "word": "Blödigkeit", "meaning": "Veraltet: Schüchternheit, Verlegenheit." },
+    { "word": "zimperlich", "meaning": "Übertrieben vorsichtig und empfindlich." },
+    { "word": "schalkhafter", "meaning": "Schalkhaft: verschmitzt, zu Späßen aufgelegt." },
+    { "word": "Wanderbuch", "meaning": "Ausweisheft, das wandernde Handwerksgesellen früher bei sich trugen." },
+    { "word": "Zweifler", "meaning": "Jemand, der nicht leicht etwas glaubt." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum nennt der Kutscher den Schneider „Graf Strapinski“?",
+      "options": [
+        "Er will sich für die fehlende Dankbarkeit des Schneiders rächen",
+        "Der Schneider hat ihn darum gebeten",
+        "Er hält den Schneider wirklich für einen Grafen",
+        "Der Wirt hat ihm Geld dafür gegeben"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "multipleChoice",
+      "prompt": "Wie deutet die Köchin das schüchterne Essverhalten des Schneiders?",
+      "options": [
+        "Als Zeichen vornehmer Herkunft",
+        "Als Zeichen von Krankheit",
+        "Als Unzufriedenheit mit dem Essen",
+        "Als schlechte Manieren"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q3",
+      "type": "trueFalse",
+      "prompt": "Melcher Böhni bemerkt etwas Verdächtiges an den Händen des Fremden.",
+      "answer": true
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Der Schneider isst schüchtern von der Forelle.",
+        "Er beschließt, sich wenigstens satt zu essen.",
+        "Der Kutscher nennt ihn Graf Strapinski und fährt davon.",
+        "Neugierige Herren setzen sich zu dem vermeintlichen Grafen."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Welche Speise aß der Schneider mit dem Muthe der Verzweiflung?",
+      "options": ["Pastete", "Suppe", "Kuchen", "Wurst"],
+      "answer": 0
+    }
+  ]
+}

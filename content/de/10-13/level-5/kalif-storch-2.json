@@ -1,0 +1,63 @@
+{
+  "id": "de-10-13-l5-kalif-storch-2",
+  "lang": "de",
+  "ageGroup": "10-13",
+  "level": 5,
+  "title": "Kalif Storch (2): Die Nachteule",
+  "author": "Wilhelm Hauff",
+  "source": "Die Geschichte von Kalif Storch (Märchen-Almanach auf das Jahr 1826), Kapitel III–V. Gekürzt, Rechtschreibung modernisiert. Wikisource: https://de.wikisource.org/wiki/Die_Geschichte_von_Kalif_Storch",
+  "simplified": true,
+  "body": "Traurig wanderten die Verzauberten durch die Felder. Aus ihrer Storchenhaut konnten sie nicht heraus, und in die Stadt zurück konnten sie auch nicht, denn wer hätte einem Storch geglaubt, dass er der Kalif sei? Ihr einziges Vergnügen war, dass sie fliegen konnten, und so flogen sie oft auf die Dächer von Bagdad, um zu sehen, was dort vorging.\n\nAm vierten Tag saßen sie auf dem Palast und sahen unten in der Straße einen prächtigen Zug. Ein Mann in einem goldbestickten Mantel ritt auf einem geschmückten Pferd, und halb Bagdad rief: „Heil Mizra, dem Herrscher von Bagdad!“ Da sprach der Kalif: „Ahnst du jetzt, warum ich verzaubert bin, Großwesir? Dieser Mizra ist der Sohn meines Todfeindes, des mächtigen Zauberers Kaschnur. Aber noch gebe ich die Hoffnung nicht auf.“\n\nSie flogen davon, doch der Großwesir hatte wenig Übung im Fliegen und wurde bald müde. Am Abend ließen sie sich in einer Ruine nieder, die einmal ein Schloss gewesen war. Plötzlich hörten sie ein leises Weinen. Der Kalif, dem auch unter dem Storchenflügel ein tapferes Herz schlug, stieß mit dem Schnabel eine Tür auf. In dem verfallenen Zimmer saß eine große Nachteule. Dicke Tränen rollten ihr aus den runden Augen. Als sie die Störche sah, rief sie in gutem menschlichem Arabisch: „Willkommen, ihr Störche! Mir wurde einst vorhergesagt, dass mir durch Störche ein großes Glück kommen werde!“\n\nDie Eule erzählte, sie sei Lusa, die einzige Tochter des Königs von Indien. Derselbe Zauberer Kaschnur habe sie verwandelt, weil ihr Vater sie nicht mit seinem Sohn Mizra verheiraten wollte. „Hässlich soll ich bleiben“, habe er gerufen, „bis einer aus freiem Willen dich, selbst in dieser schrecklichen Gestalt, zur Frau haben will.“ Dann verriet sie: „Der Zauberer kommt jeden Monat einmal in diese Ruinen und feiert mit seinen Genossen in einem Saal. Vielleicht spricht er dabei das Zauberwort aus, das ihr vergessen habt. Ich zeige euch den Saal, aber nur unter einer Bedingung: Einer von euch muss mir die Hand reichen und mich heiraten.“\n\nDie Störche gingen ein wenig hinaus. Der Großwesir wollte lieber Storch bleiben als die Eule heiraten, und so entschloss sich der Kalif, die Bedingung selbst zu erfüllen. Die Eule führte sie durch einen finsteren Gang zu einer Mauerlücke. Von dort sahen sie in einen großen Saal mit bunten Lampen, wo acht Männer um einen Tisch saßen. In einem von ihnen erkannten die Störche den Krämer wieder, der ihnen das Zauberpulver verkauft hatte. Er erzählte gerade die Geschichte vom Kalifen und seinem Wesir. „Was für ein Wort hast du ihnen denn aufgegeben?“, fragte ein anderer Zauberer. „Ein recht schweres lateinisches“, antwortete er, „es heißt Mutabor.“\n\nVor Freude liefen die Störche so schnell zum Tor der Ruine, dass die Eule kaum folgen konnte. Dort sprach der Kalif zu ihr: „Retterin meines Lebens, nimm mich zum ewigen Dank zum Mann!“ Dann bückten sich die Störche dreimal nach Osten, der aufgehenden Sonne entgegen. „Mutabor!“, riefen sie, und im Nu waren sie wieder Menschen. Wer beschreibt aber ihr Erstaunen, als vor ihnen eine schöne, herrlich geschmückte Dame stand! „Erkennt Ihr Eure Nachteule nicht mehr?“, fragte sie lächelnd.\n\nIn Bagdad war das Volk hoch erfreut, seinen geliebten Herrscher wiederzuhaben. Der Betrüger Mizra wurde selbst in einen Storch verwandelt und in einen eisernen Käfig gesperrt. Kalif Chasid aber lebte lange und vergnügt mit seiner Frau, der Prinzessin. Und wenn er recht heiter war, machte er den Großwesir nach, wie der als Storch vergeblich „Mu – Mu –“ gerufen hatte.",
+  "glossary": [
+    { "word": "Ruine", "meaning": "Die Überreste eines zerfallenen Gebäudes." },
+    { "word": "Todfeindes", "meaning": "Todfeind: ein Feind, der einen bis aufs Äußerste hasst." },
+    { "word": "Genossen", "meaning": "Gefährten, Kumpane." },
+    { "word": "Mauerlücke", "meaning": "Ein Loch oder Spalt in einer Mauer." },
+    { "word": "Betrüger", "meaning": "Jemand, der andere täuscht, um sich einen Vorteil zu verschaffen." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Wer war die Nachteule in Wirklichkeit?",
+      "options": ["Die Tochter des Königs von Indien", "Die Frau des Großwesirs", "Die Schwester des Kalifen", "Eine Zauberin"],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Der Großwesir wollte die Eule gern heiraten.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Wie erfuhren die Störche das vergessene Zauberwort wieder?",
+      "options": [
+        "Sie belauschten die Zauberer im Saal",
+        "Die Eule las es in einem Buch",
+        "Selim der Gelehrte schrieb ihnen einen Brief",
+        "Ein anderer Storch verriet es ihnen"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Die Störche sehen Mizra durch Bagdad reiten.",
+        "Sie finden eine weinende Eule in einer Ruine.",
+        "Der Krämer verrät das Zauberwort.",
+        "Die Eule verwandelt sich in eine schöne Prinzessin."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Worin wurde der Betrüger Mizra am Ende gesperrt?",
+      "options": ["Käfig", "Turm", "Keller", "Kerker"],
+      "answer": 0
+    }
+  ]
+}

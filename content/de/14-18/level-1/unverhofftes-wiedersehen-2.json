@@ -1,0 +1,68 @@
+{
+  "id": "de-14-18-l1-unverhofftes-wiedersehen-2",
+  "lang": "de",
+  "ageGroup": "14-18",
+  "level": 1,
+  "title": "Unverhofftes Wiedersehen (2)",
+  "author": "Johann Peter Hebel",
+  "source": "Unverhoftes Wiedersehen (Schatzkästlein des rheinischen Hausfreundes, 1811), zweiter Teil. Originalschreibweise. Wikisource: https://de.wikisource.org/wiki/Unverhoftes_Wiedersehen",
+  "simplified": false,
+  "body": "Als aber die Bergleute in Falun im Jahr 1809 etwas vor oder nach Johannis zwischen zwey Schachten eine Oeffnung durchgraben wollten, gute dreyhundert Ehlen tief unter dem Boden gruben sie aus dem Schutt und Vitriolwasser den Leichnam eines Jünglings heraus, der ganz mit Eisenvitriol durchdrungen, sonst aber unverwest und unverändert war; also daß man seine Gesichtszüge und sein Alter noch völlig erkennen konnte, als wenn er erst vor einer Stunde gestorben, oder ein wenig eingeschlafen wäre, an der Arbeit.\n\nAls man ihn aber zu Tag ausgefördert hatte, Vater und Mutter, Gefreundte und Bekannte waren schon lange todt, kein Mensch wollte den schlafenden Jüngling kennen oder etwas von seinem Unglück wissen, bis die ehemalige Verlobte des Bergmanns kam, der eines Tages auf die Schicht gegangen war und nimmer zurückkehrte. Grau und zusammengeschrumpft kam sie an einer Krücke an den Platz und erkannte ihren Bräutigam; und mehr mit freudigem Entzücken als mit Schmerz sank sie auf die geliebte Leiche nieder, und erst als sie sich von einer langen heftigen Bewegung des Gemüths erholt hatte, „es ist mein Verlobter,“ sagte sie endlich, „um den ich fünfzig Jahre lang getrauert hatte, und den mich Gott noch einmal sehen läßt vor meinem Ende. Acht Tage vor der Hochzeit ist er unter die Erde gegangen und nimmer herauf gekommen.“\n\nDa wurden die Gemüther aller Umstehenden von Wehmuth und Thränen ergriffen, als sie sahen die ehemalige Braut jezt in der Gestalt des hingewelkten kraftlosen Alters und den Bräutigam noch in seiner jugendlichen Schöne, und wie in ihrer Brust nach 50 Jahren die Flamme der jugendlichen Liebe noch einmal erwachte; aber er öffnete den Mund nimmer zum Lächeln oder die Augen zum Wiedererkennen; und wie sie ihn endlich von den Bergleuten in ihr Stüblein tragen ließ, als die einzige, die ihm angehöre, und ein Recht an ihn habe, bis sein Grab gerüstet sey auf dem Kirchhof.\n\nDen andern Tag, als das Grab gerüstet war auf dem Kirchhof und ihn die Bergleute holten, schloß sie ein Kästlein auf legte sie ihm das schwarzseidene Halstuch mit rothen Streifen um, und begleitete ihn alsdann in ihrem Sonntagsgewand, als wenn es ihr Hochzeittag und nicht der Tag seiner Beerdigung wäre. Denn als man ihn auf dem Kirchhof ins Grab legte, sagte sie: „Schlafe nun wohl, noch einen Tag oder zehen im kühlen Hochzeitbett, und laß dir die Zeit nicht lange werden. Ich habe nur noch wenig zu thun, und komme bald, und bald wirds wieder Tag. – Was die Erde einmal wieder gegeben hat, wird sie zum zweytenmal auch nicht behalten,“ sagte sie, als sie fortgieng, und noch einmal umschaute.",
+  "glossary": [
+    { "word": "Leichnam", "meaning": "Der Körper eines Verstorbenen." },
+    { "word": "unverwest", "meaning": "Nicht verfallen oder zersetzt." },
+    { "word": "Krücke", "meaning": "Eine Stütze zum Gehen." },
+    { "word": "Wehmuth", "meaning": "Wehmut: stille Trauer, sanfter Schmerz." },
+    { "word": "Kirchhof", "meaning": "Friedhof bei einer Kirche." }
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multipleChoice",
+      "prompt": "Warum war der Leichnam nach fünfzig Jahren noch unverändert?",
+      "options": [
+        "Er war von Eisenvitriol durchdrungen",
+        "Er lag im ewigen Eis",
+        "Er war einbalsamiert worden",
+        "Er lag in einem verschlossenen Sarg"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q2",
+      "type": "trueFalse",
+      "prompt": "Die Eltern des Bergmanns erkannten ihren Sohn sofort wieder.",
+      "answer": false
+    },
+    {
+      "id": "q3",
+      "type": "multipleChoice",
+      "prompt": "Was zeigt das Verhalten der alten Frau bei der Beerdigung?",
+      "options": [
+        "Sie erlebt den Tag wie ihre Hochzeit und hofft auf ein Wiedersehen",
+        "Sie ist wütend auf die Bergleute",
+        "Sie hat ihren Bräutigam längst vergessen",
+        "Sie will so schnell wie möglich nach Hause"
+      ],
+      "answer": 0
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bringe die Ereignisse in die richtige Reihenfolge.",
+      "items": [
+        "Bergleute finden den Leichnam eines Jünglings.",
+        "Die alte Frau erkennt ihren Bräutigam.",
+        "Sie lässt ihn in ihr Stüblein tragen.",
+        "Sie legt ihm das Halstuch um und begleitet ihn zum Grab."
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "wordRecall",
+      "prompt": "Womit war der Körper des Jünglings ganz durchdrungen?",
+      "options": ["Eisenvitriol", "Salz", "Kalk", "Schwefel"],
+      "answer": 0
+    }
+  ]
+}
