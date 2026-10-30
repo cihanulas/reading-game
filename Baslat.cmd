@@ -26,7 +26,17 @@ if not exist "node_modules\.bin\vite.cmd" (
 echo Okuma Adasi baslatiliyor. Tarayici otomatik acilacak.
 echo Uygulamayi durdurmak icin bu pencereyi kapatin.
 echo.
-call npm run dev -- --host 127.0.0.1 --open
+echo Bu bilgisayardan: http://127.0.0.1:5173/
+for /f "usebackq delims=" %%i in (`powershell -NoProfile -Command "(Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.IPAddress -notlike '127.*' -and $_.PrefixOrigin -ne 'WellKnown' } | Select-Object -First 1 -ExpandProperty IPAddress)"`) do set "LANIP=%%i"
+if defined LANIP (
+    echo Telefondan, ayni Wi-Fi ile: http://%LANIP%:5173/
+    echo Adres http ile baslamali. https yazmayin; tarayici guvenli baglanti hatasi verir.
+    echo 127.0.0.1 yalnizca bu bilgisayarda acilir. Telefonda kullanmayin.
+) else (
+    echo Telefon adresi bulunamadi. Asagida Vite'in yazdigi Network satirini kullanin.
+)
+echo.
+call npm run dev -- --host --open
 if errorlevel 1 (
     echo Uygulama baslatilamadi. Yukaridaki hata mesajini kontrol edin.
     pause

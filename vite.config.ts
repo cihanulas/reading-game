@@ -27,6 +27,10 @@ export default defineConfig({
       },
     }),
   ],
+  server: {
+    // Telefondan erişim: aynı Wi-Fi’daki cihazlar bilgisayarın yerel IP’siyle bağlanır.
+    host: true,
+  },
   test: {
     environment: 'node',
   },
