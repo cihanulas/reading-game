@@ -4,6 +4,8 @@ import {
   CHEST_GOLD,
   earnedBadges,
   islandStates,
+  journeyProgress,
+  journeyMilestones,
   ITEMS,
   mapPieces,
   pickReward,
@@ -38,6 +40,30 @@ describe('islands', () => {
 
   it('ignores placement reads', () => {
     expect(unlockedIslands([s({ mode: 'placement' }), s({ mode: 'placement' })])).toEqual(['explore']);
+  });
+});
+
+describe('journey completion', () => {
+  const groups = [{ level: 1, texts: [{ id: 'a' }, { id: 'b' }] }, { level: 2, texts: [{ id: 'c' }] }];
+
+  it('counts unique understood texts, not repeats, placement or unrelated content', () => {
+    const sessions = [s({ textId: 'a' }), s({ textId: 'a' }), s({ textId: 'b', comprehension: 0.2 }), s({ textId: 'c', mode: 'placement' }), s({ textId: 'bonus' })];
+    expect(journeyProgress(sessions, groups)).toMatchObject({ done: 1, total: 3, complete: false });
+    expect(journeyProgress([], [])).toMatchObject({ complete: false });
+  });
+
+  it('awards each level and island only on its first completion', () => {
+    const before = [s({ textId: 'a' }), s({ textId: 'b' })];
+    const after = [...before, s({ textId: 'c' })];
+    expect(journeyMilestones(before, after, groups, 'explore')).toEqual({ levels: [2], island: true, journey: true });
+    expect(journeyMilestones(after, [...after, s({ textId: 'c' })], groups, 'explore')).toEqual({ levels: [], island: false, journey: false });
+  });
+
+  it('allows the journey across modes without requiring microphone access', () => {
+    const before = [s({ textId: 'a' }), s({ textId: 'b', mode: 'pacer' })];
+    const after = [...before, s({ textId: 'c', mode: 'rsvp' })];
+    expect(journeyMilestones(before, after, groups, 'rsvp')).toEqual({ levels: [2], island: false, journey: true });
+    expect(journeyProgress(after, groups, 'voice').done).toBe(0);
   });
 });
 

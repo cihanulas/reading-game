@@ -2,6 +2,7 @@ import { AnimatePresence, motion, MotionConfig } from 'motion/react';
 import { lazy, Suspense } from 'react';
 import { CreateProfileScreen } from './screens/CreateProfileScreen';
 import { HomeScreen } from './screens/HomeScreen';
+import { JourneyScreen } from './screens/JourneyScreen';
 import { PlacementResultScreen } from './screens/PlacementResultScreen';
 import { PlacementScreen } from './screens/PlacementScreen';
 import { PlayResultScreen } from './screens/PlayResultScreen';
@@ -26,6 +27,8 @@ function renderScreen(screen: Screen) {
       return <PlacementResultScreen />;
     case 'home':
       return <HomeScreen />;
+    case 'journey':
+      return <JourneyScreen />;
     case 'textSelect':
       return <TextSelectScreen />;
     case 'play':

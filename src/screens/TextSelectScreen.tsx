@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { CheckCircle2, Gift } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { getLevelTexts } from '../content/loader';
 import { useProfile } from '../db/useProfile';
@@ -6,6 +7,7 @@ import { useSessions } from '../db/sessions';
 import { useApp } from '../store/app';
 import { MODE_ICON } from '../ui/modes';
 import { IslandArt } from '../ui/GameArt';
+import { isSuccessful, journeyProgress } from '../core/progress';
 
 export function TextSelectScreen() {
   const { t } = useTranslation();
@@ -13,7 +15,10 @@ export function TextSelectScreen() {
   const profile = useProfile(profileId);
   const sessions = useSessions(profile?.id, profile?.lang);
   const groups = useMemo(() => (profile ? getLevelTexts(profile.lang, profile.ageGroup) : []), [profile]);
-  const [level, setLevel] = useState(1);
+  const [chosenLevel, setLevel] = useState<number | null>(null);
+  const progress = journeyProgress(sessions ?? [], groups, mode);
+  const level = chosenLevel ?? progress.levels.find((group) => group.done < group.total)?.level ?? 1;
+  const completed = new Set((sessions ?? []).filter((session) => session.mode === mode && isSuccessful(session)).map((session) => session.textId));
 
   const bestScore = useMemo(() => {
     const best = new Map<string, number>();
@@ -35,6 +40,8 @@ export function TextSelectScreen() {
           {MODE_ICON[mode]} {t(`modes.${mode}.title`)}
           </h2>
           <p className="speech">{t(`modes.${mode}.intro`)}</p>
+          <p className="library-progress">{t('journey.progress', progress)}</p>
+          <progress value={progress.done} max={progress.total || 1} aria-label={t(`modes.${mode}.title`)} />
         </header>
         <div className="library-content">
         {groups.length === 0 && <p>{t('textSelect.empty')}</p>}
@@ -49,6 +56,7 @@ export function TextSelectScreen() {
               document.getElementById(`level-tab-${groups[next].level}`)?.focus();
             }}>
               {t('textSelect.level', { level: group.level })}
+              {progress.levels.find((item) => item.level === group.level)?.done === group.texts.length && <CheckCircle2 size={15} aria-label={t('journey.understood')} />}
             </button>
           ))}
         </div>
@@ -60,7 +68,8 @@ export function TextSelectScreen() {
                 return (
                   <li key={text.id}>
                     <button type="button" className="btn text-pick" onClick={() => startPlay(text.id)}>
-                      <span className="text-title">{best !== undefined ? '⭐' : '📜'} {text.title}</span>
+                      <span className="text-title">{completed.has(text.id) && <CheckCircle2 size={18} aria-hidden="true" />} {text.title}</span>
+                      <span className={`text-status ${completed.has(text.id) ? 'complete' : ''}`}>{t(completed.has(text.id) ? 'journey.understood' : 'journey.notYet')}</span>
                       <small>
                         {text.author} · {t('textSelect.words', { count: text.wordCount })}
                         {best !== undefined && <> · {t('textSelect.best', { score: best })}</>}
@@ -77,6 +86,7 @@ export function TextSelectScreen() {
           <button type="button" className="btn ghost" onClick={() => go('home')}>
             {t('textSelect.back')}
           </button>
+          <button type="button" className="btn ghost" onClick={() => go('journey')}><Gift size={18} aria-hidden="true" />{t('journey.title')}</button>
         </div>
       </div>
     </section>

@@ -1,4 +1,6 @@
 :root {
+  --gold: #f1c15e;
+  --berry: #9c3d5d;
   --sea: #148c91;
   --sea-dark: #21636d;
   --sand: #fffdf7;
@@ -16,6 +18,114 @@
 
 * {
   box-sizing: border-box;
+}
+
+.run-header { display: flex; align-items: center; justify-content: space-between; gap: .75rem; flex: 0 0 auto; margin-bottom: .5rem; }
+.run-header .badge { margin: 0; }
+.run-header .btn { padding: .4rem .65rem; font-size: .85rem; flex-shrink: 0; }
+.question-progress { font-size: .85rem; margin: .4rem 0; font-weight: 800; }
+.celebration { position: relative; display: grid; place-items: center; height: 84px; isolation: isolate; }
+.achievement-seal { display: grid; place-items: center; width: 70px; height: 70px; border-radius: 50%; color: #825016; background: #ffe4a0; border: 5px double #c99232; box-shadow: 0 4px 0 #e7cc88; }
+.achievement-seal svg { width: 38px; height: 38px; }
+.grand .achievement-seal { color: #fff; background: var(--berry); border-color: #efc873; box-shadow: 0 4px 0 #782a46; }
+.confetti { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: -1; }
+.confetti i { position: absolute; left: calc(5% + var(--piece) * 4%); top: -12px; width: 7px; height: 12px; background: var(--coral); opacity: 0; }
+.confetti i:nth-child(3n) { background: var(--gold); }
+.confetti i:nth-child(3n + 1) { background: var(--sea); border-radius: 50%; }
+@media (prefers-reduced-motion: no-preference) {
+  .confetti i { animation: confetti-fall 2.4s ease-out both; animation-delay: calc(var(--piece) * 45ms); }
+  .achievement-seal { animation: seal-arrive .6s cubic-bezier(.2, .8, .3, 1.2) both; }
+  .gift-reveal svg { animation: gift-wiggle 2.5s ease-in-out 3; }
+}
+@keyframes confetti-fall { 0% { opacity: 0; transform: translate(0, -10px) rotate(0); } 15% { opacity: 1; } 100% { opacity: 0; transform: translate(var(--drift), 120px) rotate(290deg); } }
+@keyframes seal-arrive { from { opacity: 0; transform: scale(.65) rotate(-12deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+@keyframes gift-wiggle { 0%, 75%, 100% { transform: rotate(0); } 80%, 90% { transform: rotate(-10deg); } 85%, 95% { transform: rotate(10deg); } }
+.journey-link { display: inline-flex; align-items: center; gap: .4rem; border: 0; padding: 0; background: none; color: var(--sea-dark); font: inherit; font-size: .9rem; font-weight: 800; text-align: left; cursor: pointer; }
+.journey-link:hover { text-decoration: underline; }
+.home-journey progress, .library-intro progress, .journey-checklist progress { display: block; width: 100%; height: 8px; border: 0; border-radius: 8px; accent-color: var(--sea); overflow: hidden; }
+progress::-webkit-progress-bar { background: #dde8df; border-radius: 8px; }
+progress::-webkit-progress-value { background: var(--sea); border-radius: 8px; }
+.home-journey progress { margin-top: .35rem; }
+.text-title { display: flex; align-items: center; gap: .4rem; }
+.text-status { font-size: .7rem; font-weight: 800; color: #6b6354; }
+.text-status.complete { color: #267041; }
+.library-progress { font-size: .85rem; font-weight: 800; }
+.journey-screen { max-width: 1280px; }
+.journey-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.journey-heading h2 { margin: 0; font-family: 'Fraunces', Georgia, serif; font-size: 1.5rem; }
+.journey-heading .btn { font-size: .85rem; }
+.journey-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: center; }
+.certificate { position: relative; text-align: center; padding: 1.5rem 1.75rem; background: #fffef9; border: 6px double #bca057; outline: 1px solid #fff9dd; outline-offset: -12px; box-shadow: 0 12px 30px rgb(34 88 71 / .12); }
+.certificate h2 { font-family: 'Fraunces', Georgia, serif; font-size: 1.4rem; line-height: 1.3; margin: .5rem 0 1rem; }
+.certificate-label { font-size: .75rem; margin: .35rem 0; color: #5f6e68; }
+.certificate-name { display: block; font-family: 'Fraunces', Georgia, serif; font-size: 1.8rem; color: var(--berry); overflow-wrap: anywhere; line-height: 1.2; }
+.certificate-achievement { font-size: .9rem; line-height: 1.5; margin: .8rem 0; }
+.certificate-gift { border-top: 1px solid #e4d7b7; border-bottom: 1px solid #e4d7b7; padding: .75rem 0; color: #794024; }
+.certificate-gift > svg { display: block; margin: 0 auto .35rem; }
+.certificate-gift strong { display: block; font-size: 1.05rem; }
+.certificate-gift p { font-size: .8rem; margin: .35rem 0 0; }
+.certificate-note { font-size: .7rem; color: #52665c; line-height: 1.45; margin: .85rem 0 .25rem; }
+.certificate-print { font-size: .8rem; padding: .4rem .8rem; }
+.gift-reveal { margin: .5rem 0; }
+.journey-activities > h2 { font-family: 'Fraunces', Georgia, serif; font-size: 1.7rem; margin: 0; }
+.journey-activities > p, .journey-next p { font-size: .9rem; line-height: 1.5; }
+.activity-list { display: grid; gap: .8rem; }
+.activity-tile { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: .65rem .85rem; align-items: center; background: #f9fbf5; border: 1px solid #b2cfc0; border-radius: 8px; padding: 1rem; box-shadow: 0 3px 0 rgb(53 112 90 / .1); }
+.activity-tile h3 { font-size: 1rem; line-height: 1.3; margin: .2rem 0; overflow-wrap: anywhere; }
+.activity-tile p { font-size: .75rem; margin: .25rem 0; }
+.activity-tile .btn { grid-column: 2; justify-self: start; font-size: .8rem; padding: .45rem .8rem; background: #dceddf; box-shadow: none; }
+.activity-symbol { display: grid; place-items: center; width: 52px; height: 64px; background: #fce4b5; color: #80581f; border-radius: 8px; }
+.activity-symbol svg { width: 30px; height: 30px; stroke-width: 1.5; }
+.activity-discovery .activity-symbol { background: #f5dbe2; color: var(--berry); }
+.journey-next { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #adc9bd; }
+.journey-next h3 { font-size: 1rem; margin: 0; }
+.journey-next p { margin: .4rem 0; }
+.journey-next .btn { font-size: .8rem; padding: .4rem 0; }
+.journey-checklist { padding: 1rem 2rem; text-align: center; }
+.journey-checklist > .island-art { max-width: 200px; margin: 0 auto; }
+.journey-checklist h2 { font-size: 1.25rem; }
+.journey-checklist ul { padding: 0; list-style: none; text-align: left; }
+.journey-checklist li { display: flex; align-items: center; gap: .6rem; padding: .45rem 0; border-bottom: 1px solid #bad5c8; }
+.journey-checklist li strong { margin-left: auto; }
+@media (max-width: 899px) {
+  .journey-columns { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .journey-heading { align-items: start; }
+  .journey-heading .btn { padding: .5rem 0; }
+  .certificate { padding: 1.25rem; }
+  .journey-checklist { padding: 0; }
+}
+@media (max-width: 600px) {
+  .home-screen .stats { flex-wrap: wrap; }
+  .home-screen .stats .home-journey { flex-basis: 100%; border-left: 0; padding-left: 0; }
+  .journey-heading h2 { font-size: 1.25rem; }
+  .journey-heading .btn { max-width: 110px; }
+}
+@media (min-width: 900px) and (min-height: 600px) {
+  .screen.journey-screen { max-width: 1280px; min-height: 100dvh; display: flex; flex-direction: column; justify-content: center; padding: 1rem 2rem; }
+  .journey-columns { gap: 2rem; }
+}
+@media (min-width: 900px) and (min-height: 600px) and (max-height: 700px) {
+  .journey-heading { margin-bottom: .65rem; }
+  .certificate { padding: .55rem 1.25rem; }
+  .certificate .celebration { height: 62px; }
+  .certificate .achievement-seal { width: 54px; height: 54px; }
+  .certificate .achievement-seal svg { width: 28px; height: 28px; }
+  .certificate h2 { margin: .3rem 0 .5rem; font-size: 1.25rem; }
+  .certificate-name { font-size: 1.5rem; }
+  .certificate-achievement { font-size: .8rem; margin: .5rem 0; }
+  .certificate-gift { padding: .5rem 0; }
+  .certificate-gift > svg { display: none; }
+  .certificate-note { font-size: .65rem; margin-top: .5rem; }
+  .activity-tile { padding: .75rem; gap: .4rem .75rem; }
+  .journey-next { margin-top: .75rem; padding-top: .75rem; }
+  .journey-checklist > .island-art { max-width: 140px; }
+}
+@media print {
+  body { background: white !important; }
+  .journey-heading, .journey-activities, .certificate-print, .confetti, .gift-reveal { display: none !important; }
+  .screen.journey-screen { display: block; max-width: none; min-height: 0; padding: 1cm; }
+  .journey-columns { display: block; }
+  .certificate { max-width: 17cm; margin: 0 auto; padding: 1cm; box-shadow: none; break-inside: avoid; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
 
 body {

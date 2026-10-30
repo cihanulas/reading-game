@@ -41,6 +41,7 @@ export interface ReadingText {
   lang: string;
   ageGroup: AgeGroup;
   level: number;
+  activity?: 'detective' | 'discovery';
   title: string;
   author: string;
   source: string;

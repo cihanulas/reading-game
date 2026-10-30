@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { AGE_GROUPS, SUPPORTED_LANGUAGES } from '../lang';
-import { getLevelTexts, getPlacementTexts, rawContent } from './loader';
+import { getActivityTexts, getLevelTexts, getPlacementTexts, rawContent } from './loader';
 import { MAX_LEVEL } from './schema';
 import { validateReadingText } from './validate';
 
@@ -17,6 +17,18 @@ describe('content library', () => {
     const ids = Object.values(rawContent).map((t) => t.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
+
+  it.each(SUPPORTED_LANGUAGES.flatMap((lang) => AGE_GROUPS.map((age) => [lang, age] as const)))(
+    '%s %s has separate, age-appropriate continuation activities', (lang, age) => {
+      const activities = getActivityTexts(lang, age);
+      expect(activities.map((text) => text.activity).sort()).toEqual(['detective', 'discovery']);
+      const mainIds = getLevelTexts(lang, age).flatMap((group) => group.texts.map((text) => text.id));
+      for (const activity of activities) {
+        expect(mainIds).not.toContain(activity.id);
+        expect(activity.wordCount).toBeGreaterThan(100);
+      }
+    },
+  );
 
   it.each(SUPPORTED_LANGUAGES.flatMap((l) => AGE_GROUPS.map((a) => [l, a] as const)))(
     '%s %s has 2 placement texts',

@@ -1,7 +1,8 @@
 import { motion } from 'motion/react';
-import { ChartNoAxesCombined, PackageOpen, Coins, Flame, LockKeyhole, RotateCcw, Users } from 'lucide-react';
+import { ChartNoAxesCombined, PackageOpen, Coins, Flame, LockKeyhole, RotateCcw, Users, Gift, Flag, CheckCircle2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { chestsEarned, islandStates, type IslandState } from '../core/progress';
+import { chestsEarned, islandStates, journeyProgress, type IslandState } from '../core/progress';
+import { getLevelTexts } from '../content/loader';
 import { streakDays } from '../core/scoring';
 import { useRewards } from '../db/rewards';
 import { useSessions } from '../db/sessions';
@@ -36,6 +37,8 @@ export function HomeScreen() {
   const streak = streakDays(sessions.map((s) => s.createdAt), Date.now());
   const unopened = chestsEarned(sessions) - rewards.length;
   const islands = islandStates(sessions);
+  const groups = getLevelTexts(profile.lang, profile.ageGroup);
+  const journey = journeyProgress(sessions, groups);
   const route = islands.map(({ id }) => `${POSITION[id].left},${POSITION[id].top}`).join(' ');
 
   const enter = (island: IslandState) => {
@@ -68,6 +71,14 @@ export function HomeScreen() {
             <dt>{t('home.streak')}</dt>
             <dd><Flame aria-hidden="true" /> {t('home.streakDays', { count: streak })}</dd>
           </div>
+          <div className="home-journey">
+            <dt>{t('journey.title')}</dt>
+            <dd><button type="button" className="journey-link" onClick={() => go('journey')}>
+              {journey.complete ? <Gift aria-hidden="true" /> : <Flag aria-hidden="true" />}
+              {t(journey.complete ? 'journey.openGift' : 'journey.progress', journey)}
+            </button></dd>
+            <progress value={journey.done} max={journey.total || 1} aria-label={t('journey.title')} />
+          </div>
         </dl>
 
         <div className="sea-map" role="group" aria-label={t('home.map')}>
@@ -76,6 +87,7 @@ export function HomeScreen() {
             <polyline points={route} />
           </svg>
           {islands.map((island, i) => {
+            const islandProgress = journeyProgress(sessions, groups, island.id);
             const blocked = unsupported(island.id);
             const locked = !island.unlocked || blocked;
             const hint = blocked
@@ -97,8 +109,9 @@ export function HomeScreen() {
                   whileTap={locked ? { x: [0, -6, 6, -4, 4, 0] } : { scale: 0.92 }}
                 >
                   <IslandArt kind={island.id} />
-                  <span className="island-name">{locked && <LockKeyhole size={13} aria-hidden="true" />}{t(`modes.${island.id}.title`)}</span>
+                  <span className="island-name">{locked && <LockKeyhole size={13} aria-hidden="true" />}{islandProgress.complete && <CheckCircle2 size={16} aria-hidden="true" />}{t(`modes.${island.id}.title`)}</span>
                   {hint && <small>{hint}</small>}
+                  {!hint && <small className="island-completion">{t('journey.progress', islandProgress)}</small>}
                 </motion.button>
               </div>
             );

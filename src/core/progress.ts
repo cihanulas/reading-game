@@ -46,6 +46,33 @@ export const unlockedIslands = (sessions: SessionFacts[]) =>
 export const mapPieces = (sessions: SessionFacts[]) => sessions.filter(isSuccessful).length;
 export const chestsEarned = (sessions: SessionFacts[]) => Math.floor(mapPieces(sessions) / PIECES_PER_CHEST);
 
+export interface JourneyGroup {
+  level: number;
+  texts: { id: string }[];
+}
+
+export function journeyProgress(sessions: SessionFacts[], groups: JourneyGroup[], mode?: IslandId) {
+  const completed = new Set(sessions.filter((session) => isSuccessful(session) && (!mode || session.mode === mode)).map((session) => session.textId));
+  const levels = groups.map((group) => ({
+    level: group.level,
+    total: group.texts.length,
+    done: group.texts.filter((text) => completed.has(text.id)).length,
+  }));
+  const total = levels.reduce((sum, level) => sum + level.total, 0);
+  const done = levels.reduce((sum, level) => sum + level.done, 0);
+  return { levels, total, done, complete: total > 0 && done === total };
+}
+
+export function journeyMilestones(before: SessionFacts[], after: SessionFacts[], groups: JourneyGroup[], mode: IslandId) {
+  const previous = journeyProgress(before, groups, mode);
+  const current = journeyProgress(after, groups, mode);
+  return {
+    levels: current.levels.filter((level) => level.total > 0 && level.done === level.total && previous.levels.find((old) => old.level === level.level)?.done !== level.total).map((level) => level.level),
+    island: current.complete && !previous.complete,
+    journey: journeyProgress(after, groups).complete && !journeyProgress(before, groups).complete,
+  };
+}
+
 export type BadgeId =
   | 'firstVoyage'
   | 'bookworm'

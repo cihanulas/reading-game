@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
-import { useEffect, useRef, useState } from 'react';
+import { Gift, Flag, Trophy } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BADGE_ICON, PIECES_PER_CHEST } from '../core/progress';
 import { MIN_COMPREHENSION_FOR_TARGET } from '../core/scoring';
@@ -7,6 +8,8 @@ import { useApp } from '../store/app';
 import { MODE_ICON } from '../ui/modes';
 import { playSound } from '../ui/sound';
 import { PageNavigation } from '../ui/PageNavigation';
+import { Celebration } from '../ui/Celebration';
+import { getTextById } from '../content/loader';
 
 const pop = (i: number) => ({
   initial: { scale: 0, opacity: 0 },
@@ -17,18 +20,20 @@ const pop = (i: number) => ({
 export function PlayResultScreen() {
   const { t } = useTranslation();
   const { playSummary: s, go } = useApp();
-  const played = useRef(false);
   const [rewardPage, setRewardPage] = useState(0);
 
   useEffect(() => {
-    if (!s || played.current) return;
-    played.current = true;
-    const fx = s.newIslands.length > 0 ? 'unlock' : s.chestEarned ? 'chest' : s.newBadges.length > 0 ? 'badge' : null;
+    if (!s) return;
+    const fx = s.milestones.journey || s.milestones.island || s.newIslands.length > 0 ? 'unlock' : s.chestEarned ? 'chest' : s.newBadges.length > 0 || s.milestones.levels.length > 0 ? 'badge' : null;
     if (s.score.targetBonus > 0 || s.comprehension >= MIN_COMPREHENSION_FOR_TARGET) playSound('success');
-    if (fx) setTimeout(() => playSound(fx), 600);
+    const timer = fx ? setTimeout(() => playSound(fx), 600) : undefined;
+    return () => clearTimeout(timer);
   }, [s]);
 
   if (!s) return null;
+  const activity = getTextById(s.textId)?.activity;
+  const milestoneTitle = s.milestones.journey ? t('journey.completed') : s.milestones.island ? t('journey.islandComplete') : s.milestones.levels.length ? t('journey.levelComplete', { level: s.milestones.levels[0] }) : t('playResult.title');
+  const encouragement = s.milestones.journey ? t('journey.finalMessage') : s.milestones.island ? t('journey.islandMessage') : s.milestones.levels.length ? t('journey.levelMessage') : null;
 
   const wpm = (value: number) => t('placementResult.unitWpm', { value });
   const stats = [
@@ -69,6 +74,8 @@ export function PlayResultScreen() {
           : t('playResult.targetSame', { value: s.newTarget });
 
   const rewards = [
+    ...s.milestones.levels.map((level) => ({ id: `level-${level}`, icon: <Flag size={22} />, label: t('journey.levelComplete', { level }), kind: 'milestone-reward' })),
+    ...(s.milestones.island ? [{ id: 'island-complete', icon: <Trophy size={22} />, label: t('journey.islandComplete'), kind: 'milestone-reward' }] : []),
     ...s.newIslands.map((id) => ({ id: `island-${id}`, icon: MODE_ICON[id], label: t('rewards.islandUnlocked', { island: t(`modes.${id}.title`) }), kind: 'island-unlock' })),
     ...s.newBadges.map((id) => ({ id: `badge-${id}`, icon: BADGE_ICON[id], label: t('rewards.newBadge', { badge: t(`badges.${id}.title`) }), kind: '' })),
     s.chestEarned
@@ -80,12 +87,10 @@ export function PlayResultScreen() {
     <section className="screen result-screen">
       <div className="card center result-layout">
         <div className="result-summary">
-        <motion.div aria-hidden {...pop(0)}>
-          <div className="treasure">{s.score.targetBonus > 0 ? '💰' : '🧭'}</div>
-        </motion.div>
-        <h2>{t('playResult.title')}</h2>
+        <Celebration grand={s.milestones.journey || s.milestones.island} />
+        <h2>{milestoneTitle}</h2>
         <p className="byline">{s.title}</p>
-        <p className="speech">🦜 {message}</p>
+        <p className="speech">{encouragement ?? message}</p>
         <dl className="stats">
           {stats.map((st) => (
             <div key={st.label}>
@@ -130,6 +135,11 @@ export function PlayResultScreen() {
         <PageNavigation page={rewardPage} total={Math.ceil(rewards.length / 4)} onChange={setRewardPage} />
         </div>
         <div className="row result-actions">
+          {s.milestones.journey && (
+            <button type="button" className="btn primary" onClick={() => go('journey')}>
+              <Gift size={20} aria-hidden="true" /> {t('journey.openGift')}
+            </button>
+          )}
           <button type="button" className="btn ghost" onClick={() => go('home')}>
             {t('playResult.home')}
           </button>
@@ -138,8 +148,8 @@ export function PlayResultScreen() {
               🧰 {t('rewards.openChest')}
             </button>
           )}
-          <button type="button" className="btn primary" onClick={() => go('textSelect')}>
-            {t('playResult.again')}
+          <button type="button" className="btn primary" onClick={() => go(activity ? 'journey' : 'textSelect')}>
+            {t(activity ? 'journey.activities' : 'playResult.again')}
           </button>
         </div>
       </div>

@@ -24,6 +24,7 @@ export function validateReadingText(data: unknown, path: string): string[] {
   if (!AGE_GROUPS.includes(t.ageGroup!)) err(`geçersiz yaş grubu "${t.ageGroup}"`);
   if (!Number.isInteger(t.level) || t.level! < PLACEMENT_LEVEL || t.level! > MAX_LEVEL) err(`geçersiz seviye "${t.level}"`);
   if (typeof t.simplified !== 'boolean') err('"simplified" true/false olmalı');
+  if (t.activity !== undefined && (!['detective', 'discovery'].includes(t.activity) || t.level !== MAX_LEVEL)) err('ek aktivite türü geçersiz veya son seviyede değil');
 
   const segments = path.split('/');
   const [lang, age, levelDir] = segments.slice(segments.indexOf('content') + 1);

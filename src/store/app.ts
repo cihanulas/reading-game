@@ -13,6 +13,7 @@ export type Screen =
   | 'play'
   | 'playResult'
   | 'treasure'
+  | 'journey'
   | 'progress';
 
 /** Island game modes available from the home screen. */
@@ -44,6 +45,7 @@ export interface PlaySummary {
   chestEarned: boolean;
   /** Map pieces collected toward the next chest. */
   pieces: number;
+  milestones: { levels: number[]; island: boolean; journey: boolean };
   /** Read-aloud details (Yankı Mağarası only). */
   voice?: VoiceStats;
 }
