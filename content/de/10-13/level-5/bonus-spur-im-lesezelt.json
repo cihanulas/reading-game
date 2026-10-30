@@ -1,0 +1,13 @@
+{
+  "id": "de-10-13-bonus-spur-im-lesezelt",
+  "lang": "de", "ageGroup": "10-13", "level": 5, "activity": "detective",
+  "title": "Die Spur im Lesezelt", "author": "Okuma Adası", "source": "Originaltext für die Leseaktivitäten von Okuma Adası.", "simplified": false,
+  "body": "Im Schulgarten stand ein kleines Lesezelt. Am Freitag hatte die Klasse dort ein Buch mit einem gelben Lesezeichen zurückgelassen. Am Montag lag das Buch noch auf dem Kissen, doch das Lesezeichen fehlte. Neben dem Zelt entdeckte Lina einen gelben Papierstreifen. War das schon die Lösung?\n\nSie hob den Streifen auf. Er war glatt und hatte keine Schrift. Das gesuchte Lesezeichen war jedoch aus festem Papier und trug den Namen der Klasse. Lina legte den Streifen beiseite und fragte, wer zuletzt im Zelt gewesen war. Tom erzählte, dass er am Freitag die Kissen zum Trocknen herausgetragen hatte. Vorher hatte er das Buch geschlossen und auf die Bank gelegt.\n\nGemeinsam sahen sie zwischen den Seiten nach. Dort lag eine gepresste Blüte, aber kein Lesezeichen. Dann untersuchten sie die Bank. Unter einem Bein klemmte das gelbe Lesezeichen. Es war beim Tragen aus dem Buch gerutscht. Der andere Papierstreifen gehörte zu einer Girlande.\n\nLina schrieb den Ablauf in ihr Heft. Zwei Dinge können dieselbe Farbe haben und trotzdem nichts miteinander zu tun haben. Beim nächsten Mal wollte sie wieder genau vergleichen, bevor sie eine Vermutung für eine sichere Antwort hielt.",
+  "glossary": [{ "word": "Vermutung", "meaning": "Eine mögliche Erklärung, die noch geprüft werden muss." }],
+  "questions": [
+    { "id": "q1", "type": "multipleChoice", "prompt": "Woran erkannte Lina, dass der erste Streifen nicht das Lesezeichen war?", "options": ["Papier und Beschriftung passten nicht.", "Er war blau.", "Er lag im Buch."], "answer": 0 },
+    { "id": "q2", "type": "trueFalse", "prompt": "Das Lesezeichen lag unter einem Bein der Bank.", "answer": true },
+    { "id": "q3", "type": "ordering", "prompt": "Ordne Linas Suche.", "items": ["Sie verglich den Papierstreifen mit dem gesuchten Lesezeichen.", "Sie fragte Tom nach dem Freitag.", "Sie fand das Lesezeichen an der Bank."] },
+    { "id": "q4", "type": "multipleChoice", "prompt": "Was lernte Lina?", "options": ["Eine passende Farbe allein beweist noch keinen Zusammenhang.", "Jeder gelbe Streifen ist ein Lesezeichen.", "Fragen sind beim Suchen unnötig."], "answer": 0 }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "de-10-13-bonus-bohnen-am-fenster",
+  "lang": "de", "ageGroup": "10-13", "level": 5, "activity": "discovery",
+  "title": "Bohnen am Fenster", "author": "Okuma Adası", "source": "Originaltext für die Leseaktivitäten von Okuma Adası.", "simplified": false,
+  "body": "Nora wollte wissen, ob junge Bohnenpflanzen zum Licht wachsen. Sie stellte zwei ähnliche Pflanzen nebeneinander ans Fenster. Beide bekamen gleich große Töpfe, dieselbe Erde und gleich viel Wasser. Nach einigen Tagen neigten sich ihre Stängel zum Fenster. Nora zeichnete die Pflanzen und markierte auf dem Papier, aus welcher Richtung das Licht kam.\n\nNun drehte sie einen Topf vorsichtig um eine halbe Umdrehung. Den anderen ließ sie stehen. Sie wollte nicht gleichzeitig den Standort, die Wassermenge und den Topf verändern. Sonst wäre später schwer zu erkennen gewesen, welche Änderung eine Rolle spielte.\n\nJeden Nachmittag betrachtete sie die Pflanzen zur gleichen Zeit. Der neue Teil des gedrehten Stängels bog sich nach und nach wieder zum Fenster. Die andere Pflanze blieb zum Licht geneigt. Nora hatte erwartet, dass sich die gedrehte Pflanze sofort bewegen würde. Stattdessen musste sie mehrere Tage geduldig beobachten.\n\nIn ihrem Heft schrieb sie nicht, dass alle Pflanzen immer gleich reagieren. Sie hatte schließlich nur zwei Bohnenpflanzen untersucht. Für eine verlässlichere Aussage wollte sie den Versuch mit weiteren Pflanzen wiederholen. Ihr wichtigster Fund war deshalb nicht nur die gebogene Bohne: Sie hatte gelernt, eine Frage mit einem überschaubaren Versuch zu prüfen.",
+  "glossary": [{ "word": "Stängel", "meaning": "Der Teil einer Pflanze, der Blätter und Blüten trägt." }],
+  "questions": [
+    { "id": "q1", "type": "multipleChoice", "prompt": "Was veränderte Nora absichtlich?", "options": ["Die Richtung eines Topfes.", "Die Wassermenge beider Pflanzen.", "Die Erde in beiden Töpfen."], "answer": 0 },
+    { "id": "q2", "type": "trueFalse", "prompt": "Die gedrehte Pflanze richtete sich sofort vollständig zum Fenster aus.", "answer": false },
+    { "id": "q3", "type": "multipleChoice", "prompt": "Warum wollte Nora weitere Pflanzen untersuchen?", "options": ["Zwei Pflanzen reichen nicht für eine Aussage über alle Pflanzen.", "Sie hatte keine Zeichnung gemacht.", "Beide Töpfe waren leer."], "answer": 0 },
+    { "id": "q4", "type": "ordering", "prompt": "Ordne den Versuch.", "items": ["Nora stellte zwei ähnliche Pflanzen ans Fenster.", "Sie drehte einen Topf um eine halbe Umdrehung.", "Sie beobachtete die neue Wuchsrichtung mehrere Tage lang."] }
+  ]
+}
