@@ -1,6 +1,8 @@
 Okuma Adası - Kaynaklar / Credits
 
 METİNLER
+- "Yeni ufuklar" görevleri: Türkçe ve Almanca, iki yaş grubu için toplam 8 özgün Okuma Adası metni.
+  Bu etkinlikler klasik eserlerden alıntı veya uyarlama değildir; anlama, çıkarım ve bilimsel gözlem çalışmalarıdır.
 - Ömer Seyfettin (1884-1920) öyküleri. Kamu malı (public domain). Dijital metin: Vikikaynak (https://tr.wikisource.org)
   "Kaşağı", "Diyet", "Perili Köşk", "Kütük", "Bir Hatıra", "Pembe İncili Kaftan", "Bir Temiz Havlu Uğruna",
   "Kerâmet", "Nasıl Kurtarmış?", "Gizli Mâbed", "Forsa", "Fon Sadriştayn'ın Karısı", "Vire".

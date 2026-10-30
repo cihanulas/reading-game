@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { getTextById } from '../content/loader';
-import { chestsEarned, earnedBadges, mapPieces, PIECES_PER_CHEST, unlockedIslands } from '../core/progress';
+import { getLevelTexts, getTextById } from '../content/loader';
+import { chestsEarned, earnedBadges, journeyMilestones, mapPieces, PIECES_PER_CHEST, unlockedIslands } from '../core/progress';
 import { adaptTarget, comprehensionRatio, effectiveWpm, wordsPerMinute } from '../core/reading';
 import { scoreSession, streakDays } from '../core/scoring';
 import { db, type ReadingSession } from '../db/db';
@@ -13,7 +13,7 @@ import { ReadingRun, type RunResult } from '../ui/ReadingRun';
 
 export function PlayScreen() {
   const { t } = useTranslation();
-  const { profileId, mode, textId, finishPlay } = useApp();
+  const { profileId, mode, textId, finishPlay, go } = useApp();
   const profile = useProfile(profileId);
   const text = textId ? getTextById(textId) : undefined;
   if (!profile || !text) return null;
@@ -75,6 +75,7 @@ export function PlayScreen() {
       newIslands: unlockedIslands(after).filter((i) => !islandsBefore.includes(i)),
       chestEarned: chestsEarned(after) > chestsEarned(previous),
       pieces: mapPieces(after) % PIECES_PER_CHEST,
+      milestones: journeyMilestones(previous, after, getLevelTexts(profile.lang, profile.ageGroup), mode),
       voice,
     });
   };
@@ -90,7 +91,8 @@ export function PlayScreen() {
           {MODE_ICON[mode]} {t(`modes.${mode}.title`)}
         </p>
       }
-      onComplete={(r) => void onComplete(r)}
+      onComplete={onComplete}
+      onExit={() => go(text.activity ? 'journey' : 'textSelect')}
     />
   );
 }

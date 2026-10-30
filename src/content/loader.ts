@@ -28,7 +28,7 @@ export function getPlacementTexts(lang: LangCode, ageGroup: AgeGroup): LoadedTex
 export function getLevelTexts(lang: LangCode, ageGroup: AgeGroup): { level: number; texts: LoadedText[] }[] {
   const groups: { level: number; texts: LoadedText[] }[] = [];
   for (let level = PLACEMENT_LEVEL + 1; level <= MAX_LEVEL; level++) {
-    const texts = getTexts(lang, ageGroup, level);
+    const texts = getTexts(lang, ageGroup, level).filter((text) => !text.activity);
     if (texts.length > 0) groups.push({ level, texts });
   }
   return groups;
@@ -36,4 +36,8 @@ export function getLevelTexts(lang: LangCode, ageGroup: AgeGroup): { level: numb
 
 export function getTextById(id: string): LoadedText | undefined {
   return allTexts.find((t) => t.id === id);
+}
+
+export function getActivityTexts(lang: LangCode, ageGroup: AgeGroup): LoadedText[] {
+  return allTexts.filter((text) => text.lang === lang && text.ageGroup === ageGroup && text.activity);
 }

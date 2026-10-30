@@ -1,4 +1,5 @@
 import { useMemo, useRef, useState } from 'react';
+import { LogOut } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { getPlacementTexts } from '../content/loader';
 import { comprehensionRatio, effectiveWpm, initialTargetWpm, wordsPerMinute, type PlacementResult } from '../core/reading';
@@ -43,6 +44,9 @@ export function PlacementScreen() {
 
   const completePlacement = async (all: TextResult[]) => {
     const now = Date.now();
+    const norm = getLanguagePack(profile.lang).wpmNorms[profile.ageGroup];
+    const targetWpm = initialTargetWpm(all, norm);
+    await db.transaction('rw', db.sessions, db.profiles, async () => {
     await db.sessions.bulkAdd(
       all.map((r) => ({
         profileId: profile.id,
@@ -58,17 +62,16 @@ export function PlacementScreen() {
         createdAt: now,
       })),
     );
-    const norm = getLanguagePack(profile.lang).wpmNorms[profile.ageGroup];
-    const targetWpm = initialTargetWpm(all, norm);
     await db.profiles.update(profile.id, { targetWpm });
+    });
 
     const avgWpm = Math.round(all.reduce((s, r) => s + r.wpm, 0) / all.length);
     const avgComp = all.reduce((s, r) => s + r.comprehension, 0) / all.length;
     finishPlacement({ wpm: avgWpm, comprehension: avgComp, effectiveWpm: effectiveWpm(avgWpm, avgComp), targetWpm });
   };
 
-  const onComplete = ({ activeMs, correct, total }: RunResult) => {
-    results.current = [
+  const onComplete = async ({ activeMs, correct, total }: RunResult) => {
+    const all = [
       ...results.current,
       {
         textId: text.id,
@@ -78,8 +81,10 @@ export function PlacementScreen() {
         comprehension: comprehensionRatio(correct, total),
       },
     ];
-    if (index + 1 < texts.length) setIndex(index + 1);
-    else void completePlacement(results.current);
+    if (index + 1 < texts.length) {
+      results.current = all;
+      setIndex(index + 1);
+    } else await completePlacement(all);
   };
 
   if (!started) {
@@ -90,6 +95,9 @@ export function PlacementScreen() {
           <p className="speech">🦜 {t('placement.intro', { count: texts.length })}</p>
           <button type="button" className="btn primary" onClick={() => setStarted(true)}>
             {t('placement.next')}
+          </button>
+          <button type="button" className="btn ghost" onClick={() => go(profile.targetWpm === null ? 'profiles' : 'home')}>
+            <LogOut size={18} aria-hidden="true" /> {t('reading.exit')}
           </button>
         </div>
       </section>
@@ -102,6 +110,7 @@ export function PlacementScreen() {
       text={text}
       header={<p className="badge">{t('placement.progress', { current: index + 1, total: texts.length })}</p>}
       onComplete={onComplete}
+      onExit={() => go(profile.targetWpm === null ? 'profiles' : 'home')}
     />
   );
 }

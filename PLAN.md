@@ -109,6 +109,16 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
   - de-DE sesli mod, birim testleriyle doğrulandı; Chrome/Edge'de mikrofonla elle denenmesi gerekiyor.
 - [ ] **Faz 8 – İngilizce:** aynı adımlar.
 
+### Tamamlama ve Devam Deneyimi
+
+- [x] Bölüm ve ada tamamlanınca başarı mührü, motivasyon mesajları ve hareket azaltma tercihine uyan kısa konfeti.
+- [x] Tamamlama sayacı farklı ve başarılı okunmuş ana hikâyelere dayanır (anlama en az %60). Aynı metnin tekrarı sayacı artırmaz; yerleştirme ve ek görevler ana yolculuğa dahil değildir.
+- [x] Bölüm/ada mühürleri okuma moduna özeldir. Final sertifikası beş bölümdeki bütün ana metinlerin herhangi bir modda tamamlanmasıyla açılır; mikrofon zorunlu değildir.
+- [x] Profil için sabit sürpriz ödülü: soslu fıstık, sakız veya lolipop. Yazdırılabilir sertifika aileye gösterilir; gerçek ödül aile onayına, alerji ve beslenme tercihlerine bağlıdır. Uygulama ödül teslimi yapmaz.
+- [x] Türkçe ve Almanca, her iki yaş grubuna ikişer özgün devam metni: ipucu dedektifi ve bilim yolculuğu. `activity` alanı bulunan level-5 metinleri ayrı tutulur; eski yolculuğun tamamlanma şartı değişmez.
+- [x] Haritada ilerleme, tamamlanan hikâye işaretleri ve ilk eksik bölüme otomatik geçiş.
+- [x] Hazırlık, okuma ve sorulardan çıkış; yarım tur kaydedilmez. Kayıt hatasında yeniden deneme, çift gönderimi önleme ve atomik yerleştirme kaydı.
+
 ## 9. Doğrulama
 
 - Puan ve uyarlama algoritması için birim testleri (ör. 300 kelime / 90 sn = 200 KDK).
@@ -117,3 +127,14 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
 - Tablette yatay/dikey ekranda dokunmatik test.
 - Çevrimdışı açılış kontrolü.
 - Test dili ile sabit metin kontrolü.
+
+### Otomatik Kontroller
+
+- `npm test`: içerik, dil eşliği, puanlama ve tamamlama kuralları.
+- `npx tsc --noEmit`: TypeScript kontrolü.
+- Bir terminalde `npm run dev -- --host 127.0.0.1 --port 4173`, diğerinde `npm run test:ui`.
+  Tarayıcı testi yalnız Vite geliştirme sunucusuyla çalışır; sunucu farklı porttaysa `OKUMA_TEST_URL` ayarlanır.
+  Windows'ta kurulu Edge kullanılır; diğer sistemlerde önceden `npx playwright install chromium` gerekir.
+  Yalıtılmış tarayıcı profilleri gerçek kullanıcı kayıtlarına dokunmaz; ekran görüntüleri sistemin geçici klasörüne yazılır.
+- Tarayıcı kapsamı: TR/DE son hikâye, ilk final ödülü, yenilemede aynı sürpriz, yazdırma görünümü, devam görevi, kayıt hatası/tekrar deneme, bütün modlardan çıkış ve mikrofon temizliği (sahte tanıma nesnesiyle).
+- Ekran boyutları: 1024×600, 1440×900, 390×844, 320×844. Gerçek mikrofonla konuşma tanımanın kalitesi ve çevrimdışı üretim/PWA akışı ayrıca elle doğrulanmalıdır.

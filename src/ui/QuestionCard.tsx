@@ -1,5 +1,5 @@
 import { Reorder } from 'motion/react';
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { OrderingQuestion, Question } from '../content/schema';
 import { shuffle } from '../core/shuffle';
@@ -13,6 +13,7 @@ interface Props {
 export function QuestionCard({ question, onDone }: Props) {
   const { t } = useTranslation();
   const [result, setResult] = useState<boolean | null>(null);
+  const advanced = useRef(false);
 
   const check = (correct: boolean) => {
     setResult(correct);
@@ -30,7 +31,11 @@ export function QuestionCard({ question, onDone }: Props) {
       {result !== null && (
         <div className={`feedback ${result ? 'ok' : 'no'}`}>
           <span>{result ? t('question.correct') : t('question.wrong')}</span>
-          <button type="button" className="btn primary" onClick={() => onDone(result)} autoFocus>
+          <button type="button" className="btn primary" onClick={() => {
+            if (advanced.current) return;
+            advanced.current = true;
+            onDone(result);
+          }} autoFocus>
             {t('question.next')}
           </button>
         </div>
