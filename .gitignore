@@ -4,3 +4,4 @@ dev-dist
 *.local
 .vscode/*
 !.vscode/extensions.json
+tmp-*
