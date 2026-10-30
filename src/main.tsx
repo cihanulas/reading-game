@@ -10,10 +10,13 @@ import '@fontsource/fraunces/latin-ext-700.css';
 import '@fontsource/fraunces/latin-700.css';
 import './i18n';
 import { App } from './App';
+import { restoreRecoveredProfile } from './db/restoreRecovered';
 import './styles.css';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-);
+void restoreRecoveredProfile().then(() => {
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  );
+});

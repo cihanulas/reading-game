@@ -23,10 +23,19 @@ if not exist "node_modules\.bin\vite.cmd" (
     )
 )
 
+echo Bu bilgisayardan adres her zaman: http://127.0.0.1:5173/
+echo Port 5173 sabittir. Baska porta gecmek kayitlari gizler.
+echo.
+powershell -NoProfile -Command "try { $c = New-Object System.Net.Sockets.TcpClient; $c.Connect('127.0.0.1', 5173); $c.Close(); exit 0 } catch { exit 1 }"
+if not errorlevel 1 (
+    echo Oyun zaten acik. Tarayici ayni adrese gidiyor.
+    start http://127.0.0.1:5173/
+    exit /b 0
+)
+
 echo Okuma Adasi baslatiliyor. Tarayici otomatik acilacak.
 echo Uygulamayi durdurmak icin bu pencereyi kapatin.
 echo.
-echo Bu bilgisayardan: http://127.0.0.1:5173/
 for /f "usebackq delims=" %%i in (`powershell -NoProfile -Command "(Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.IPAddress -notlike '127.*' -and $_.PrefixOrigin -ne 'WellKnown' } | Select-Object -First 1 -ExpandProperty IPAddress)"`) do set "LANIP=%%i"
 if defined LANIP (
     echo Telefondan, ayni Wi-Fi ile: http://%LANIP%:5173/
@@ -36,9 +45,11 @@ if defined LANIP (
     echo Telefon adresi bulunamadi. Asagida Vite'in yazdigi Network satirini kullanin.
 )
 echo.
-call npm run dev -- --host --open
+start "" cmd /c "ping -n 4 127.0.0.1 >nul & start http://127.0.0.1:5173/"
+call npm run dev -- --host --port 5173 --strictPort
 if errorlevel 1 (
-    echo Uygulama baslatilamadi. Yukaridaki hata mesajini kontrol edin.
+    echo Port 5173 acilamadi. Eski Okuma Adasi penceresini kapatip yeniden deneyin.
+    echo Kayitlar http://127.0.0.1:5173/ adresinde durur.
     pause
     exit /b 1
 )

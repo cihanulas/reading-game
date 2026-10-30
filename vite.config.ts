@@ -29,7 +29,10 @@ export default defineConfig({
   ],
   server: {
     // Telefondan erişim: aynı Wi-Fi’daki cihazlar bilgisayarın yerel IP’siyle bağlanır.
+    // Port sabit: başka bir porta düşmek tarayıcıda boş bir oyun gibi görünür.
     host: true,
+    port: 5173,
+    strictPort: true,
   },
   test: {
     environment: 'node',
