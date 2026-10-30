@@ -1,0 +1,13 @@
+{
+  "id": "tr-10-13-bonus-golge-saati",
+  "lang": "tr", "ageGroup": "10-13", "level": 5, "activity": "discovery",
+  "title": "Bahçedeki Gölge Saati", "author": "Okuma Adası", "source": "Okuma Adası için yazılmış özgün etkinlik metni.", "simplified": false,
+  "body": "Mert, okul bahçesindeki direğin gölgesinin sabah uzun, öğleye doğru daha kısa olduğunu gördü. Direğin boyu değişmediğine göre, değişen neydi? Öğretmeni, gökyüzünde Güneş'in bulunduğu yönün gün boyunca farklı göründüğünü anlattı. Bunun nedeni Dünya'nın kendi çevresinde dönmesiydi.\n\nMert ile Ada bir gözlem yapmaya karar verdi. Düz bir zemine tebeşirle gölgenin ucunu işaretlediler. İşaretin yanına saati yazdılar. Her teneffüste aynı direğe döndüler. Direği yerinden oynatmadılar ve her ölçümde aynı noktayı başlangıç kabul ettiler. Böylece işaretleri birbiriyle karşılaştırabildiler.\n\nÖğleden sonra gölge yeniden uzamaya başladı. Üstelik yalnız uzunluğu değil, yönü de değişmişti. Ada, işaretleri birleştirince bir yol çizildiğini fark etti. Bu yol, Güneş'in kendisini izlemek zorunda kalmadan gün içindeki değişimi gösteriyordu. Gözlerini korumak için Güneş'e doğrudan bakmadılar.\n\nErtesi gün hava bulutluydu. Bazı saatlerde gölge seçilemiyordu. Mert boş kalan ölçümlere hayalinden sayı yazmak istedi. Ada, ölçemedikleri zamanı boş bırakmalarının daha doğru olacağını söyledi. Defterlerine hava durumunu da eklediler. Artık yalnız bir gölge resmi değil, nasıl toplandığı belli olan gözlem kayıtları vardı.",
+  "glossary": [{ "word": "gözlem", "meaning": "Bir şeyi dikkatle izleyerek bilgi toplama." }],
+  "questions": [
+    { "id": "q1", "type": "multipleChoice", "prompt": "Çocuklar karşılaştırma yapabilmek için neyi aynı tuttu?", "options": ["Direği ve ölçümün başlangıç noktasını.", "Gölgenin uzunluğunu.", "Hava durumunu."], "answer": 0 },
+    { "id": "q2", "type": "trueFalse", "prompt": "Bulut yüzünden yapılamayan ölçümler tahmin edilen sayılarla doldurulmalıydı.", "answer": false },
+    { "id": "q3", "type": "multipleChoice", "prompt": "Gölge gün içinde nasıl değişti?", "options": ["Hem yönü hem uzunluğu değişti.", "Yalnız rengi değişti.", "Hep aynı kaldı."], "answer": 0 },
+    { "id": "q4", "type": "ordering", "prompt": "Gözlemin aşamalarını sırala.", "items": ["Sabah gölgenin ucunu işaretlediler.", "Öğleden sonra gölgenin uzadığını gördüler.", "Ertesi gün ölçümlere hava durumunu eklediler."] }
+  ]
+}
