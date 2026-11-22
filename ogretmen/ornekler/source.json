@@ -1,0 +1,36 @@
+{
+  "lang": "tr",
+  "subject": "Matematik",
+  "topic": "Kesirler: bütün, parça, pay ve payda",
+  "gradeGuess": 3,
+  "pageType": "textbook",
+  "transcript": "3. SINIF MATEMATİK · 5. ÜNİTE\n\n# Kesirler: Bütün ve Parça\n\nAyşe annesinin yaptığı pizzayı 4 eş parçaya böldü. Bu parçalardan 1 tanesini kardeşine verdi. Kardeşine pizzanın dörtte birini vermiş oldu.\n\nBir bütünün eş parçalarından birini veya birkaçını gösteren sayılara **kesir** denir.\n\n> **1/4** kesrinde üstteki sayı **pay**, alttaki sayı **payda**dır. Payda bütünün kaç eş parçaya bölündüğünü, pay ise kaç parçanın alındığını gösterir.\n\n[Şekil 1: Pizzanın 1/4'ü]\n[Şekil 2: Şeridin 2/3'ü boyandı]\n\n## Alıştırmalar\n1. Bir çikolata 6 eş parçaya bölünmüş. 2 parçası yenmiş. Yenen kısmı kesirle yazınız.\n2. 3/5 kesrinin payını ve paydasını yazınız.\n3. Şekil 2'de boyanmayan kısmı kesirle gösteriniz. (el yazısıyla: → 1/3)",
+  "regions": [
+    { "id": "r1", "kind": "heading", "image": 0, "box": { "x": 0.06, "y": 0.035, "w": 0.88, "h": 0.075 }, "description": "Ünite bilgisi ve sayfa başlığı", "text": "Kesirler: Bütün ve Parça" },
+    { "id": "r2", "kind": "text", "image": 0, "box": { "x": 0.06, "y": 0.115, "w": 0.88, "h": 0.135 }, "description": "Pizza örneği ve kesir tanımı" },
+    { "id": "r3", "kind": "text", "image": 0, "box": { "x": 0.06, "y": 0.255, "w": 0.88, "h": 0.075 }, "description": "Pay ve payda kuralı kutusu" },
+    { "id": "r4", "kind": "figure", "image": 0, "box": { "x": 0.06, "y": 0.34, "w": 0.26, "h": 0.22 }, "description": "Dört eş dilime bölünmüş pizza; sağ üst dilim kırmızı boyalı (1/4)" },
+    { "id": "r5", "kind": "figure", "image": 0, "box": { "x": 0.37, "y": 0.4, "w": 0.37, "h": 0.1 }, "description": "Üç eş parçalı şerit; ilk iki parça yeşil, sonuncusu beyaz (2/3 boyalı)" },
+    { "id": "r6", "kind": "exercise", "image": 0, "box": { "x": 0.06, "y": 0.57, "w": 0.88, "h": 0.18 }, "description": "Üç alıştırma sorusu" },
+    { "id": "r7", "kind": "handwriting", "image": 0, "box": { "x": 0.62, "y": 0.71, "w": 0.09, "h": 0.035 }, "description": "3. soruya çocuğun el yazısıyla yazdığı cevap", "text": "→ 1/3" }
+  ],
+  "keyConcepts": [
+    { "term": "Bütün", "explanation": "Bölmeden önceki tam nesne: bir pizza, bir çikolata, bir şerit." },
+    { "term": "Eş parça", "explanation": "Birbirine tam olarak eşit büyüklükteki parçalar." },
+    { "term": "Kesir", "explanation": "Bir bütünün eş parçalarından kaç tanesini aldığımızı gösteren sayı." },
+    { "term": "Payda", "explanation": "Kesir çizgisinin altındaki sayı; bütünün kaç eş parçaya bölündüğünü söyler." },
+    { "term": "Pay", "explanation": "Kesir çizgisinin üstündeki sayı; kaç parça aldığımızı söyler." }
+  ],
+  "learningGoals": [
+    "Çocuk bütünü eş parçalara ayırmanın ne demek olduğunu açıklayabilmeli.",
+    "Çocuk bir şekildeki boyalı kısmı kesirle yazabilmeli.",
+    "Çocuk bir kesrin payını ve paydasını gösterebilmeli."
+  ],
+  "exercises": [
+    { "id": "e1", "text": "Bir çikolata 6 eş parçaya bölünmüş. 2 parçası yenmiş. Yenen kısmı kesirle yazınız.", "regionId": "r6" },
+    { "id": "e2", "text": "3/5 kesrinin payını ve paydasını yazınız.", "regionId": "r6" },
+    { "id": "e3", "text": "Şekil 2'de boyanmayan kısmı kesirle gösteriniz.", "regionId": "r6" }
+  ],
+  "uncertainties": [],
+  "safety": { "ok": true }
+}

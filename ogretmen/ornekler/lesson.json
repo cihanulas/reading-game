@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "lang": "tr",
+  "title": "Pizzadan Kesirlere!",
+  "subject": "Matematik",
+  "gradeBand": "3. sınıf",
+  "summary": "Bütün, eş parça, pay ve payda kavramları pizza ve şerit örnekleriyle anlatıldı; benzer bir örnek birlikte çözüldü.",
+  "scenes": [
+    {
+      "id": "s1",
+      "title": "Pizza zamanı",
+      "steps": [
+        {
+          "say": "Merhaba! Ben Kaptan Kelime. Bugün çok lezzetli bir konu var: kesirler!",
+          "avatar": { "mood": "happy", "gesture": "wave" },
+          "board": [{ "op": "heading", "text": "Kesirler: Bütün ve Parça", "anim": "write" }]
+        },
+        {
+          "say": "Bir pizzayı dört arkadaş paylaşacak olsa, herkes eşit pay almak ister, değil mi?",
+          "avatar": { "mood": "thinking", "gesture": "think" },
+          "board": [{ "op": "emoji", "id": "e1", "emoji": "🍕", "count": 1, "label": "1 bütün pizza", "anim": "pop" }]
+        },
+        {
+          "say": "Pizzayı dört eş parçaya bölersek, her biri bütünün bir parçası olur.",
+          "avatar": { "mood": "explaining", "gesture": "point" },
+          "board": [
+            { "op": "remove", "target": "e1" },
+            { "op": "diagram", "id": "f1", "kind": "fraction", "fraction": { "numerator": 0, "denominator": 4 }, "anim": "slide" },
+            { "op": "text", "id": "t1", "text": "4 eş parça", "style": "big" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Pay ve payda",
+      "steps": [
+        {
+          "say": "Kitabındaki bu pizzaya bak. Dört parçadan biri kırmızı boyanmış.",
+          "avatar": { "mood": "explaining", "gesture": "point" },
+          "board": [{ "op": "image", "id": "i1", "image": 0, "box": { "x": 0.06, "y": 0.34, "w": 0.26, "h": 0.22 }, "caption": "Şekil 1", "anim": "slide" }]
+        },
+        {
+          "say": "Bunu bir bölü dört diye yazarız. Alttaki dört, pizzanın kaç eş parçaya bölündüğünü söyler. Buna payda deriz.",
+          "caption": "1/4 → payda = 4",
+          "avatar": { "mood": "explaining", "gesture": "point" },
+          "board": [
+            { "op": "math", "id": "m1", "text": "1/4", "latex": "\\frac{1}{4}", "anim": "write" },
+            { "op": "highlight", "target": "m1", "text": "4" },
+            { "op": "text", "id": "t2", "text": "Payda: kaç eş parçaya böldük?", "style": "note" }
+          ]
+        },
+        {
+          "say": "Üstteki bir ise kaç parça aldığımızı söyler. Buna da pay deriz.",
+          "avatar": { "mood": "happy", "gesture": "nod" },
+          "board": [
+            { "op": "highlight", "target": "m1", "text": "1" },
+            { "op": "text", "id": "t3", "text": "Pay: kaç parça aldık?", "style": "note" }
+          ],
+          "check": {
+            "question": "3/5 kesrinde payda hangisi?",
+            "choices": ["3", "5", "8"],
+            "answerIndex": 1,
+            "onCorrect": "Süper! Payda alttaki sayıdır, yani beş.",
+            "onWrong": "Az kaldı! Payda çizginin altında duruyor. Bir daha bak."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Şeritte kesir",
+      "steps": [
+        {
+          "say": "Kesirler sadece pizzada değil. Bu şerit üç eş parçaya bölünmüş ve iki parçası boyanmış.",
+          "avatar": { "mood": "surprised", "gesture": "point" },
+          "board": [
+            { "op": "diagram", "id": "d1", "kind": "fraction", "fraction": { "numerator": 2, "denominator": 3 }, "anim": "slide" },
+            { "op": "math", "id": "m2", "text": "2/3", "latex": "\\frac{2}{3}" }
+          ]
+        },
+        {
+          "say": "Sayı doğrusunda da gösterebiliriz. Sıfır ile bir arasını üç eşit adıma böleriz ve iki adım ileri gideriz.",
+          "avatar": { "mood": "explaining", "gesture": "point" },
+          "board": [
+            { "op": "diagram", "id": "d2", "kind": "numberline", "numberline": { "min": 0, "max": 1, "step": 0.3333, "jumps": [{ "from": 0, "to": 0.3333 }, { "from": 0.3333, "to": 0.6667, "label": "2/3" }] } }
+          ],
+          "check": {
+            "question": "Şeridin kaç parçası boyanmamış?",
+            "choices": ["1", "2", "3"],
+            "answerIndex": 0,
+            "onCorrect": "Evet! Üç parçadan biri beyaz kalmış.",
+            "onWrong": "Beyaz kalan parçaları say bakalım."
+          }
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Birlikte deneyelim",
+      "steps": [
+        {
+          "say": "Bir pasta sekiz eş dilime bölünmüş ve üç dilimi yenmiş olsun. Yenen kısım nasıl yazılır?",
+          "avatar": { "mood": "thinking", "gesture": "think" },
+          "board": [
+            { "op": "emoji", "id": "e2", "emoji": "🍰", "count": 8, "label": "8 eş dilim" },
+            { "op": "bullets", "id": "b1", "items": ["Kaç eş parça var? → payda", "Kaç parça yenmiş? → pay"] }
+          ]
+        },
+        {
+          "say": "Sekiz eş parça var, payda sekiz. Üç parça yenmiş, pay üç. Cevap üç bölü sekiz!",
+          "caption": "3/8",
+          "avatar": { "mood": "proud", "gesture": "clap" },
+          "board": [{ "op": "math", "id": "m3", "text": "3/8", "latex": "\\frac{3}{8}", "anim": "pop" }]
+        },
+        {
+          "say": "Şimdi sıra sende! Kitabındaki birinci soruyu aynı yolla çözmeyi dene.",
+          "avatar": { "mood": "encouraging", "gesture": "point" },
+          "board": [{ "op": "image", "id": "i2", "image": 0, "box": { "x": 0.06, "y": 0.57, "w": 0.88, "h": 0.18 }, "caption": "Alıştırmalar" }]
+        }
+      ]
+    }
+  ],
+  "recap": {
+    "points": [
+      "Kesir, bir bütünün eş parçalarını gösterir.",
+      "Payda alttadır: bütün kaç eş parçaya bölündü?",
+      "Pay üsttedir: kaç parça aldık?"
+    ],
+    "say": "Bugün kesirlerin ne olduğunu öğrendin. Pay ile paydayı artık tanıyorsun. Harika iş çıkardın!"
+  },
+  "glossary": [
+    { "term": "kesir", "meaning": "Bütünün eş parçalarından kaçını aldığımızı gösteren sayı." },
+    { "term": "pay", "meaning": "Kesrin üstündeki sayı." },
+    { "term": "payda", "meaning": "Kesrin altındaki sayı." }
+  ],
+  "nextIdeas": ["Hangi kesir daha büyük: 1/2 mi, 1/4 mü?", "Kesirleri nasıl toplarız?"]
+}

@@ -1198,3 +1198,59 @@ button svg { flex-shrink: 0; }
   .treasure-layout .badge-icon { font-size: 1.35rem; }
   .treasure-layout .collection li { padding: .5rem .3rem; }
 }
+
+.teacher-screen { max-width: 1100px; }
+.teacher-head, .teacher-controls, .row.wrap { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.teacher-head h2 { margin: 0; flex: 1; }
+.teacher-form { display: grid; gap: .8rem; }
+.teacher-form label, .teacher-speed, .teacher-captions { display: grid; gap: .3rem; font-weight: 700; }
+.teacher-form input, .teacher-form textarea, .teacher-form select { font: inherit; padding: .6rem .7rem; border-radius: 8px; border: 2px solid #d7e4df; background: #fff; }
+.teacher-form small { font-weight: 500; color: #4d675f; }
+.teacher-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .8rem; }
+.teacher-lesson-title { margin: 0; font-size: 1.2rem; }
+.teacher-lesson-topic { margin: .35rem 0 0; display: flex; flex-wrap: wrap; gap: .45rem; align-items: baseline; }
+.teacher-cat { background: #e7f2ea; color: #1d4e89; border-radius: 999px; padding: .12rem .6rem; font-size: .85rem; font-weight: 800; }
+.teacher-lesson-meta { margin: .3rem 0 .5rem; color: #4d675f; font-size: .8rem; }
+.teacher-stage { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 1rem; align-items: start; }
+.teacher-side { display: grid; gap: .7rem; justify-items: center; }
+.teacher-caption { background: #fff; border-radius: 12px; padding: .8rem 1rem; margin: 0; min-height: 4.5rem; }
+.teacher-note { background: #fff4d8; border-radius: 10px; padding: .6rem .8rem; }
+.teacher-check .btn.is-right { background: #cfe8c8; box-shadow: inset 0 0 0 3px #2f7d4a; }
+.teacher-check .btn:disabled { opacity: 1; cursor: default; }
+.teacher-parrot { width: 150px; }
+.teacher-parrot.talking { animation: parrot-bob .35s ease-in-out infinite; }
+.teacher-parrot.gesture-wave { animation: parrot-wave .8s ease-in-out infinite; }
+.teacher-parrot.gesture-point { transform: rotate(-8deg); }
+.teacher-parrot.gesture-clap { animation: parrot-bob .25s ease-in-out infinite; }
+.teacher-parrot.mood-thinking { filter: saturate(.8); }
+@keyframes parrot-bob { 50% { transform: translateY(-4px) scale(1.03); } }
+@keyframes parrot-wave { 50% { transform: rotate(-8deg); } }
+.board { background: #f7fbff; border: 3px solid #1d4e89; border-radius: 16px; min-height: 280px; padding: 1rem; display: flex; flex-direction: column; gap: .7rem; }
+.board-heading { margin: 0; color: #1d4e89; }
+.board-text.big, .board-math { font-size: 1.8rem; font-weight: 800; margin: 0; }
+.board-text.note { color: #4d675f; margin: 0; }
+.board-emoji { font-size: 2rem; display: flex; flex-wrap: wrap; gap: .3rem; align-items: center; margin: 0; }
+.board-emoji small { font-size: .9rem; width: 100%; }
+.board mark, .marked { background: #ffe08a; }
+.board-image { margin: 0; max-width: 100%; }
+.board-image > img { width: 100%; height: auto; display: block; border-radius: 12px; }
+.board-crop { position: relative; width: 100%; overflow: hidden; border-radius: 12px; background: #fff; }
+.board-crop img { position: absolute; display: block; max-width: none; max-height: none; }
+.board-image figcaption { font-size: .85rem; color: #4d675f; }
+.fraction-bar { display: flex; gap: 4px; }
+.fraction-bar span { flex: 1; height: 42px; border: 2px solid #1d4e89; border-radius: 6px; background: #fff; }
+.fraction-bar span.on { background: #6bb36b; }
+.numberline { width: 100%; height: 72px; }
+.diagram { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+.diagram li, .diagram > div { background: #fff; border-radius: 10px; padding: .45rem .7rem; }
+.diagram-flow li:not(:last-child)::after, .diagram-timeline li:not(:last-child)::after { content: ' →'; }
+.diagram-compare, .diagram-table { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+.diagram h4 { margin: 0 0 .3rem; }
+.board-svg svg { max-width: 100%; height: auto; }
+.teacher-done ul { padding-left: 1.2rem; }
+@media (max-width: 800px) {
+  .teacher-stage { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .teacher-parrot.talking, .teacher-parrot.gesture-wave, .teacher-parrot.gesture-clap { animation: none; }
+}

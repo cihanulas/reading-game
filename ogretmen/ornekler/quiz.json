@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "lang": "tr",
+  "title": "Kesir Avcısı",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "prompt": "2/7 kesrinde pay hangisidir?",
+      "say": "İki bölü yedi kesrinde pay hangisidir?",
+      "choices": ["7", "2", "9"],
+      "answerIndex": 1,
+      "explanation": "Pay çizginin üstündeki sayıdır, yani 2.",
+      "hint": "Pay üstte mi altta mı duruyordu?",
+      "difficulty": 1
+    },
+    {
+      "id": "q2",
+      "type": "true_false",
+      "prompt": "Payda, bütünün kaç eş parçaya bölündüğünü gösterir.",
+      "answerBool": true,
+      "explanation": "Evet, payda kaç eş parçaya böldüğümüzü söyler.",
+      "difficulty": 1
+    },
+    {
+      "id": "q3",
+      "type": "fill_blank",
+      "prompt": "Bir elma 4 eş parçaya bölündü ve 3 parçası yendi. Yenen kısım ___ olarak yazılır.",
+      "acceptedAnswers": ["3/4", "dörtte üç"],
+      "explanation": "4 eş parça var (payda 4), 3'ü yendi (pay 3): 3/4.",
+      "hint": "Önce paydayı bul: kaç eş parça var?",
+      "difficulty": 2
+    },
+    {
+      "id": "q4",
+      "type": "ordering",
+      "prompt": "Bir şeklin boyalı kısmını kesirle yazmak için adımları sırala.",
+      "orderedItems": ["Bütünün kaç eş parçaya bölündüğünü say", "Sayıyı paydaya yaz", "Boyalı parçaları say", "Sayıyı paya yaz"],
+      "explanation": "Önce paydayı, sonra payı buluruz.",
+      "difficulty": 2
+    },
+    {
+      "id": "q5",
+      "type": "short_answer",
+      "prompt": "Bir şerit 5 eş parçaya bölünmüş, 2 parçası boyanmış. Boyanmayan kısmı kesirle yaz.",
+      "acceptedAnswers": ["3/5", "beşte üç"],
+      "explanation": "5 parçadan 2'si boyalıysa 3'ü boyasızdır: 3/5.",
+      "hint": "Önce boyasız parçaları say.",
+      "difficulty": 3
+    }
+  ]
+}

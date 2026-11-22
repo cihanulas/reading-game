@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ChartNoAxesCombined, PackageOpen, Coins, Flame, LockKeyhole, RotateCcw, Users, Gift, Flag, CheckCircle2 } from 'lucide-react';
+import { ChartNoAxesCombined, PackageOpen, Coins, Flame, LockKeyhole, RotateCcw, Users, Gift, Flag, CheckCircle2, GraduationCap } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { chestsEarned, islandStates, journeyProgress, type IslandState } from '../core/progress';
 import { getLevelTexts } from '../content/loader';
@@ -119,6 +119,9 @@ export function HomeScreen() {
         </div>
 
         <div className="row map-actions">
+          <button type="button" className="btn primary" onClick={() => go('teacher')}>
+            <GraduationCap size={20} aria-hidden="true" /> {t('teacher.open')}
+          </button>
           <button type="button" className="btn primary" onClick={() => go('treasure')}>
             <PackageOpen size={20} aria-hidden="true" /> {t('home.treasure')}
             {unopened > 0 && <span className="pill">{unopened}</span>}

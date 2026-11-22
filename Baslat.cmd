@@ -23,6 +23,15 @@ if not exist "node_modules\.bin\vite.cmd" (
     )
 )
 
+echo Ogretmen sunucusu kontrol ediliyor.
+powershell -NoProfile -Command "try { $c = New-Object System.Net.Sockets.TcpClient; $c.Connect('127.0.0.1', 5174); $c.Close(); exit 0 } catch { exit 1 }"
+if errorlevel 1 (
+    echo Ogretmen sunucusu aciliyor. Penceresini kapatmayin.
+    start "Ogretmen" cmd /c "cd /d %~dp0 && npm run ogretmen:sunucu"
+) else (
+    echo Ogretmen sunucusu zaten acik: http://127.0.0.1:5174/
+)
+echo.
 echo Bu bilgisayardan adres her zaman: http://127.0.0.1:5173/
 echo Port 5173 sabittir. Baska porta gecmek kayitlari gizler.
 echo.

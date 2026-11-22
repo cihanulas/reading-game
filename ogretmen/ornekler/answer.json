@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "onTopic": true,
+  "steps": [
+    {
+      "say": "Neden parçaların eşit olması gerektiğini merak ettin, değil mi? Çok güzel bir soru!",
+      "avatar": { "mood": "happy", "gesture": "nod" }
+    },
+    {
+      "say": "Bak, bu iki çikolatanın ikisi de iki parçaya bölünmüş. Ama soldakinde parçalar eşit, sağdakinde değil.",
+      "avatar": { "mood": "explaining", "gesture": "point" },
+      "board": [
+        {
+          "op": "diagram",
+          "id": "d1",
+          "kind": "compare",
+          "columns": [
+            { "title": "Eş parçalar", "items": ["Yarım + yarım", "Herkes aynı payı alır"] },
+            { "title": "Eş olmayan parçalar", "items": ["Büyük + küçük", "Kim ne kadar aldı belli değil"] }
+          ],
+          "anim": "slide"
+        }
+      ]
+    },
+    {
+      "say": "Parçalar eşit değilse bir bölü iki dediğimizde hangi parçayı kastettiğimiz belli olmaz. O yüzden kesirde parçalar hep eşittir.",
+      "avatar": { "mood": "encouraging", "gesture": "none" },
+      "check": {
+        "question": "Bir pizza biri büyük biri küçük iki parçaya bölündü. Büyük parçaya 1/2 diyebilir miyiz?",
+        "choices": ["Evet", "Hayır"],
+        "answerIndex": 1,
+        "onCorrect": "Doğru! Parçalar eşit olmadığı için yarım diyemeyiz.",
+        "onWrong": "Bir düşün: iki parça aynı büyüklükte mi?"
+      }
+    }
+  ],
+  "followUp": "Evdeki bir ekmeği eşit parçalara nasıl bölebileceğini düşün!"
+}

@@ -5,3 +5,5 @@ dev-dist
 .vscode/*
 !.vscode/extensions.json
 tmp-*
+ogretmen-veri/
+token.txt

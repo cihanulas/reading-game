@@ -15,6 +15,8 @@ Rehber karakter: papağan **Kaptan Kelime**.
 | Yapay zeka | Uygulama içinde yok |
 | Mikrofon | Ses hiçbir zaman kaydedilmez veya saklanmaz. Not: Web Speech tanıma tarayıcının hizmetiyle yapılır (Chrome/Edge'de bulut), bu kullanıcıya okuma öncesi söylenir |
 
+Not: "Sunucu yok" ve "Yapay zeka yok" kararları okuma oyunu için geçerlidir. Faz 9'daki Ders Öğretmeni, aynı bilgisayarda çalışan bir sunucu ve Cursor SDK üzerinden yapay zeka kullanır; okuma oyunu bundan bağımsız ve çevrimdışı kalır.
+
 ## 2. Okuma Hızı Ölçümü ve Puanlama
 
 - **KDK (kelime/dakika)** = kelime sayısı ÷ okuma süresi (dakika).
@@ -108,6 +110,10 @@ Yeni dil eklemek oyun mantığında kod değişikliği gerektirmez. Bir dil = ar
   - 24 Almanca metin (de.wikisource.org, kamu malı): 10-13 için Grimm, Hebel, Hauff (Kalif Storch sadeleştirilmiş); 14-18 için Hebel (Unverhofftes Wiedersehen), Hauff (Gespensterschiff), Keller (Kleider machen Leute), Kafka (Vor dem Gesetz, Eine kaiserliche Botschaft), Kleist (Das Bettelweib von Locarno), özgün yazımla.
   - de-DE sesli mod, birim testleriyle doğrulandı; Chrome/Edge'de mikrofonla elle denenmesi gerekiyor.
 - [ ] **Faz 8 – İngilizce:** aynı adımlar.
+- [ ] **Faz 9 – Ders Öğretmeni:** Çocuk kitap/defter sayfasının fotoğrafını (veya metin/konu) gönderir; Kaptan Kelime konuyu sesli, tahtada görsellerle ve animasyonla anlatır; istenirse sınav hazırlar ve soruları cevaplar. Ayrıntı: `ogretmen/README.md`.
+  - [x] Altyapı: Cursor SDK ajan hattı (Sayfa Çözümleyici → Ders Anlatıcı, Sınav Hazırlayıcı, Soru-Cevap), talimatlar (`ogretmen/prompts/`), veri sözleşmeleri ve doğrulama, örnek veri, CLI, skill'ler (`.cursor/skills/ders-ogretmeni`, `.cursor/skills/ogretmen-uygulamasi`).
+  - [ ] Gerçek API anahtarıyla uçtan uca deneme ve resim anlayan model seçimi.
+  - [x] Sunucu (`npm run ogretmen:sunucu`, 127.0.0.1:5174, Vite `/api` proxy, `Baslat.cmd` ikisini açar), fotoğraf yükleme, ders oynatıcı, animasyonlu öğretmen, seslendirme, sınav ve soru-cevap ekranları. Haritadan "Kaptan Kelime'ye sor".
 
 ### Tamamlama ve Devam Deneyimi
 

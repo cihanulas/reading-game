@@ -9,6 +9,7 @@ import { PlayResultScreen } from './screens/PlayResultScreen';
 import { PlayScreen } from './screens/PlayScreen';
 import { ProfilesScreen } from './screens/ProfilesScreen';
 import { TextSelectScreen } from './screens/TextSelectScreen';
+import { TeacherScreen } from './screens/TeacherScreen';
 import { TreasureScreen } from './screens/TreasureScreen';
 import { useApp, type Screen } from './store/app';
 
@@ -43,6 +44,8 @@ function renderScreen(screen: Screen) {
           <ProgressScreen />
         </Suspense>
       );
+    case 'teacher':
+      return <TeacherScreen />;
   }
 }
 

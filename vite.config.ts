@@ -14,6 +14,7 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,svg,txt,webmanifest,woff,woff2}'],
         cleanupOutdatedCaches: true,
         navigateFallback: 'index.html',
+        navigateFallbackDenylist: [/^\/api/],
       },
       manifest: {
         name: 'Okuma Adası',
@@ -33,6 +34,9 @@ export default defineConfig({
     host: true,
     port: 5173,
     strictPort: true,
+    proxy: {
+      '/api': { target: 'http://127.0.0.1:5174', changeOrigin: true, timeout: 0, proxyTimeout: 0 },
+    },
   },
   test: {
     environment: 'node',
